@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "12916748533",
+    "project_id": "duygearnsdk",
+    "storage_bucket": "duygearnsdk.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:12916748533:android:9e067f4aec715e929f95bc",
+        "android_client_info": {
+          "package_name": "com.ponygames.IdleRestaurantDuy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "12916748533-uljfam9m6ehpbe3rag9lek29a5gbc25u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC6P_qboVlJeC4RU1tuInv3ra_k6TNrDtM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "12916748533-uljfam9m6ehpbe3rag9lek29a5gbc25u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

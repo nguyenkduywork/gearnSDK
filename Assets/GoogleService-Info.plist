@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>312434017493-uhu2umih55ur0rh18vs2ath.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.312434017493-uhu2umihvs2athb95pjh9ff</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAMmrzHGpAgSyPJVZKlE4HM</string>
+	<key>GCM_SENDER_ID</key>
+	<string>3124340</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.ponygames.IdleRestaurant</string>
+	<key>PROJECT_ID</key>
+	<string>red-ball</string>
+	<key>STORAGE_BUCKET</key>
+	<string>red-ball.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:312434017493:ios:8bb119e7b1</string>
+	<key>DATABASE_URL</key>
+	<string>https://red-ball.firebaseio.com</string>
+</dict>
+</plist>

@@ -1,0 +1,15 @@
+﻿<Properties StartupConfiguration="{B46D6404-F2D3-C190-089C-C29DBA57B81E}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/ElevatorController.cs">
+    <Files>
+      <File FileName="Assets/Scripts/WaiterController.cs" Line="220" Column="5" />
+      <File FileName="Assets/Scripts/ElevatorController.cs" Line="299" Column="5" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

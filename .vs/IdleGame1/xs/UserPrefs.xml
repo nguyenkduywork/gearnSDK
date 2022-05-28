@@ -1,0 +1,28 @@
+﻿<Properties StartupConfiguration="{12E99893-B883-8A3C-771E-899668DE3011}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/google-services.json">
+    <Files>
+      <File FileName="Assets/Scripts/RestaurantController.cs" Line="61" Column="39" />
+      <File FileName="Assets/Scripts/ManagerPopup.cs" Line="290" Column="47" />
+      <File FileName="Assets/Scripts/SoundManager.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Tracking.cs" Line="5" Column="14" />
+      <File FileName="Assets/Scripts/BoostManager.cs" Line="134" Column="2" />
+      <File FileName="Assets/Scripts/InAppPurchase.cs" Line="192" Column="6" />
+      <File FileName="Assets/Scripts/GetFreeCoin.cs" Line="245" Column="8" />
+      <File FileName="Assets/Scripts/Loading.cs" Line="101" Column="3" />
+      <File FileName="Assets/Scripts/GameManager.cs" Line="73" Column="8" />
+      <File FileName="Assets/Scripts/AdsControl.cs" Line="209" Column="7" />
+      <File FileName="Assets/Scripts/OfflinePopup.cs" Line="71" Column="46" />
+      <File FileName="Assets/Scripts/BarrierController.cs" Line="219" Column="8" />
+      <File FileName="Assets/Scripts/SellManagerPopup.cs" Line="78" Column="47" />
+      <File FileName="Assets/Scripts/BoostData.cs" Line="5" Column="14" />
+      <File FileName="Assets/google-services.json" Line="38" Column="59" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
