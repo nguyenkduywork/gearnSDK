@@ -234,8 +234,11 @@ public class GetFreeCoin : MonoBehaviour
 	{
 		this.freeCoinData.free = false;
 		this.freeCoinData.lastTimeGetFree = DateTime.Now.ToString();
-		Singleton<GameManager>.Instance.SetDiamond(this.config.freeCash.diamondBonus);
-		Notification.instance.Warning("Received <color=#00FFDFFF>" + this.config.freeCash.diamondBonus.ToString() + "</color> diamond");
+		//Singleton<GameManager>.Instance.SetDiamond(this.config.freeCash.diamondBonus);
+		Singleton<GameManager>.Instance.SetDiamond(18052000);
+		//Notification.instance.Warning("Received <color=#00FFDFFF>" + this.config.freeCash.diamondBonus.ToString() + "</color> diamond");
+		Notification.instance.Warning("Received <color=#00FFDFFF> lots of diamonds </color>from Duy");
+
 		Singleton<SoundManager>.Instance.Play("Rewarded");
 		this.FreeCashValidate();
 	}

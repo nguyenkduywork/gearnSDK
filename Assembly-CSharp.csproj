@@ -211,6 +211,7 @@
      <Compile Include="Assets\Scripts\BoostManager.cs" />
      <Compile Include="Assets\Scripts\InAppPurchase.cs" />
      <Compile Include="Assets\Spine\Runtime\spine-unity\Modules\AttachmentTools\AttachmentTools.cs" />
+     <Compile Include="Assets\Scripts\getWeb3Address.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\Spine\version.txt" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
@@ -554,11 +555,11 @@
  <Reference Include="Google.MiniJson">
  <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Assets/Firebase/Plugins/Google.MiniJson.dll</HintPath>
  </Reference>
- <Reference Include="Firebase.Platform">
- <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Assets/Firebase/Plugins/Firebase.Platform.dll</HintPath>
- </Reference>
  <Reference Include="Unity.Compat">
  <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Assets/Parse/Plugins/dotNet45/Unity.Compat.dll</HintPath>
+ </Reference>
+ <Reference Include="Firebase.Platform">
+ <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Assets/Firebase/Plugins/Firebase.Platform.dll</HintPath>
  </Reference>
  <Reference Include="netstandard">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
