@@ -1,0 +1,1011 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <LangVersion>latest</LangVersion>
+    <_TargetFrameworkDirectories>non_empty_path_generated_by_unity.rider.package</_TargetFrameworkDirectories>
+    <_FullFrameworkReferenceAssemblyPaths>non_empty_path_generated_by_unity.rider.package</_FullFrameworkReferenceAssemblyPaths>
+    <DisableHandlePackageFileConflicts>true</DisableHandlePackageFileConflicts>
+  <CodeAnalysisRuleSet></CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{e4488744-c9dd-d7cb-6b70-268078861ecc}</ProjectGuid>
+    <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Moralis.Web3UnitySdk</AssemblyName>
+    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>.</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\Bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;UNITY_2020_3_26;UNITY_2020_3;UNITY_2020;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;UNITY_INCLUDE_TESTS;UNITY_ANALYTICS;USE_SEARCH_ENGINE_API;SCENE_TEMPLATE_MODULE;ENABLE_AR;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_EVENT_QUEUE;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_NATIVE_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;ENABLE_RUNTIME_PERMISSIONS;ENABLE_ENGINE_CODE_STRIPPING;ENABLE_ONSCREEN_KEYBOARD;ENABLE_MANAGED_UNITYTLS;INCLUDE_DYNAMIC_GI;ENABLE_MONO_BDWGC;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;ENABLE_VIDEO;PLATFORM_ANDROID;UNITY_ANDROID;UNITY_ANDROID_API;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_CRUNCH_TEXTURE_COMPRESSION;UNITY_CAN_SHOW_SPLASH_SCREEN;UNITY_HAS_GOOGLEVR;UNITY_HAS_TANGO;ENABLE_SPATIALTRACKING;PLATFORM_EXTENDS_VULKAN_DEVICE;PLATFORM_HAS_MULTIPLE_SWAPCHAINS;UNITY_ANDROID_SUPPORTS_SHADOWFILES;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;ENABLE_MONO;NET_STANDARD_2_0;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_LEGACY_INPUT_MANAGER;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn></NoWarn>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn></NoWarn>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoConfig>true</NoConfig>
+    <NoStdLib>true</NoStdLib>
+    <AddAdditionalExplicitAssemblyReferences>false</AddAdditionalExplicitAssemblyReferences>
+    <ImplicitlyExpandNETStandardFacades>false</ImplicitlyExpandNETStandardFacades>
+    <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
+  </PropertyGroup>
+  <ItemGroup>
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Abstractions\IServiceHubComposer.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Queries\Live\ErrorMessage.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\SolanaApi\CloudApi\AccountApi.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Utilities\FlexibleDictionaryWrapper.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Services\ClientServices\CommandRunnerExtensions.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Queries\Live\SubscribeRequest.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Operations\MoralisSetOperation.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Models\Block.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\MoralisSettings.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Services\Models\DataTransferLevel.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\HostManifestData.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Models\ReservesCollection.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Queries\QueryServiceExtensions.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\EvmContractManager.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Interfaces\ITokenApi.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Utilities\Conversion.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Utilities\JsonUtilities.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Exceptions\InitializationRequiredException.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Abstractions\IMetadataService.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Interfaces\IStorageApi.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\DeadRpcReadClient.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Models\NftMetadataCollection.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Models\Erc20Price.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\SolanaApi\Client\ApiException.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Services\ClientServices\MoralisCommandRunner.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Api\TokenApi.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Abstractions\IServiceHub.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Utilities\FileUtilities.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\UnityNewtosoftSerializer.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Models\NftContractMetadata.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Abstractions\ISessionService.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\SolanaApi\Api\AccountApi.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Queries\Live\ConnectRequest.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\MoralisCloud.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Utilities\Formatters.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Models\Ens.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Kits\AuthenticationKit\Scripts\AuthenticationKitView.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Services\Infrastructure\MoralisQueryService.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Services\Infrastructure\MetadataService.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Services\ClientServices\MoralisObjectService.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Utilities\XamarinAttributes.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Utilities\FlexibleListWrapper.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Services\RelativeCacheLocationMutator.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Models\LogEventResponse.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Exceptions\ObservableInvalidValueException.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Abstractions\ICustomServiceHub.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Exceptions\SwitchDefaultException.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\SolanaApi\Interfaces\ISolanaApi.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Services\Models\WebRequest.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\MoralisClient.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\CloudApi\AccountApi.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\MoralisLoginTokenResponse.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Services\Infrastructure\InstallationService.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\SolanaApi\Models\SplNft.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\SolanaApi\Models\FileParameter.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Events\ObservableUnityEvent.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Abstractions\IWebClient.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Models\NftCollection.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Utilities\ReflectionUtilities.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Client\ApiClient.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Client\ApiException.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Utilities\TaskQueue.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Models\Erc20Allowance.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Abstractions\IMoralisCommandRunner.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Queries\Live\QueryEventMessage.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Models\ChainList.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\MoralisSubscriptionQuery.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Abstractions\ILiveQueryCallbacks.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Services\ClientServices\FileServiceExtensions.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\SupportedEvmChains.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Queries\Live\UnscubscribeRequest.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Abstractions\IObjectState.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Models\Log.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Models\Resolve.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Utilities\MoralisFileExtensions.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Models\TradeCollection.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\EnvironmentData.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\UI\ReadMe\ReadMe.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Objects\MoralisGeoDistance.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Queries\MoralisQuery.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\MobileLogin.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\CloudApi\NativeApi.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Operations\MoralisUniqueAddOperation.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Web3GL.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Models\WebRequest.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Models\Erc20Metadata.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Enums.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Queries\Live\MoralisClientWebSocket.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Abstractions\CustomServiceHub.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Operations\MoralisDeleteOperation.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Components\EnsureUniqueInScene.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\SolanaApi\Models\Portfolio.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Models\Erc20TransactionCollection.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Utilities\ThreadingUtilities.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Objects\MoralisFile.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Utilities\LateInitializer.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Abstractions\ICacheService.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Client\Web3ApiClient.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Queries\Live\ActionEvent.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\SolanaApi\Models\MetaplexNft.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\IdentifierBasedRelativeCacheLocationGenerator.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Queries\Live\LiveQueryClientStatus.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Interfaces\IDefiApi.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Queries\Live\OperationTypes.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Objects\MoralisUser.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Services\Models\MoralisCommand.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\SolanaApi\CloudApi\NftApi.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\SolanaApi\Client\ApiClient.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Models\FileParameter.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Interfaces\IWebClient.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Utilities\Validators.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Models\HistoricalNftTransfer.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Models\NativeBalance.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Models\BlockDate.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\SolanaApi\Models\SplTokenBalanace.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Queries\QueryExtensions.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Services\ClientServices\MoralisService.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Interfaces\IWeb3Api.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\WalletSelectItem.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\EvmContractItem.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Models\IpfsFile.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\SolanaApi\Interfaces\IWebClient.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Kits\AuthenticationKit\Scripts\AuthenticationKitState.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\ResourceWrapper.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Services\ClientServices\UserServiceExtensions.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\CloudApi\DefiApi.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Services\ClientServices\MoralisSessionService.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Objects\MoralisRole.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Abstractions\IUserService.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Models\BlockTransaction.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\CloudApi\TokenApi.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Moralis.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Services\Infrastructure\MoralisCurrentUserService.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Objects\MoralisAcl.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Api\StorageApi.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Queries\Live\SubscribableWebSocket.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Abstractions\IServiceHubMutator.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\ServerConnectionData.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\UnityFileHelper.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Api\AccountApi.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Models\Trade.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Abstractions\IDiskFileCacheService.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Api\ResolveApi.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Abstractions\ICurrentObjectService.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Kits\AuthenticationKit\Scripts\AuthenticationKit.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\SolanaApi\Models\Enums.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Resources.Designer.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\SolanaApi\Models\NativeBalance.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\SolanaApi\Interfaces\INftApi.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Models\RunContractDto.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Services\ClientServices\MoralisUserService.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Constants\MoralisConstants.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Exceptions\InitializedAlreadyException.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Models\NativeErc20Price.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Interfaces\IInitializableAsync.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\MoralisSessionTokenResponse.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Services\ClientServices\MoralisFileService.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\MoralisClient.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Abstractions\ICurrentUserService.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Interfaces\IAccountApi.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Objects\MoralisSession.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Abstractions\IInstallationService.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Data\Observable.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Models\Erc20Transaction.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Services\ClientServices\MoralisLiveQueryManager.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Abstractions\IDataCache.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Objects\MoralisGeoPoint.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\ISubscriptionQuery.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\SolanaApi\Models\WebRequest.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Abstractions\IDataTransferLevel.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Utilities\IdentityEqualityComparer.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Abstractions\ICloudFunctionService.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Client\Configuration.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Models\Transaction.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Kits\AuthenticationKit\Scripts\AuthenticationKitStateObservable.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Objects\MoralisObject.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Abstractions\IJsonConvertible.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Abstractions\IEnvironmentData.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Models\LogEventByAddress.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\MoralisLoginTokenRequest.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Operations\MoralisFieldOperations.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\DesignPatterns\CreationalPatterns\Singleton\SingletonMonobehaviour\SingletonMonoBehaviour.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Abstractions\IAuthenticationProvider.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Models\IpfsFileRequest.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Models\NftOwner.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Abstractions\IHostManifestData.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\MoralisDynamic.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Services\OrchestrationServiceHub.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\SolanaApi\Models\NftMetadata.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\MoralisLiveQueriesGL.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Utilities\AssemblyLister.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\UniversalWebClient.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Abstractions\IMutableServiceHub.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Interfaces\IInitializable.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Models\NftTransfer.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Abstractions\IQueryService.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Services\ClientServices\MoralisLiveQueryClient.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\ChainEntry.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\CloudApi\ResolveApi.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Services\Models\CountQueryResult.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Services\ClientServices\MoralisCloudFunctionService.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Services\Infrastructure\MoralisCacheService.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Models\NftContractMetadataCollection.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Abstractions\IServerConnectionData.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Models\NftMetadata.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\MoralisLiveQueryCallbacks.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\MoralisSingleton.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\MoralisServiceHub.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Abstractions\IClientWebSocket.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\EvmContractInstance.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Models\Erc721Metadata.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Services\AbsoluteCacheLocationMutator.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\CloudApi\StorageApi.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Queries\MutableObjectState.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Queries\Live\Enums.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\SolanaApi\Client\SolanaApiClient.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Interfaces\IResolveApi.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\SolanaApi\Api\NftApi.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Models\TransactionCollection.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Models\NftTransferCollection.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\AotTypeEnforcer.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Interfaces\INativeApi.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Operations\MoralisIncrementOperation.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Operations\MoralisAddOperation.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Models\TradesCollection.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Api\NativeApi.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\SolanaApi\MoralisSolanaClient.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Abstractions\IRelativeCacheLocationGenerator.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Exceptions\UnexpectedStateException.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Abstractions\IObjectService.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Models\LogEvent.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Services\ServiceHub.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Abstractions\IMoralisFieldOperation.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Abstractions\ILiveQueryClient.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Services\ClientServices\SessionServiceExtensions.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Exceptions\MoralisFailureException.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Abstractions\IJsonSerializer.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\SolanaApi\Client\Configuration.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\SolanaApi\Models\CloudFunctionResult.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Abstractions\ILiveQueryService.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\MoralisServerSettings.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\SolanaApi\UniversalWebClient.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Queries\Live\MoralisLiveQueryDelegates.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Objects\MoralisFileState.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Api\DefiApi.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Abstractions\IUser.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Abstractions\LiveQueryCallbacks.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Kits\AuthenticationKit\Scripts\AuthenticationKitPlatform.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Abstractions\IFileService.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Models\Erc20TokenBalance.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Models\CloudFunctionResult.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Models\NftOwnerCollection.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\MoralisLiveQueryController.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Services\ClientServices\UniversalWebClient.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Kits\AuthenticationKit\Scripts\AuthenticationKitUnityEvent.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Models\Nft.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Parameter.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Utilities\InternalExtensions.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Services\MutableServiceHub.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\SolanaApi\Interfaces\IAccountApi.cs" />
+     <None Include="Packages\io.moralis.web3-unity-sdk\Runtime\Moralis.Web3UnitySdk.asmdef" />
+ <Reference Include="UnityEngine">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.AIModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.ARModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/Managed/UnityEngine/UnityEngine.ARModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.AccessibilityModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/Managed/UnityEngine/UnityEngine.AccessibilityModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.AndroidJNIModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/Managed/UnityEngine/UnityEngine.AndroidJNIModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.AnimationModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/Managed/UnityEngine/UnityEngine.AnimationModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.AssetBundleModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/Managed/UnityEngine/UnityEngine.AssetBundleModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.AudioModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/Managed/UnityEngine/UnityEngine.AudioModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.ClothModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/Managed/UnityEngine/UnityEngine.ClothModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.CoreModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/Managed/UnityEngine/UnityEngine.CoreModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.CrashReportingModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/Managed/UnityEngine/UnityEngine.CrashReportingModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.DSPGraphModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/Managed/UnityEngine/UnityEngine.DSPGraphModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.DirectorModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/Managed/UnityEngine/UnityEngine.DirectorModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.GIModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/Managed/UnityEngine/UnityEngine.GIModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.GameCenterModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/Managed/UnityEngine/UnityEngine.GameCenterModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.GridModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/Managed/UnityEngine/UnityEngine.GridModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.HotReloadModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/Managed/UnityEngine/UnityEngine.HotReloadModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.IMGUIModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/Managed/UnityEngine/UnityEngine.IMGUIModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.ImageConversionModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/Managed/UnityEngine/UnityEngine.ImageConversionModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.InputModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/Managed/UnityEngine/UnityEngine.InputModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.InputLegacyModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/Managed/UnityEngine/UnityEngine.InputLegacyModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.JSONSerializeModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/Managed/UnityEngine/UnityEngine.JSONSerializeModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.LocalizationModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/Managed/UnityEngine/UnityEngine.LocalizationModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.ParticleSystemModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/Managed/UnityEngine/UnityEngine.ParticleSystemModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.PerformanceReportingModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/Managed/UnityEngine/UnityEngine.PerformanceReportingModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.PhysicsModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/Managed/UnityEngine/UnityEngine.PhysicsModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Physics2DModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/Managed/UnityEngine/UnityEngine.Physics2DModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.ProfilerModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/Managed/UnityEngine/UnityEngine.ProfilerModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/Managed/UnityEngine/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.ScreenCaptureModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/Managed/UnityEngine/UnityEngine.ScreenCaptureModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.SharedInternalsModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/Managed/UnityEngine/UnityEngine.SharedInternalsModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.SpriteMaskModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteMaskModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.SpriteShapeModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteShapeModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.StreamingModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/Managed/UnityEngine/UnityEngine.StreamingModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.SubstanceModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/Managed/UnityEngine/UnityEngine.SubstanceModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.SubsystemsModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/Managed/UnityEngine/UnityEngine.SubsystemsModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TLSModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/Managed/UnityEngine/UnityEngine.TLSModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TerrainModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/Managed/UnityEngine/UnityEngine.TerrainModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TerrainPhysicsModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/Managed/UnityEngine/UnityEngine.TerrainPhysicsModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TextCoreModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/Managed/UnityEngine/UnityEngine.TextCoreModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TextRenderingModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/Managed/UnityEngine/UnityEngine.TextRenderingModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TilemapModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/Managed/UnityEngine/UnityEngine.TilemapModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UIModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/Managed/UnityEngine/UnityEngine.UIModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UIElementsModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/Managed/UnityEngine/UnityEngine.UIElementsModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UIElementsNativeModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/Managed/UnityEngine/UnityEngine.UIElementsNativeModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UNETModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/Managed/UnityEngine/UnityEngine.UNETModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UmbraModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/Managed/UnityEngine/UnityEngine.UmbraModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UnityAnalyticsModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityAnalyticsModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UnityConnectModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityConnectModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UnityCurlModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityCurlModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UnityTestProtocolModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityTestProtocolModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UnityWebRequestModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UnityWebRequestAssetBundleModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestAssetBundleModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UnityWebRequestAudioModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UnityWebRequestTextureModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UnityWebRequestWWWModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.VFXModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/Managed/UnityEngine/UnityEngine.VFXModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.VRModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/Managed/UnityEngine/UnityEngine.VRModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.VehiclesModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/Managed/UnityEngine/UnityEngine.VehiclesModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.VideoModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/Managed/UnityEngine/UnityEngine.VideoModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.WindModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/Managed/UnityEngine/UnityEngine.WindModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.XRModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/Managed/UnityEngine/UnityEngine.XRModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/Managed/UnityEngine/UnityEditor.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.CoreModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/Managed/UnityEngine/UnityEditor.CoreModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.GraphViewModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/Managed/UnityEngine/UnityEditor.GraphViewModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.PackageManagerUIModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/Managed/UnityEngine/UnityEditor.PackageManagerUIModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.SceneTemplateModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/Managed/UnityEngine/UnityEditor.SceneTemplateModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.UIElementsModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/Managed/UnityEngine/UnityEditor.UIElementsModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.UIElementsSamplesModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/Managed/UnityEngine/UnityEditor.UIElementsSamplesModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.UIServiceModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/Managed/UnityEngine/UnityEditor.UIServiceModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.UnityConnectModule">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/Managed/UnityEngine/UnityEditor.UnityConnectModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Graphs">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.WebGL.Extensions">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.OSXStandalone.Extensions">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Android.Extensions">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.WindowsStandalone.Extensions">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="log4netPlastic">
+ <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Library/PackageCache/com.unity.collab-proxy@1.15.7/Lib/Editor/PlasticSCM/log4netPlastic.dll</HintPath>
+ </Reference>
+ <Reference Include="Google.VersionHandlerImpl">
+ <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Assets/ExternalDependencyManager/Editor/1.2.171/Google.VersionHandlerImpl.dll</HintPath>
+ </Reference>
+ <Reference Include="UDP">
+ <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Assets/Plugins/UDP/UDP.dll</HintPath>
+ </Reference>
+ <Reference Include="Firebase.App">
+ <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Assets/Firebase/Plugins/Firebase.App.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityStore">
+ <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Assets/Plugins/UnityChannel/UnityStore.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Analytics.StandardEvents">
+ <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Library/PackageCache/com.unity.analytics@3.6.12/AnalyticsStandardEvents/Unity.Analytics.StandardEvents.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Plastic.Newtonsoft.Json">
+ <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Library/PackageCache/com.unity.collab-proxy@1.15.7/Lib/Editor/PlasticSCM/Unity.Plastic.Newtonsoft.Json.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Monetization.Editor">
+ <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Assets/UnityAds/UnityEngine.Monetization.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Analytics.Editor">
+ <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Library/PackageCache/com.unity.analytics@3.6.12/Unity.Analytics.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Plastic.Antlr3.Runtime">
+ <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Library/PackageCache/com.unity.collab-proxy@1.15.7/Lib/Editor/PlasticSCM/Unity.Plastic.Antlr3.Runtime.dll</HintPath>
+ </Reference>
+ <Reference Include="ChannelPurchase">
+ <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Assets/Plugins/UnityChannel/ChannelPurchase.dll</HintPath>
+ </Reference>
+ <Reference Include="log4net">
+ <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Packages/io.moralis.web3-unity-sdk/Runtime/External/log4net.dll</HintPath>
+ </Reference>
+ <Reference Include="Firebase.TaskExtension">
+ <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Assets/Firebase/Plugins/Firebase.TaskExtension.dll</HintPath>
+ </Reference>
+ <Reference Include="Google.IOSResolver">
+ <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Assets/ExternalDependencyManager/Editor/1.2.171/Google.IOSResolver.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Analytics.Tracker">
+ <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Library/PackageCache/com.unity.analytics@3.6.12/Unity.Analytics.Tracker.dll</HintPath>
+ </Reference>
+ <Reference Include="Google.JarResolver">
+ <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Assets/ExternalDependencyManager/Editor/1.2.171/Google.JarResolver.dll</HintPath>
+ </Reference>
+ <Reference Include="QRCoder">
+ <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Packages/io.moralis.web3-unity-sdk/Runtime/External/QRCoder.1.3.4/lib/net35/QRCoder.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Advertisements.Editor">
+ <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Assets/UnityAds/UnityEngine.Advertisements.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="BouncyCastle.Crypto">
+ <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Packages/io.moralis.web3-unity-sdk/Runtime/External/BouncyCastle.Crypto/BouncyCastle.Crypto.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Drawing.Common">
+ <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Packages/io.moralis.web3-unity-sdk/Runtime/External/System.Drawing.Common/netstandard2.0/System.Drawing.Common.dll</HintPath>
+ </Reference>
+ <Reference Include="Newtonsoft.Json">
+ <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Library/PackageCache/com.unity.nuget.newtonsoft-json@3.0.2/Runtime/Newtonsoft.Json.dll</HintPath>
+ </Reference>
+ <Reference Include="Google.PackageManagerResolver">
+ <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Assets/ExternalDependencyManager/Editor/1.2.171/Google.PackageManagerResolver.dll</HintPath>
+ </Reference>
+ <Reference Include="QRCoder.Unity">
+ <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Packages/io.moralis.web3-unity-sdk/Runtime/External/QRCoder.Unity.1.0.2/lib/net35/QRCoder.Unity.dll</HintPath>
+ </Reference>
+ <Reference Include="Firebase.Editor">
+ <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Assets/Firebase/Editor/Firebase.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Google.VersionHandler">
+ <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Assets/ExternalDependencyManager/Editor/Google.VersionHandler.dll</HintPath>
+ </Reference>
+ <Reference Include="Firebase.Analytics">
+ <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Assets/Firebase/Plugins/Firebase.Analytics.dll</HintPath>
+ </Reference>
+ <Reference Include="unityplastic">
+ <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Library/PackageCache/com.unity.collab-proxy@1.15.7/Lib/Editor/PlasticSCM/unityplastic.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Tasks">
+ <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Assets/Parse/Plugins/dotNet45/Unity.Tasks.dll</HintPath>
+ </Reference>
+ <Reference Include="Google.MiniJson">
+ <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Assets/Firebase/Plugins/Google.MiniJson.dll</HintPath>
+ </Reference>
+ <Reference Include="Firebase.Platform">
+ <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Assets/Firebase/Plugins/Firebase.Platform.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Compat">
+ <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Assets/Parse/Plugins/dotNet45/Unity.Compat.dll</HintPath>
+ </Reference>
+ <Reference Include="netstandard">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
+ </Reference>
+ <Reference Include="Microsoft.Win32.Primitives">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/Microsoft.Win32.Primitives.dll</HintPath>
+ </Reference>
+ <Reference Include="System.AppContext">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.AppContext.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Collections.Concurrent">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Collections.Concurrent.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Collections">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Collections.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Collections.NonGeneric">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Collections.NonGeneric.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Collections.Specialized">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Collections.Specialized.dll</HintPath>
+ </Reference>
+ <Reference Include="System.ComponentModel">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.ComponentModel.dll</HintPath>
+ </Reference>
+ <Reference Include="System.ComponentModel.EventBasedAsync">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.ComponentModel.EventBasedAsync.dll</HintPath>
+ </Reference>
+ <Reference Include="System.ComponentModel.Primitives">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.ComponentModel.Primitives.dll</HintPath>
+ </Reference>
+ <Reference Include="System.ComponentModel.TypeConverter">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.ComponentModel.TypeConverter.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Console">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Console.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Data.Common">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Data.Common.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Diagnostics.Contracts">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.Contracts.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Diagnostics.Debug">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.Debug.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Diagnostics.FileVersionInfo">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.FileVersionInfo.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Diagnostics.Process">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.Process.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Diagnostics.StackTrace">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.StackTrace.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Diagnostics.TextWriterTraceListener">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.TextWriterTraceListener.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Diagnostics.Tools">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.Tools.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Diagnostics.TraceSource">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.TraceSource.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Diagnostics.Tracing">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.Tracing.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Drawing.Primitives">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Drawing.Primitives.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Dynamic.Runtime">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Dynamic.Runtime.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Globalization.Calendars">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Globalization.Calendars.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Globalization">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Globalization.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Globalization.Extensions">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Globalization.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="System.IO.Compression">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.Compression.dll</HintPath>
+ </Reference>
+ <Reference Include="System.IO.Compression.ZipFile">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.Compression.ZipFile.dll</HintPath>
+ </Reference>
+ <Reference Include="System.IO">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.dll</HintPath>
+ </Reference>
+ <Reference Include="System.IO.FileSystem">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.FileSystem.dll</HintPath>
+ </Reference>
+ <Reference Include="System.IO.FileSystem.DriveInfo">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.FileSystem.DriveInfo.dll</HintPath>
+ </Reference>
+ <Reference Include="System.IO.FileSystem.Primitives">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.FileSystem.Primitives.dll</HintPath>
+ </Reference>
+ <Reference Include="System.IO.FileSystem.Watcher">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.FileSystem.Watcher.dll</HintPath>
+ </Reference>
+ <Reference Include="System.IO.IsolatedStorage">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.IsolatedStorage.dll</HintPath>
+ </Reference>
+ <Reference Include="System.IO.MemoryMappedFiles">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.MemoryMappedFiles.dll</HintPath>
+ </Reference>
+ <Reference Include="System.IO.Pipes">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.Pipes.dll</HintPath>
+ </Reference>
+ <Reference Include="System.IO.UnmanagedMemoryStream">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.UnmanagedMemoryStream.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Linq">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Linq.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Linq.Expressions">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Linq.Expressions.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Linq.Parallel">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Linq.Parallel.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Linq.Queryable">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Linq.Queryable.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Net.Http">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.Http.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Net.NameResolution">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.NameResolution.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Net.NetworkInformation">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.NetworkInformation.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Net.Ping">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.Ping.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Net.Primitives">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.Primitives.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Net.Requests">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.Requests.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Net.Security">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.Security.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Net.Sockets">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.Sockets.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Net.WebHeaderCollection">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.WebHeaderCollection.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Net.WebSockets.Client">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.WebSockets.Client.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Net.WebSockets">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.WebSockets.dll</HintPath>
+ </Reference>
+ <Reference Include="System.ObjectModel">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.ObjectModel.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Reflection">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Reflection.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Reflection.Extensions">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Reflection.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Reflection.Primitives">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Reflection.Primitives.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Resources.Reader">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Resources.Reader.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Resources.ResourceManager">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Resources.ResourceManager.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Resources.Writer">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Resources.Writer.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Runtime.CompilerServices.VisualC">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.CompilerServices.VisualC.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Runtime">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Runtime.Extensions">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Runtime.Handles">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.Handles.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Runtime.InteropServices">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.InteropServices.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Runtime.InteropServices.RuntimeInformation">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Runtime.Numerics">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.Numerics.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Runtime.Serialization.Formatters">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.Serialization.Formatters.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Runtime.Serialization.Json">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.Serialization.Json.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Runtime.Serialization.Primitives">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.Serialization.Primitives.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Runtime.Serialization.Xml">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.Serialization.Xml.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Security.Claims">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Security.Claims.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Security.Cryptography.Algorithms">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Security.Cryptography.Algorithms.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Security.Cryptography.Csp">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Security.Cryptography.Csp.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Security.Cryptography.Encoding">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Security.Cryptography.Encoding.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Security.Cryptography.Primitives">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Security.Cryptography.Primitives.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Security.Cryptography.X509Certificates">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Security.Cryptography.X509Certificates.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Security.Principal">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Security.Principal.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Security.SecureString">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Security.SecureString.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Text.Encoding">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Text.Encoding.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Text.Encoding.Extensions">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Text.Encoding.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Text.RegularExpressions">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Text.RegularExpressions.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Threading">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Threading.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Threading.Overlapped">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Threading.Overlapped.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Threading.Tasks">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Threading.Tasks.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Threading.Tasks.Parallel">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Threading.Tasks.Parallel.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Threading.Thread">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Threading.Thread.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Threading.ThreadPool">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Threading.ThreadPool.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Threading.Timer">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Threading.Timer.dll</HintPath>
+ </Reference>
+ <Reference Include="System.ValueTuple">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.ValueTuple.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Xml.ReaderWriter">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Xml.ReaderWriter.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Xml.XDocument">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Xml.XDocument.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Xml.XmlDocument">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Xml.XmlDocument.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Xml.XmlSerializer">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Xml.XmlSerializer.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Xml.XPath">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Xml.XPath.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Xml.XPath.XDocument">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Xml.XPath.XDocument.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Numerics.Vectors">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/NetStandard/Extensions/2.0.0/System.Numerics.Vectors.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Runtime.InteropServices.WindowsRuntime">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/NetStandard/Extensions/2.0.0/System.Runtime.InteropServices.WindowsRuntime.dll</HintPath>
+ </Reference>
+ <Reference Include="mscorlib">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/mscorlib.dll</HintPath>
+ </Reference>
+ <Reference Include="System.ComponentModel.Composition">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.ComponentModel.Composition.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Core">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Core.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Data">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Data.dll</HintPath>
+ </Reference>
+ <Reference Include="System">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Drawing">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Drawing.dll</HintPath>
+ </Reference>
+ <Reference Include="System.IO.Compression.FileSystem">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.IO.Compression.FileSystem.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Net">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Net.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Numerics">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Numerics.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Runtime.Serialization">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Runtime.Serialization.dll</HintPath>
+ </Reference>
+ <Reference Include="System.ServiceModel.Web">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.ServiceModel.Web.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Transactions">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Transactions.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Web">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Web.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Windows">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Windows.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Xml">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Xml.Linq">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Linq.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Xml.Serialization">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Serialization.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.UI">
+ <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UI">
+ <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Nethereum.csproj">
+      <Project>{aa3307e8-6f61-ec35-0e64-166e5eb4972a}</Project>
+      <Name>Nethereum</Name>
+    </ProjectReference>
+    <ProjectReference Include="UniTask.csproj">
+      <Project>{116c2d9f-09d4-99e7-e947-aa8e440a3725}</Project>
+      <Name>UniTask</Name>
+    </ProjectReference>
+    <ProjectReference Include="WalletConnectSharp.Unity.csproj">
+      <Project>{e1d8d006-4867-a04e-85d9-eff1b1b769ad}</Project>
+      <Name>WalletConnectSharp.Unity</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

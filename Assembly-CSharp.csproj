@@ -52,48 +52,24 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Spine\Runtime\spine-unity\SpineAttributes.cs" />
      <Compile Include="Assets\Spine\Runtime\spine-unity\Mesh Generation\SpineMesh.cs" />
      <Compile Include="Assets\Spine\Runtime\spine-csharp\Animation.cs" />
-     <Compile Include="Assets\Scripts\Rating.cs" />
      <Compile Include="Assets\Scripts\Database.cs" />
      <Compile Include="Assets\Scripts\GameUtilities.cs" />
      <Compile Include="Assets\Scripts\Singleton.cs" />
-     <Compile Include="Assets\Scripts\RestaurantPopup.cs" />
-     <Compile Include="Assets\Spine\Runtime\spine-csharp\BoneData.cs" />
-     <Compile Include="Assets\Scripts\ManagerProfile.cs" />
-     <Compile Include="Assets\Spine\Runtime\spine-unity\Modules\TK2D\SpriteCollectionAttachmentLoader.cs" />
      <Compile Include="Assets\Spine\Runtime\spine-unity\Components\SkeletonMecanim.cs" />
-     <Compile Include="Assets\Scripts\Experience.cs" />
      <Compile Include="Assets\Spine\Runtime\spine-unity\Asset Types\RegionlessAttachmentLoader.cs" />
-     <Compile Include="Assets\Scripts\GameManager.cs" />
      <Compile Include="Assets\Spine\Runtime\spine-unity\Asset Types\AnimationReferenceAsset.cs" />
      <Compile Include="Assets\Scripts\FreeCoinData.cs" />
-     <Compile Include="Assets\Spine\Runtime\spine-csharp\AnimationState.cs" />
-     <Compile Include="Assets\Scripts\BarrierController.cs" />
      <Compile Include="Assets\Scripts\Loading.cs" />
-     <Compile Include="Assets\Spine\Runtime\spine-csharp\IkConstraintData.cs" />
      <Compile Include="Assets\Spine\Runtime\spine-unity\Modules\Timeline\SpineAnimationState\SpineAnimationStateClip.cs" />
-     <Compile Include="Assets\Scripts\Notification.cs" />
-     <Compile Include="Assets\Spine\Runtime\spine-unity\Modules\SkeletonUtility Modules\SkeletonUtilityEyeConstraint.cs" />
-     <Compile Include="Assets\Scripts\Location.cs" />
      <Compile Include="Assets\Spine\Runtime\spine-unity\Components\SkeletonAnimation.cs" />
-     <Compile Include="Assets\Scripts\CoinItem.cs" />
-     <Compile Include="Assets\Spine\Runtime\spine-csharp\Attachments\AtlasAttachmentLoader.cs" />
-     <Compile Include="Assets\Scripts\ShopManager.cs" />
-     <Compile Include="Assets\Spine\Runtime\spine-unity\SkeletonUtility\SkeletonUtilityConstraint.cs" />
-     <Compile Include="Assets\Spine\Runtime\spine-csharp\Event.cs" />
      <Compile Include="Assets\Spine\Runtime\spine-unity\Modules\SkeletonRenderSeparator\SkeletonPartsRenderer.cs" />
      <Compile Include="Assets\Spine\Runtime\spine-unity\Modules\Timeline\SpineAnimationState\SpineAnimationStateBehaviour.cs" />
      <Compile Include="Assets\Spine\Runtime\spine-csharp\SkeletonData.cs" />
-     <Compile Include="Assets\Scripts\OverviewPopup.cs" />
      <Compile Include="Assets\Scripts\WaiterController.cs" />
      <Compile Include="Assets\Scripts\Tracking.cs" />
-     <Compile Include="Assets\Spine\Runtime\spine-csharp\ExposedList.cs" />
      <Compile Include="Assets\Spine\Runtime\spine-unity\Modules\SkeletonUtility Modules\SkeletonUtilityKinematicShadow.cs" />
-     <Compile Include="Assets\Scripts\GetFreeCoin.cs" />
-     <Compile Include="Assets\Spine\Runtime\spine-csharp\IkConstraint.cs" />
-     <Compile Include="Assets\Spine\Runtime\spine-unity\Modules\SkeletonGraphic\SkeletonGraphic.cs" />
      <Compile Include="Assets\Spine\Runtime\spine-csharp\EventData.cs" />
      <Compile Include="Assets\Spine\Runtime\spine-csharp\TransformConstraintData.cs" />
      <Compile Include="Assets\Scripts\SoundManager.cs" />
@@ -101,44 +77,22 @@
      <Compile Include="Assets\Spine\Runtime\spine-unity\Modules\SkeletonGraphic\BoneFollowerGraphic.cs" />
      <Compile Include="Assets\Spine\Runtime\spine-csharp\Attachments\RegionAttachment.cs" />
      <Compile Include="Assets\Spine\Runtime\spine-unity\Components\SkeletonRenderer.cs" />
-     <Compile Include="Assets\Spine\Runtime\spine-unity\Modules\CustomMaterials\SkeletonRendererCustomMaterials.cs" />
      <Compile Include="Assets\Spine\Runtime\spine-csharp\Attachments\AttachmentLoader.cs" />
-     <Compile Include="Assets\Spine\Runtime\spine-csharp\IUpdatable.cs" />
      <Compile Include="Assets\Scripts\Restaurant.cs" />
-     <Compile Include="Assets\Spine\Runtime\spine-csharp\Json.cs" />
      <Compile Include="Assets\Scripts\SettingPopup.cs" />
-     <Compile Include="Assets\Spine\Runtime\spine-csharp\Attachments\PathAttachment.cs" />
-     <Compile Include="Assets\Spine\Runtime\spine-csharp\Attachments\AttachmentType.cs" />
      <Compile Include="Assets\Spine\Runtime\spine-unity\Modules\SkeletonGraphic\SkeletonGraphicMirror.cs" />
-     <Compile Include="Assets\Scripts\SoundSetting.cs" />
      <Compile Include="Assets\Scripts\ElevatorPopup.cs" />
-     <Compile Include="Assets\Spine\Runtime\spine-csharp\SlotData.cs" />
-     <Compile Include="Assets\Spine\Runtime\spine-unity\Asset Types\BlendModeMaterialsAsset.cs" />
-     <Compile Include="Assets\Spine\Runtime\spine-csharp\Attachments\ClippingAttachment.cs" />
-     <Compile Include="Assets\Spine\Runtime\spine-csharp\BlendMode.cs" />
-     <Compile Include="Assets\Spine\Runtime\spine-csharp\Attachments\MeshAttachment.cs" />
      <Compile Include="Assets\Spine\Runtime\spine-unity\Modules\YieldInstructions\WaitForSpineEvent.cs" />
      <Compile Include="Assets\Spine\Runtime\spine-unity\Mesh Generation\DoubleBuffered.cs" />
      <Compile Include="Assets\Scripts\RestaurantProperties.cs" />
      <Compile Include="Assets\Scripts\ManagerController.cs" />
-     <Compile Include="Assets\Scripts\BarrierState.cs" />
      <Compile Include="Assets\Scripts\ObjectPool.cs" />
-     <Compile Include="Assets\Spine\Runtime\spine-csharp\TransformConstraint.cs" />
-     <Compile Include="Assets\Scripts\ManagerItem.cs" />
-     <Compile Include="Assets\Spine\Runtime\spine-unity\Asset Types\SkeletonDataModifierAsset.cs" />
      <Compile Include="Assets\Scripts\GameProcess.cs" />
      <Compile Include="Assets\Spine\Runtime\spine-csharp\PathConstraint.cs" />
-     <Compile Include="Assets\Spine\Runtime\spine-csharp\Attachments\Attachment.cs" />
-     <Compile Include="Assets\Scripts\JumpCash.cs" />
      <Compile Include="Assets\Scripts\ManagerState.cs" />
-     <Compile Include="Assets\Scripts\KitchenData.cs" />
      <Compile Include="Assets\Spine\Runtime\spine-unity\Modules\SkeletonRenderSeparator\SkeletonRenderSeparator.cs" />
-     <Compile Include="Assets\Spine\Runtime\spine-csharp\PathConstraintData.cs" />
      <Compile Include="Assets\Spine\Runtime\spine-unity\Components\BoneFollower.cs" />
      <Compile Include="Assets\Scripts\ElevatorProperties.cs" />
-     <Compile Include="Assets\Spine\Runtime\spine-unity\Asset Types\SkeletonDataAsset.cs" />
-     <Compile Include="Assets\Scripts\DataManager.cs" />
-     <Compile Include="Assets\Spine\Runtime\spine-unity\Asset Types\AtlasAssetBase.cs" />
      <Compile Include="Assets\Spine\Runtime\spine-csharp\MathUtils.cs" />
      <Compile Include="Assets\Scripts\Constant.cs" />
      <Compile Include="Assets\Scripts\Boost.cs" />
@@ -146,58 +100,107 @@
      <Compile Include="Assets\Spine\Runtime\spine-unity\Modules\Timeline\PlayableHandle Component\SkeletonAnimationPlayableHandle.cs" />
      <Compile Include="Assets\Spine\Runtime\spine-unity\Modules\Timeline\PlayableHandle Component\SpinePlayableHandleBase.cs" />
      <Compile Include="Assets\Scripts\KitchenPopup.cs" />
-     <Compile Include="Assets\Spine\Runtime\spine-csharp\Skin.cs" />
-     <Compile Include="Assets\Spine\Runtime\spine-unity\SkeletonUtility\SkeletonUtilityBone.cs" />
-     <Compile Include="Assets\Scripts\BoostData.cs" />
      <Compile Include="Assets\Spine\Runtime\spine-unity\SkeletonUtility\SkeletonUtility.cs" />
      <Compile Include="Assets\Spine\Runtime\spine-unity\SkeletonExtensions.cs" />
      <Compile Include="Assets\Spine\Runtime\spine-unity\Modules\Timeline\SpineSkeletonFlip\SpineSkeletonFlipMixerBehaviour.cs" />
-     <Compile Include="Assets\Scripts\KitchenProperties.cs" />
      <Compile Include="Assets\Spine\Runtime\spine-unity\Modules\YieldInstructions\WaitForSpineTrackEntryEnd.cs" />
      <Compile Include="Assets\Spine\Runtime\spine-unity\Components\PointFollower.cs" />
-     <Compile Include="Assets\Spine\Runtime\spine-unity\Modules\Ragdoll\SkeletonRagdoll.cs" />
      <Compile Include="Assets\Spine\Runtime\spine-unity\Modules\SkeletonUtility Modules\SkeletonUtilityGroundConstraint.cs" />
      <Compile Include="Assets\Spine\Runtime\spine-csharp\Skeleton.cs" />
      <Compile Include="Assets\Scripts\KitchenController.cs" />
-     <Compile Include="Assets\Scripts\TransporterController.cs" />
      <Compile Include="Assets\Scripts\CoinItemPool.cs" />
-     <Compile Include="Assets\Spine\Runtime\spine-unity\Modules\AnimationMatchModifier\AnimationMatchModifierAsset.cs" />
      <Compile Include="Assets\Scripts\BarrierData.cs" />
      <Compile Include="Assets\Scripts\RestaurantController.cs" />
+     <Compile Include="Assets\Moralis Web3 Unity SDK\Demos\Introduction\Scripts\CongratulationsController.cs" />
+     <Compile Include="Assets\Spine\Runtime\spine-unity\Modules\Timeline\SpineAnimationState\SpineAnimationStateTrack.cs" />
+     <Compile Include="Assets\Spine\Runtime\spine-unity\Modules\Ragdoll\SkeletonRagdoll2D.cs" />
+     <Compile Include="Assets\Scripts\BoostController.cs" />
+     <Compile Include="Assets\Spine\Runtime\spine-unity\Modules\YieldInstructions\WaitForSpineAnimationComplete.cs" />
+     <Compile Include="Assets\Spine\Runtime\spine-csharp\Attachments\BoundingBoxAttachment.cs" />
+     <Compile Include="Assets\Scripts\SellManagerPopup.cs" />
+     <Compile Include="Assets\Spine\Runtime\spine-csharp\Slot.cs" />
+     <Compile Include="Assets\Spine\Runtime\spine-csharp\SkeletonJson.cs" />
+     <Compile Include="Assets\Spine\Runtime\spine-unity\Modules\Timeline\SpineAnimationState\SpineAnimationStateMixerBehaviour.cs" />
+     <Compile Include="Assets\Scripts\ElevatorController.cs" />
+     <Compile Include="Assets\Spine\Runtime\spine-unity\Modules\Timeline\SpineSkeletonFlip\SpineSkeletonFlipBehaviour.cs" />
+     <Compile Include="Assets\Scripts\ManagerSkill.cs" />
+     <Compile Include="Assets\Spine\Runtime\spine-csharp\Attachments\VertexAttachment.cs" />
+     <Compile Include="Assets\Spine\Runtime\spine-unity\SpineAttributes.cs" />
+     <Compile Include="Assets\Scripts\Rating.cs" />
+     <Compile Include="Assets\Scripts\RestaurantPopup.cs" />
+     <Compile Include="Assets\Spine\Runtime\spine-csharp\BoneData.cs" />
+     <Compile Include="Assets\Scripts\ManagerProfile.cs" />
+     <Compile Include="Assets\Spine\Runtime\spine-unity\Modules\TK2D\SpriteCollectionAttachmentLoader.cs" />
+     <Compile Include="Assets\Scripts\Experience.cs" />
+     <Compile Include="Assets\Scripts\GameManager.cs" />
+     <Compile Include="Assets\Spine\Runtime\spine-csharp\AnimationState.cs" />
+     <Compile Include="Assets\Scripts\BarrierController.cs" />
+     <Compile Include="Assets\Spine\Runtime\spine-csharp\IkConstraintData.cs" />
+     <Compile Include="Assets\Scripts\Notification.cs" />
+     <Compile Include="Assets\Spine\Runtime\spine-unity\Modules\SkeletonUtility Modules\SkeletonUtilityEyeConstraint.cs" />
+     <Compile Include="Assets\Scripts\Location.cs" />
+     <Compile Include="Assets\Scripts\CoinItem.cs" />
+     <Compile Include="Assets\Spine\Runtime\spine-csharp\Attachments\AtlasAttachmentLoader.cs" />
+     <Compile Include="Assets\Scripts\ShopManager.cs" />
+     <Compile Include="Assets\Spine\Runtime\spine-unity\SkeletonUtility\SkeletonUtilityConstraint.cs" />
+     <Compile Include="Assets\Spine\Runtime\spine-csharp\Event.cs" />
+     <Compile Include="Assets\Scripts\OverviewPopup.cs" />
+     <Compile Include="Assets\Spine\Runtime\spine-csharp\ExposedList.cs" />
+     <Compile Include="Assets\Scripts\GetFreeCoin.cs" />
+     <Compile Include="Assets\Spine\Runtime\spine-csharp\IkConstraint.cs" />
+     <Compile Include="Assets\Spine\Runtime\spine-unity\Modules\SkeletonGraphic\SkeletonGraphic.cs" />
+     <Compile Include="Assets\Spine\Runtime\spine-unity\Modules\CustomMaterials\SkeletonRendererCustomMaterials.cs" />
+     <Compile Include="Assets\Spine\Runtime\spine-csharp\IUpdatable.cs" />
+     <Compile Include="Assets\Spine\Runtime\spine-csharp\Json.cs" />
+     <Compile Include="Assets\Spine\Runtime\spine-csharp\Attachments\PathAttachment.cs" />
+     <Compile Include="Assets\Spine\Runtime\spine-csharp\Attachments\AttachmentType.cs" />
+     <Compile Include="Assets\Scripts\NextScene.cs" />
+     <Compile Include="Assets\Scripts\SoundSetting.cs" />
+     <Compile Include="Assets\Moralis Web3 Unity SDK\Demos\Introduction\Scripts\UIController.cs" />
+     <Compile Include="Assets\Spine\Runtime\spine-csharp\SlotData.cs" />
+     <Compile Include="Assets\Spine\Runtime\spine-unity\Asset Types\BlendModeMaterialsAsset.cs" />
+     <Compile Include="Assets\Spine\Runtime\spine-csharp\Attachments\ClippingAttachment.cs" />
+     <Compile Include="Assets\Spine\Runtime\spine-csharp\BlendMode.cs" />
+     <Compile Include="Assets\Spine\Runtime\spine-csharp\Attachments\MeshAttachment.cs" />
+     <Compile Include="Assets\Scripts\BarrierState.cs" />
+     <Compile Include="Assets\Spine\Runtime\spine-csharp\TransformConstraint.cs" />
+     <Compile Include="Assets\Scripts\ManagerItem.cs" />
+     <Compile Include="Assets\Spine\Runtime\spine-unity\Asset Types\SkeletonDataModifierAsset.cs" />
+     <Compile Include="Assets\Spine\Runtime\spine-csharp\Attachments\Attachment.cs" />
+     <Compile Include="Assets\Scripts\JumpCash.cs" />
+     <Compile Include="Assets\Scripts\KitchenData.cs" />
+     <Compile Include="Assets\Spine\Runtime\spine-csharp\PathConstraintData.cs" />
+     <Compile Include="Assets\Spine\Runtime\spine-unity\Asset Types\SkeletonDataAsset.cs" />
+     <Compile Include="Assets\Scripts\DataManager.cs" />
+     <Compile Include="Assets\Spine\Runtime\spine-unity\Asset Types\AtlasAssetBase.cs" />
+     <Compile Include="Assets\Spine\Runtime\spine-csharp\Skin.cs" />
+     <Compile Include="Assets\Spine\Runtime\spine-unity\SkeletonUtility\SkeletonUtilityBone.cs" />
+     <Compile Include="Assets\Scripts\BoostData.cs" />
+     <Compile Include="Assets\Scripts\KitchenProperties.cs" />
+     <Compile Include="Assets\Spine\Runtime\spine-unity\Modules\Ragdoll\SkeletonRagdoll.cs" />
+     <Compile Include="Assets\Scripts\TransporterController.cs" />
+     <Compile Include="Assets\Spine\Runtime\spine-unity\Modules\AnimationMatchModifier\AnimationMatchModifierAsset.cs" />
      <Compile Include="Assets\Spine\Runtime\spine-unity\Modules\Timeline\SpineSkeletonFlip\SpineSkeletonFlipTrack.cs" />
      <Compile Include="Assets\Scripts\Inventory.cs" />
      <Compile Include="Assets\Spine\Runtime\spine-csharp\Triangulator.cs" />
      <Compile Include="Assets\Spine\Runtime\spine-unity\Modules\SlotBlendModes\SlotBlendModes.cs" />
      <Compile Include="Assets\Scripts\MiniJSON.cs" />
      <Compile Include="Assets\Scripts\RestaurantData.cs" />
-     <Compile Include="Assets\Spine\Runtime\spine-unity\Modules\Timeline\SpineAnimationState\SpineAnimationStateTrack.cs" />
-     <Compile Include="Assets\Spine\Runtime\spine-unity\Modules\Ragdoll\SkeletonRagdoll2D.cs" />
      <Compile Include="Assets\Spine\Runtime\spine-unity\Asset Types\EventDataReferenceAsset.cs" />
-     <Compile Include="Assets\Scripts\BoostController.cs" />
-     <Compile Include="Assets\Spine\Runtime\spine-unity\Modules\YieldInstructions\WaitForSpineAnimationComplete.cs" />
      <Compile Include="Assets\Scripts\RandomChef.cs" />
      <Compile Include="Assets\Scripts\Item.cs" />
      <Compile Include="Assets\Scripts\OverviewItem.cs" />
      <Compile Include="Assets\Scripts\InventoryItem.cs" />
      <Compile Include="Assets\Spine\Runtime\spine-csharp\SkeletonClipping.cs" />
-     <Compile Include="Assets\Spine\Runtime\spine-csharp\Attachments\BoundingBoxAttachment.cs" />
      <Compile Include="Assets\Spine\Runtime\spine-csharp\SkeletonBinary.cs" />
-     <Compile Include="Assets\Scripts\SellManagerPopup.cs" />
-     <Compile Include="Assets\Spine\Runtime\spine-csharp\Slot.cs" />
      <Compile Include="Assets\Spine\Runtime\spine-csharp\AnimationStateData.cs" />
-     <Compile Include="Assets\Spine\Runtime\spine-csharp\SkeletonJson.cs" />
-     <Compile Include="Assets\Scripts\AdsControl.cs" />
      <Compile Include="Assets\Spine\Runtime\spine-csharp\Attachments\PointAttachment.cs" />
-     <Compile Include="Assets\Spine\Runtime\spine-unity\Modules\Timeline\SpineAnimationState\SpineAnimationStateMixerBehaviour.cs" />
-     <Compile Include="Assets\Scripts\ElevatorController.cs" />
-     <Compile Include="Assets\Spine\Runtime\spine-unity\Modules\Timeline\SpineSkeletonFlip\SpineSkeletonFlipBehaviour.cs" />
+     <Compile Include="Assets\Scripts\AdsControl.cs" />
      <Compile Include="Assets\Scripts\Configuration.cs" />
-     <Compile Include="Assets\Scripts\ManagerSkill.cs" />
      <Compile Include="Assets\Spine\Runtime\spine-csharp\Atlas.cs" />
      <Compile Include="Assets\Scripts\ElevatorData.cs" />
      <Compile Include="Assets\Spine\Runtime\spine-csharp\SkeletonBounds.cs" />
      <Compile Include="Assets\Spine\Runtime\spine-unity\Modules\Ghost\SkeletonGhostRenderer.cs" />
-     <Compile Include="Assets\Spine\Runtime\spine-csharp\Attachments\VertexAttachment.cs" />
      <Compile Include="Assets\Spine\Runtime\spine-unity\Modules\BoundingBoxFollower\BoundingBoxFollower.cs" />
      <Compile Include="Assets\Scripts\OfflinePopup.cs" />
      <Compile Include="Assets\Spine\Runtime\spine-unity\Modules\Ghost\SkeletonGhost.cs" />
@@ -208,23 +211,29 @@
      <Compile Include="Assets\Scripts\BoostManager.cs" />
      <Compile Include="Assets\Scripts\InAppPurchase.cs" />
      <Compile Include="Assets\Spine\Runtime\spine-unity\Modules\AttachmentTools\AttachmentTools.cs" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\Spine\version.txt" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\Spine\Runtime\spine-unity\Modules\SkeletonRenderSeparator\SkeletonRenderSeparator.txt" />
      <None Include="Assets\Texts\Manager.txt" />
      <None Include="Assets\Spine\Runtime\spine-unity\Shaders\Utility\HiddenPass.shader" />
      <None Include="Assets\Spine\Runtime\spine-unity\Modules\Shaders\Sprite\CGIncludes\ShaderShared.cginc" />
      <None Include="Assets\Spine\Runtime\spine-unity\Modules\Shaders\Sprite\CGIncludes\ShaderMaths.cginc" />
      <None Include="Assets\Spine\Runtime\spine-unity\Modules\Shaders\Sprite\CGIncludes\SpriteSpecular.cginc" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
      <None Include="Assets\Spine\Runtime\spine-unity\Modules\Shaders\Spine-Skeleton-Tint.shader" />
      <None Include="Assets\Spine\Runtime\spine-unity\Modules\Shaders\Sprite\SpriteVertexLighting.cginc" />
      <None Include="Assets\Texts\Manager.atlas.txt" />
      <None Include="Assets\Spine\Runtime\spine-unity\Modules\Shaders\Sprite\CameraNormalsTexture.shader" />
      <None Include="Assets\Spine\Runtime\spine-unity\Shaders\BlendModes\Spine-Skeleton-PMA-Additive.shader" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
      <None Include="Assets\Texts\Factory_Mainchar_01.atlas.txt" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
      <None Include="Assets\Spine\Runtime\spine-unity\Modules\Shaders\Sprite\SpritesUnlit.shader" />
      <None Include="Assets\Spine\Runtime\spine-unity\Modules\AnimationMatchModifier\AnimationMatchModifierAsset.txt" />
      <None Include="Assets\Spine\Runtime\spine-unity\Modules\Shaders\Sprite\SpriteLighting.cginc" />
      <None Include="Assets\Spine\Runtime\spine-unity\Modules\Shaders\Spine-Skeleton-Fill.shader" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
      <None Include="Assets\Resources\BillingMode.txt" />
      <None Include="Assets\Spine\Runtime\spine-unity\Shaders\Utility\Hidden-Spine-Bones.shader" />
      <None Include="Assets\Firebase\m2repository\com\google\firebase\firebase-app-unity\maven-metadata.xml" />
@@ -235,31 +244,46 @@
      <None Include="Assets\Spine\Runtime\spine-unity\Modules\Shaders\Sprite\CGIncludes\SpriteShadows.cginc" />
      <None Include="Assets\Spine\Runtime\spine-unity\Modules\Shaders\Sprite\CGIncludes\SpriteVertexLighting.cginc" />
      <None Include="Assets\Spine\Runtime\spine-unity\Modules\Shaders\Sprite\CameraDepthTexture.shader" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
      <None Include="Assets\Spine\Runtime\spine-unity\Modules\Ghost\Shaders\Spine-Special-Skeleton-Ghost.shader" />
      <None Include="Assets\Spine\Runtime\spine-unity\Modules\Shaders\Sprite\SpritePixelLighting.cginc" />
+     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
      <None Include="Assets\Spine\Runtime\spine-unity.txt" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF.shader" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
+     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
      <None Include="Assets\UnityAds\link.xml" />
      <None Include="Assets\Firebase\m2repository\com\google\firebase\firebase-analytics-unity\maven-metadata.xml" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
      <None Include="Assets\Spine\Runtime\spine-unity\Modules\Shaders\Spine-Special-Skeleton-Grayscale.shader" />
      <None Include="Assets\Spine\Runtime\spine-unity\Modules\SkeletonGraphic\Shaders\Spine-SkeletonGraphic.shader" />
+     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
      <None Include="Assets\Texts\Factory_Mainchar_02.txt" />
      <None Include="Assets\Spine\Runtime\spine-unity\Shaders\BlendModes\Spine-Skeleton-PMA-Multiply.shader" />
      <None Include="Assets\Spine\Runtime\spine-unity\Modules\Shaders\Sprite\SpriteDepthNormalsTexture.shader" />
      <None Include="Assets\Spine\Runtime\spine-unity\Modules\Shaders\Sprite\CGIncludes\SpriteLighting.cginc" />
      <None Include="Assets\Spine\Runtime\spine-unity\Modules\Shaders\Sprite\SpritesVertexLit.shader" />
      <None Include="Assets\Texts\Factory_Mainchar_03.txt" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
      <None Include="Assets\Spine\Runtime\spine-unity\Modules\CustomMaterials\SkeletonRendererCustomMaterials.txt" />
      <None Include="Assets\Spine\Runtime\spine-unity\Shaders\Spine-SkeletonLit.shader" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
      <None Include="Assets\Texts\Factory_Mainchar_01.txt" />
      <None Include="Assets\Spine\Runtime\spine-unity\Shaders\Spine-Skeleton.shader" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
      <None Include="Assets\Texts\Factory_Mainchar_02.atlas.txt" />
      <None Include="Assets\Spine\Runtime\spine-unity\Shaders\BlendModes\Spine-Skeleton-PMA-Screen.shader" />
+     <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
      <None Include="Assets\Spine\Runtime\spine-unity\Modules\Shaders\Sprite\ShaderShared.cginc" />
      <None Include="Assets\Spine\Runtime\spine-unity\Shaders\Spine-Skeleton-TintBlack.shader" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
      <None Include="Assets\Spine\Runtime\spine-unity\Modules\Shaders\Sprite\SpriteShadows.cginc" />
      <None Include="Assets\Texts\Factory_Mainchar_03.atlas.txt" />
      <None Include="Assets\Spine\Runtime\spine-unity\Modules\Shaders\Sprite\SpritesPixelLit.shader" />
      <None Include="Assets\Spine\Runtime\spine-unity\Modules\Shaders\Sprite\CGIncludes\SpritePixelLighting.cginc" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
  <Reference Include="UnityEngine">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
  </Reference>
@@ -476,8 +500,14 @@
  <Reference Include="UDP">
  <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Assets/Plugins/UDP/UDP.dll</HintPath>
  </Reference>
+ <Reference Include="Firebase.App">
+ <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Assets/Firebase/Plugins/Firebase.App.dll</HintPath>
+ </Reference>
  <Reference Include="UnityStore">
  <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Assets/Plugins/UnityChannel/UnityStore.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Analytics.StandardEvents">
+ <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Library/PackageCache/com.unity.analytics@3.6.12/AnalyticsStandardEvents/Unity.Analytics.StandardEvents.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Monetization.Editor">
  <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Assets/UnityAds/UnityEngine.Monetization.Editor.dll</HintPath>
@@ -485,32 +515,41 @@
  <Reference Include="Unity.Analytics.Editor">
  <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Library/PackageCache/com.unity.analytics@3.6.12/Unity.Analytics.Editor.dll</HintPath>
  </Reference>
- <Reference Include="Unity.Analytics.StandardEvents">
- <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Library/PackageCache/com.unity.analytics@3.6.12/AnalyticsStandardEvents/Unity.Analytics.StandardEvents.dll</HintPath>
- </Reference>
  <Reference Include="ChannelPurchase">
  <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Assets/Plugins/UnityChannel/ChannelPurchase.dll</HintPath>
+ </Reference>
+ <Reference Include="log4net">
+ <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Packages/io.moralis.web3-unity-sdk/Runtime/External/log4net.dll</HintPath>
+ </Reference>
+ <Reference Include="Firebase.TaskExtension">
+ <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Assets/Firebase/Plugins/Firebase.TaskExtension.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.Tracker">
  <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Library/PackageCache/com.unity.analytics@3.6.12/Unity.Analytics.Tracker.dll</HintPath>
  </Reference>
+ <Reference Include="QRCoder">
+ <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Packages/io.moralis.web3-unity-sdk/Runtime/External/QRCoder.1.3.4/lib/net35/QRCoder.dll</HintPath>
+ </Reference>
  <Reference Include="UnityEngine.Advertisements.Editor">
  <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Assets/UnityAds/UnityEngine.Advertisements.Editor.dll</HintPath>
  </Reference>
- <Reference Include="Newtonsoft.Json">
- <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Library/PackageCache/com.unity.nuget.newtonsoft-json@2.0.0/Runtime/Newtonsoft.Json.dll</HintPath>
+ <Reference Include="BouncyCastle.Crypto">
+ <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Packages/io.moralis.web3-unity-sdk/Runtime/External/BouncyCastle.Crypto/BouncyCastle.Crypto.dll</HintPath>
  </Reference>
- <Reference Include="Firebase.App">
- <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Assets/Firebase/Plugins/Firebase.App.dll</HintPath>
+ <Reference Include="System.Drawing.Common">
+ <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Packages/io.moralis.web3-unity-sdk/Runtime/External/System.Drawing.Common/netstandard2.0/System.Drawing.Common.dll</HintPath>
+ </Reference>
+ <Reference Include="Newtonsoft.Json">
+ <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Library/PackageCache/com.unity.nuget.newtonsoft-json@3.0.2/Runtime/Newtonsoft.Json.dll</HintPath>
+ </Reference>
+ <Reference Include="QRCoder.Unity">
+ <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Packages/io.moralis.web3-unity-sdk/Runtime/External/QRCoder.Unity.1.0.2/lib/net35/QRCoder.Unity.dll</HintPath>
  </Reference>
  <Reference Include="Firebase.Analytics">
  <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Assets/Firebase/Plugins/Firebase.Analytics.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Tasks">
  <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Assets/Parse/Plugins/dotNet45/Unity.Tasks.dll</HintPath>
- </Reference>
- <Reference Include="Firebase.TaskExtension">
- <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Assets/Firebase/Plugins/Firebase.TaskExtension.dll</HintPath>
  </Reference>
  <Reference Include="Google.MiniJson">
  <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Assets/Firebase/Plugins/Google.MiniJson.dll</HintPath>
@@ -866,11 +905,20 @@
  <Reference Include="System.Xml.Serialization">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Serialization.dll</HintPath>
  </Reference>
+ <Reference Include="Purchasing.Common">
+ <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Library/ScriptAssemblies/Purchasing.Common.dll</HintPath>
+ </Reference>
  <Reference Include="Unity.VSCode.Editor">
  <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.Tilemap.Editor">
  <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Purchasing">
+ <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Library/ScriptAssemblies/UnityEngine.Purchasing.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.TextMeshPro.Editor">
+ <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.VisualStudio.Editor">
  <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
@@ -878,47 +926,44 @@
  <Reference Include="Unity.Timeline">
  <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
  </Reference>
+ <Reference Include="Unity.TextMeshPro">
+ <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Purchasing.SecurityStub">
+ <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Library/ScriptAssemblies/UnityEngine.Purchasing.SecurityStub.dll</HintPath>
+ </Reference>
  <Reference Include="Unity.2D.Sprite.Editor">
  <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.UI">
  <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
- <Reference Include="Unity.PlasticSCM.Editor">
- <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll</HintPath>
- </Reference>
  <Reference Include="Unity.Rider.Editor">
  <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
  </Reference>
- <Reference Include="UnityEngine.UI">
- <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+ <Reference Include="Unity.PlasticSCM.Editor">
+ <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Analytics">
  <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Library/ScriptAssemblies/Analytics.dll</HintPath>
  </Reference>
+ <Reference Include="UnityEngine.UI">
+ <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+ </Reference>
  <Reference Include="Unity.Analytics.DataPrivacy">
  <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
- </Reference>
- <Reference Include="Unity.Timeline.Editor">
- <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Purchasing.Common">
- <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Library/ScriptAssemblies/Purchasing.Common.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.Purchasing">
- <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Library/ScriptAssemblies/UnityEngine.Purchasing.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.Purchasing.SecurityStub">
- <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Library/ScriptAssemblies/UnityEngine.Purchasing.SecurityStub.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Purchasing.SecurityCore">
  <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Library/ScriptAssemblies/UnityEngine.Purchasing.SecurityCore.dll</HintPath>
  </Reference>
- <Reference Include="UnityEngine.Purchasing.Stores">
- <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Library/ScriptAssemblies/UnityEngine.Purchasing.Stores.dll</HintPath>
- </Reference>
  <Reference Include="UnityEngine.Purchasing.Codeless">
  <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Library/ScriptAssemblies/UnityEngine.Purchasing.Codeless.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Timeline.Editor">
+ <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Purchasing.Stores">
+ <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Library/ScriptAssemblies/UnityEngine.Purchasing.Stores.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.Purchasing">
  <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Library/ScriptAssemblies/UnityEditor.Purchasing.dll</HintPath>
@@ -929,13 +974,53 @@
       <Project>{f5a2b3ce-10f2-9dd6-f8ae-8e4338e48758}</Project>
       <Name>Assembly-CSharp-firstpass</Name>
     </ProjectReference>
+    <ProjectReference Include="Moralis.Web3UnitySdk.Editor.csproj">
+      <Project>{9adf71e9-a31e-25dc-fc3e-cd676f5ae530}</Project>
+      <Name>Moralis.Web3UnitySdk.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="UniTask.DOTween.csproj">
+      <Project>{6e2065e0-e851-49c0-88b8-0f142b6afa75}</Project>
+      <Name>UniTask.DOTween</Name>
+    </ProjectReference>
+    <ProjectReference Include="endel.nativewebsocket.csproj">
+      <Project>{00d223e5-370a-1cad-9f23-504a48d77392}</Project>
+      <Name>endel.nativewebsocket</Name>
+    </ProjectReference>
+    <ProjectReference Include="UniTask.Linq.csproj">
+      <Project>{1dbce5af-2f64-4959-f57d-9fdd040e35c9}</Project>
+      <Name>UniTask.Linq</Name>
+    </ProjectReference>
+    <ProjectReference Include="UniTask.TextMeshPro.csproj">
+      <Project>{3d35a389-936d-eac6-75ee-540e647aa648}</Project>
+      <Name>UniTask.TextMeshPro</Name>
+    </ProjectReference>
+    <ProjectReference Include="Nethereum.csproj">
+      <Project>{aa3307e8-6f61-ec35-0e64-166e5eb4972a}</Project>
+      <Name>Nethereum</Name>
+    </ProjectReference>
+    <ProjectReference Include="Moralis.Web3UnitySdk.csproj">
+      <Project>{e4488744-c9dd-d7cb-6b70-268078861ecc}</Project>
+      <Name>Moralis.Web3UnitySdk</Name>
+    </ProjectReference>
     <ProjectReference Include="GoogleMobileAds.csproj">
       <Project>{6292939a-2923-3cd3-77f7-24b590e639f2}</Project>
       <Name>GoogleMobileAds</Name>
     </ProjectReference>
+    <ProjectReference Include="UniTask.csproj">
+      <Project>{116c2d9f-09d4-99e7-e947-aa8e440a3725}</Project>
+      <Name>UniTask</Name>
+    </ProjectReference>
     <ProjectReference Include="GoogleMobileAds.Editor.csproj">
       <Project>{7ccae933-caf0-d81e-f57c-e7d3718854a8}</Project>
       <Name>GoogleMobileAds.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="UniTask.Addressables.csproj">
+      <Project>{63cffeab-1981-4798-9cfb-0b00f8682855}</Project>
+      <Name>UniTask.Addressables</Name>
+    </ProjectReference>
+    <ProjectReference Include="WalletConnectSharp.Unity.csproj">
+      <Project>{e1d8d006-4867-a04e-85d9-eff1b1b769ad}</Project>
+      <Name>WalletConnectSharp.Unity</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

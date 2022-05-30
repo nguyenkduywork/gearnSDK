@@ -1,3 +1,6 @@
 Library/
 Assets/Plugins/
 Assets/Firebase/
+Assets/TextMesh Pro/
+Packages/io.moralis.web3-unity-sdk/
+Temp/
