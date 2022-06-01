@@ -13,11 +13,11 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{4b78c292-bbca-03eb-4743-eb3081054b4c}</ProjectGuid>
+    <ProjectGuid>{4670a2b2-86c4-7a71-00df-6b116baa1886}</ProjectGuid>
     <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <AssemblyName>Assembly-CSharp-Editor-firstpass</AssemblyName>
+    <AssemblyName>Analytics</AssemblyName>
     <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <BaseDirectory>.</BaseDirectory>
@@ -31,7 +31,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn></NoWarn>
-    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
     <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -41,7 +41,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn></NoWarn>
-    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
     <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
   </PropertyGroup>
   <PropertyGroup>
@@ -52,21 +52,8 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Plugins\UDP\Editor\AppStoreOnboardApi.cs" />
-     <Compile Include="Assets\Plugins\UDP\Editor\Analytics\ProjectOpenEvent.cs" />
-     <Compile Include="Assets\Plugins\UDP\Editor\Analytics\EditorAnalytcisApi.cs" />
-     <Compile Include="Assets\Plugins\UDP\Editor\BuildConfig.cs" />
-     <Compile Include="Assets\Plugins\UDP\Editor\AppStoreModel.cs" />
-     <Compile Include="Assets\Plugins\UDP\Editor\Utils.cs" />
-     <Compile Include="Assets\Plugins\UnityChannel\XiaomiSupport\Editor\AppStoreSettingsEditor.cs" />
-     <Compile Include="Assets\Plugins\UDP\Editor\Analytics\Common.cs" />
-     <Compile Include="Assets\Plugins\UDP\Editor\Analytics\SdkImportEvent.cs" />
-     <Compile Include="Assets\Plugins\UDP\Editor\Analytics\ProjectBuildEvent.cs" />
-     <Compile Include="Assets\Plugins\UDP\Editor\Analytics\WebRequestQueue.cs" />
-     <Compile Include="Assets\Plugins\UDP\Editor\AppStoreSettingsEditor.cs" />
-     <Compile Include="Assets\Plugins\UnityChannel\XiaomiSupport\Editor\AppStoreOnboardApi.cs" />
-     <Compile Include="Assets\Plugins\UnityChannel\XiaomiSupport\Editor\AppStoreModel.cs" />
-     <Compile Include="Assets\Plugins\UnityChannel\XiaomiSupport\Editor\XiaomiPackageNameExtension.cs" />
+     <Compile Include="Library\PackageCache\com.unity.analytics@3.6.12\Editor\AnalyticsEditorCallbacks.cs" />
+     <None Include="Library\PackageCache\com.unity.analytics@3.6.12\Editor\Analytics.asmdef" />
  <Reference Include="UnityEngine">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
  </Reference>
@@ -739,12 +726,6 @@
  <Reference Include="System.Xml.XPath.XDocument">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.XPath.XDocument.dll</HintPath>
  </Reference>
- <Reference Include="Unity.2D.Tilemap.Editor">
- <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.2D.Sprite.Editor">
- <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
- </Reference>
  <Reference Include="UnityEditor.UI">
  <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
@@ -753,10 +734,6 @@
  </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{f5a2b3ce-10f2-9dd6-f8ae-8e4338e48758}</Project>
-      <Name>Assembly-CSharp-firstpass</Name>
-    </ProjectReference>
     <ProjectReference Include="UnityEngine.TestRunner.csproj">
       <Project>{ad489102-33ba-f9e4-47ab-d3646c2087c1}</Project>
       <Name>UnityEngine.TestRunner</Name>
@@ -764,82 +741,6 @@
     <ProjectReference Include="UnityEditor.TestRunner.csproj">
       <Project>{6c58544a-9027-2c38-cb1b-ee7349dd9017}</Project>
       <Name>UnityEditor.TestRunner</Name>
-    </ProjectReference>
-    <ProjectReference Include="Purchasing.Common.csproj">
-      <Project>{a09a5bc7-0204-4020-d295-7fd46c99a525}</Project>
-      <Name>Purchasing.Common</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.VSCode.Editor.csproj">
-      <Project>{eb87b761-cca4-389a-87de-48d90a47ea89}</Project>
-      <Name>Unity.VSCode.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="UnityEngine.Purchasing.csproj">
-      <Project>{65e2cd9d-a37d-62d4-5e2c-b6cbaab1bbbe}</Project>
-      <Name>UnityEngine.Purchasing</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.TextMeshPro.Editor.csproj">
-      <Project>{dbff93b3-60ba-95b5-8f94-024403a8d9b2}</Project>
-      <Name>Unity.TextMeshPro.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.VisualStudio.Editor.csproj">
-      <Project>{5cbe2949-9072-9a29-38a2-ae79699d105d}</Project>
-      <Name>Unity.VisualStudio.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.Timeline.csproj">
-      <Project>{d946cf63-b3f7-de46-87da-75ea7a85ec69}</Project>
-      <Name>Unity.Timeline</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.TextMeshPro.csproj">
-      <Project>{9789592f-980d-d40f-adc4-b1c6fc64fd75}</Project>
-      <Name>Unity.TextMeshPro</Name>
-    </ProjectReference>
-    <ProjectReference Include="UnityEngine.Purchasing.SecurityStub.csproj">
-      <Project>{6959bbd8-736c-92a7-41ba-1b93cf9d3901}</Project>
-      <Name>UnityEngine.Purchasing.SecurityStub</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.Rider.Editor.csproj">
-      <Project>{5f9ffa79-2446-7441-2b3c-a96755bb60e5}</Project>
-      <Name>Unity.Rider.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.PlasticSCM.Editor.csproj">
-      <Project>{2adc4181-f3c8-ab20-4488-d0260dee3b7c}</Project>
-      <Name>Unity.PlasticSCM.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Analytics.csproj">
-      <Project>{4670a2b2-86c4-7a71-00df-6b116baa1886}</Project>
-      <Name>Analytics</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.Analytics.DataPrivacy.csproj">
-      <Project>{8fe8c54a-8185-a8e5-191a-23973d57f75b}</Project>
-      <Name>Unity.Analytics.DataPrivacy</Name>
-    </ProjectReference>
-    <ProjectReference Include="UnityEngine.Purchasing.SecurityCore.csproj">
-      <Project>{1a0ea4d4-2d47-1e06-c524-3cd8e5c2fd27}</Project>
-      <Name>UnityEngine.Purchasing.SecurityCore</Name>
-    </ProjectReference>
-    <ProjectReference Include="UnityEngine.Purchasing.Codeless.csproj">
-      <Project>{77743f95-ea4f-4fa8-26a1-7d8092ebf1ca}</Project>
-      <Name>UnityEngine.Purchasing.Codeless</Name>
-    </ProjectReference>
-    <ProjectReference Include="GoogleMobileAds.csproj">
-      <Project>{6292939a-2923-3cd3-77f7-24b590e639f2}</Project>
-      <Name>GoogleMobileAds</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.Timeline.Editor.csproj">
-      <Project>{d6a110d0-d97f-0454-133d-2ca9271f1497}</Project>
-      <Name>Unity.Timeline.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="UnityEngine.Purchasing.Stores.csproj">
-      <Project>{28431f7f-abfc-3e73-933c-839088d9ea53}</Project>
-      <Name>UnityEngine.Purchasing.Stores</Name>
-    </ProjectReference>
-    <ProjectReference Include="UnityEditor.Purchasing.csproj">
-      <Project>{5f17faad-87e2-abf7-9903-53d0cdc4357e}</Project>
-      <Name>UnityEditor.Purchasing</Name>
-    </ProjectReference>
-    <ProjectReference Include="GoogleMobileAds.Editor.csproj">
-      <Project>{7ccae933-caf0-d81e-f57c-e7d3718854a8}</Project>
-      <Name>GoogleMobileAds.Editor</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

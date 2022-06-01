@@ -342,9 +342,6 @@
  <Reference Include="UnityStore">
  <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Assets/Plugins/UnityChannel/UnityStore.dll</HintPath>
  </Reference>
- <Reference Include="Unity.Analytics.StandardEvents">
- <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Library/PackageCache/com.unity.analytics@3.6.12/AnalyticsStandardEvents/Unity.Analytics.StandardEvents.dll</HintPath>
- </Reference>
  <Reference Include="Unity.Plastic.Newtonsoft.Json">
  <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Library/PackageCache/com.unity.collab-proxy@1.15.7/Lib/Editor/PlasticSCM/Unity.Plastic.Newtonsoft.Json.dll</HintPath>
  </Reference>
@@ -354,14 +351,14 @@
  <Reference Include="Unity.Analytics.Editor">
  <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Library/PackageCache/com.unity.analytics@3.6.12/Unity.Analytics.Editor.dll</HintPath>
  </Reference>
+ <Reference Include="Unity.Analytics.StandardEvents">
+ <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Library/PackageCache/com.unity.analytics@3.6.12/AnalyticsStandardEvents/Unity.Analytics.StandardEvents.dll</HintPath>
+ </Reference>
  <Reference Include="Unity.Plastic.Antlr3.Runtime">
  <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Library/PackageCache/com.unity.collab-proxy@1.15.7/Lib/Editor/PlasticSCM/Unity.Plastic.Antlr3.Runtime.dll</HintPath>
  </Reference>
  <Reference Include="ChannelPurchase">
  <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Assets/Plugins/UnityChannel/ChannelPurchase.dll</HintPath>
- </Reference>
- <Reference Include="log4net">
- <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Packages/io.moralis.web3-unity-sdk/Runtime/External/log4net.dll</HintPath>
  </Reference>
  <Reference Include="Firebase.TaskExtension">
  <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Assets/Firebase/Plugins/Firebase.TaskExtension.dll</HintPath>
@@ -372,29 +369,23 @@
  <Reference Include="Unity.Analytics.Tracker">
  <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Library/PackageCache/com.unity.analytics@3.6.12/Unity.Analytics.Tracker.dll</HintPath>
  </Reference>
- <Reference Include="QRCoder">
- <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Packages/io.moralis.web3-unity-sdk/Runtime/External/QRCoder.1.3.4/lib/net35/QRCoder.dll</HintPath>
- </Reference>
  <Reference Include="Google.JarResolver">
  <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Assets/ExternalDependencyManager/Editor/1.2.171/Google.JarResolver.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Advertisements.Editor">
  <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Assets/UnityAds/UnityEngine.Advertisements.Editor.dll</HintPath>
  </Reference>
- <Reference Include="BouncyCastle.Crypto">
- <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Packages/io.moralis.web3-unity-sdk/Runtime/External/BouncyCastle.Crypto/BouncyCastle.Crypto.dll</HintPath>
- </Reference>
- <Reference Include="System.Drawing.Common">
- <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Packages/io.moralis.web3-unity-sdk/Runtime/External/System.Drawing.Common/netstandard2.0/System.Drawing.Common.dll</HintPath>
- </Reference>
  <Reference Include="Newtonsoft.Json">
- <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Library/PackageCache/com.unity.nuget.newtonsoft-json@3.0.2/Runtime/Newtonsoft.Json.dll</HintPath>
+ <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Library/PackageCache/com.unity.nuget.newtonsoft-json@2.0.0/Runtime/Newtonsoft.Json.dll</HintPath>
  </Reference>
  <Reference Include="Google.PackageManagerResolver">
  <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Assets/ExternalDependencyManager/Editor/1.2.171/Google.PackageManagerResolver.dll</HintPath>
  </Reference>
- <Reference Include="QRCoder.Unity">
- <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Packages/io.moralis.web3-unity-sdk/Runtime/External/QRCoder.Unity.1.0.2/lib/net35/QRCoder.Unity.dll</HintPath>
+ <Reference Include="BouncyCastle.Crypto">
+ <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Assets/Plugins/BouncyCastle.Crypto.dll</HintPath>
+ </Reference>
+ <Reference Include="Jint">
+ <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Assets/Plugins/Jint/Jint.dll</HintPath>
  </Reference>
  <Reference Include="Firebase.Editor">
  <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Assets/Firebase/Editor/Firebase.Editor.dll</HintPath>
@@ -771,38 +762,8 @@
  <Reference Include="System.Xml.XPath.XDocument">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.XPath.XDocument.dll</HintPath>
  </Reference>
- <Reference Include="UnityEngine.TestRunner">
- <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Library/ScriptAssemblies/UnityEngine.TestRunner.dll</HintPath>
- </Reference>
- <Reference Include="UnityEditor.TestRunner">
- <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
- </Reference>
- <Reference Include="Purchasing.Common">
- <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Library/ScriptAssemblies/Purchasing.Common.dll</HintPath>
- </Reference>
- <Reference Include="Unity.VSCode.Editor">
- <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
- </Reference>
  <Reference Include="Unity.2D.Tilemap.Editor">
  <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.Purchasing">
- <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Library/ScriptAssemblies/UnityEngine.Purchasing.dll</HintPath>
- </Reference>
- <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.VisualStudio.Editor">
- <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.Timeline">
- <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
- </Reference>
- <Reference Include="Unity.TextMeshPro">
- <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.Purchasing.SecurityStub">
- <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Library/ScriptAssemblies/UnityEngine.Purchasing.SecurityStub.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.Sprite.Editor">
  <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
@@ -810,35 +771,8 @@
  <Reference Include="UnityEditor.UI">
  <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
- <Reference Include="Unity.Rider.Editor">
- <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.PlasticSCM.Editor">
- <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Analytics">
- <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Library/ScriptAssemblies/Analytics.dll</HintPath>
- </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
- </Reference>
- <Reference Include="Unity.Analytics.DataPrivacy">
- <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.Purchasing.SecurityCore">
- <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Library/ScriptAssemblies/UnityEngine.Purchasing.SecurityCore.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.Purchasing.Codeless">
- <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Library/ScriptAssemblies/UnityEngine.Purchasing.Codeless.dll</HintPath>
- </Reference>
- <Reference Include="Unity.Timeline.Editor">
- <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.Purchasing.Stores">
- <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Library/ScriptAssemblies/UnityEngine.Purchasing.Stores.dll</HintPath>
- </Reference>
- <Reference Include="UnityEditor.Purchasing">
- <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Library/ScriptAssemblies/UnityEditor.Purchasing.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -854,53 +788,89 @@
       <Project>{4b78c292-bbca-03eb-4743-eb3081054b4c}</Project>
       <Name>Assembly-CSharp-Editor-firstpass</Name>
     </ProjectReference>
-    <ProjectReference Include="Moralis.Web3UnitySdk.Editor.csproj">
-      <Project>{9adf71e9-a31e-25dc-fc3e-cd676f5ae530}</Project>
-      <Name>Moralis.Web3UnitySdk.Editor</Name>
+    <ProjectReference Include="UnityEngine.TestRunner.csproj">
+      <Project>{ad489102-33ba-f9e4-47ab-d3646c2087c1}</Project>
+      <Name>UnityEngine.TestRunner</Name>
     </ProjectReference>
-    <ProjectReference Include="UniTask.DOTween.csproj">
-      <Project>{6e2065e0-e851-49c0-88b8-0f142b6afa75}</Project>
-      <Name>UniTask.DOTween</Name>
+    <ProjectReference Include="UnityEditor.TestRunner.csproj">
+      <Project>{6c58544a-9027-2c38-cb1b-ee7349dd9017}</Project>
+      <Name>UnityEditor.TestRunner</Name>
     </ProjectReference>
-    <ProjectReference Include="endel.nativewebsocket.csproj">
-      <Project>{00d223e5-370a-1cad-9f23-504a48d77392}</Project>
-      <Name>endel.nativewebsocket</Name>
+    <ProjectReference Include="Purchasing.Common.csproj">
+      <Project>{a09a5bc7-0204-4020-d295-7fd46c99a525}</Project>
+      <Name>Purchasing.Common</Name>
     </ProjectReference>
-    <ProjectReference Include="UniTask.Linq.csproj">
-      <Project>{1dbce5af-2f64-4959-f57d-9fdd040e35c9}</Project>
-      <Name>UniTask.Linq</Name>
+    <ProjectReference Include="Unity.VSCode.Editor.csproj">
+      <Project>{eb87b761-cca4-389a-87de-48d90a47ea89}</Project>
+      <Name>Unity.VSCode.Editor</Name>
     </ProjectReference>
-    <ProjectReference Include="UniTask.TextMeshPro.csproj">
-      <Project>{3d35a389-936d-eac6-75ee-540e647aa648}</Project>
-      <Name>UniTask.TextMeshPro</Name>
+    <ProjectReference Include="UnityEngine.Purchasing.csproj">
+      <Project>{65e2cd9d-a37d-62d4-5e2c-b6cbaab1bbbe}</Project>
+      <Name>UnityEngine.Purchasing</Name>
     </ProjectReference>
-    <ProjectReference Include="Nethereum.csproj">
-      <Project>{aa3307e8-6f61-ec35-0e64-166e5eb4972a}</Project>
-      <Name>Nethereum</Name>
+    <ProjectReference Include="Unity.TextMeshPro.Editor.csproj">
+      <Project>{dbff93b3-60ba-95b5-8f94-024403a8d9b2}</Project>
+      <Name>Unity.TextMeshPro.Editor</Name>
     </ProjectReference>
-    <ProjectReference Include="Moralis.Web3UnitySdk.csproj">
-      <Project>{e4488744-c9dd-d7cb-6b70-268078861ecc}</Project>
-      <Name>Moralis.Web3UnitySdk</Name>
+    <ProjectReference Include="Unity.VisualStudio.Editor.csproj">
+      <Project>{5cbe2949-9072-9a29-38a2-ae79699d105d}</Project>
+      <Name>Unity.VisualStudio.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Timeline.csproj">
+      <Project>{d946cf63-b3f7-de46-87da-75ea7a85ec69}</Project>
+      <Name>Unity.Timeline</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.TextMeshPro.csproj">
+      <Project>{9789592f-980d-d40f-adc4-b1c6fc64fd75}</Project>
+      <Name>Unity.TextMeshPro</Name>
+    </ProjectReference>
+    <ProjectReference Include="UnityEngine.Purchasing.SecurityStub.csproj">
+      <Project>{6959bbd8-736c-92a7-41ba-1b93cf9d3901}</Project>
+      <Name>UnityEngine.Purchasing.SecurityStub</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Rider.Editor.csproj">
+      <Project>{5f9ffa79-2446-7441-2b3c-a96755bb60e5}</Project>
+      <Name>Unity.Rider.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.PlasticSCM.Editor.csproj">
+      <Project>{2adc4181-f3c8-ab20-4488-d0260dee3b7c}</Project>
+      <Name>Unity.PlasticSCM.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Analytics.csproj">
+      <Project>{4670a2b2-86c4-7a71-00df-6b116baa1886}</Project>
+      <Name>Analytics</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Analytics.DataPrivacy.csproj">
+      <Project>{8fe8c54a-8185-a8e5-191a-23973d57f75b}</Project>
+      <Name>Unity.Analytics.DataPrivacy</Name>
+    </ProjectReference>
+    <ProjectReference Include="UnityEngine.Purchasing.SecurityCore.csproj">
+      <Project>{1a0ea4d4-2d47-1e06-c524-3cd8e5c2fd27}</Project>
+      <Name>UnityEngine.Purchasing.SecurityCore</Name>
+    </ProjectReference>
+    <ProjectReference Include="UnityEngine.Purchasing.Codeless.csproj">
+      <Project>{77743f95-ea4f-4fa8-26a1-7d8092ebf1ca}</Project>
+      <Name>UnityEngine.Purchasing.Codeless</Name>
     </ProjectReference>
     <ProjectReference Include="GoogleMobileAds.csproj">
       <Project>{6292939a-2923-3cd3-77f7-24b590e639f2}</Project>
       <Name>GoogleMobileAds</Name>
     </ProjectReference>
-    <ProjectReference Include="UniTask.csproj">
-      <Project>{116c2d9f-09d4-99e7-e947-aa8e440a3725}</Project>
-      <Name>UniTask</Name>
+    <ProjectReference Include="Unity.Timeline.Editor.csproj">
+      <Project>{d6a110d0-d97f-0454-133d-2ca9271f1497}</Project>
+      <Name>Unity.Timeline.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="UnityEngine.Purchasing.Stores.csproj">
+      <Project>{28431f7f-abfc-3e73-933c-839088d9ea53}</Project>
+      <Name>UnityEngine.Purchasing.Stores</Name>
+    </ProjectReference>
+    <ProjectReference Include="UnityEditor.Purchasing.csproj">
+      <Project>{5f17faad-87e2-abf7-9903-53d0cdc4357e}</Project>
+      <Name>UnityEditor.Purchasing</Name>
     </ProjectReference>
     <ProjectReference Include="GoogleMobileAds.Editor.csproj">
       <Project>{7ccae933-caf0-d81e-f57c-e7d3718854a8}</Project>
       <Name>GoogleMobileAds.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="UniTask.Addressables.csproj">
-      <Project>{63cffeab-1981-4798-9cfb-0b00f8682855}</Project>
-      <Name>UniTask.Addressables</Name>
-    </ProjectReference>
-    <ProjectReference Include="WalletConnectSharp.Unity.csproj">
-      <Project>{e1d8d006-4867-a04e-85d9-eff1b1b769ad}</Project>
-      <Name>WalletConnectSharp.Unity</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

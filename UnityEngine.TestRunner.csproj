@@ -13,11 +13,11 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{a861596c-57e0-bde9-be80-1e97349c26cf}</ProjectGuid>
+    <ProjectGuid>{ad489102-33ba-f9e4-47ab-d3646c2087c1}</ProjectGuid>
     <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <AssemblyName>UnityEngine.TestRunner</AssemblyName>
     <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <BaseDirectory>.</BaseDirectory>
@@ -31,7 +31,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn></NoWarn>
-    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
     <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -41,7 +41,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn></NoWarn>
-    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
     <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
   </PropertyGroup>
   <PropertyGroup>
@@ -52,237 +52,118 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Spine\Runtime\spine-unity\Mesh Generation\SpineMesh.cs" />
-     <Compile Include="Assets\Spine\Runtime\spine-csharp\Animation.cs" />
-     <Compile Include="Assets\Scripts\Database.cs" />
-     <Compile Include="Assets\Scripts\GameUtilities.cs" />
-     <Compile Include="Assets\Scripts\Singleton.cs" />
-     <Compile Include="Assets\Spine\Runtime\spine-unity\Components\SkeletonMecanim.cs" />
-     <Compile Include="Assets\Spine\Runtime\spine-unity\Asset Types\RegionlessAttachmentLoader.cs" />
-     <Compile Include="Assets\Spine\Runtime\spine-unity\Asset Types\AnimationReferenceAsset.cs" />
-     <Compile Include="Assets\Scripts\FreeCoinData.cs" />
-     <Compile Include="Assets\Scripts\Loading.cs" />
-     <Compile Include="Assets\Spine\Runtime\spine-unity\Modules\Timeline\SpineAnimationState\SpineAnimationStateClip.cs" />
-     <Compile Include="Assets\Spine\Runtime\spine-unity\Components\SkeletonAnimation.cs" />
-     <Compile Include="Assets\Spine\Runtime\spine-unity\Modules\SkeletonRenderSeparator\SkeletonPartsRenderer.cs" />
-     <Compile Include="Assets\Spine\Runtime\spine-unity\Modules\Timeline\SpineAnimationState\SpineAnimationStateBehaviour.cs" />
-     <Compile Include="Assets\Spine\Runtime\spine-csharp\SkeletonData.cs" />
-     <Compile Include="Assets\Scripts\WaiterController.cs" />
-     <Compile Include="Assets\Scripts\Tracking.cs" />
-     <Compile Include="Assets\Spine\Runtime\spine-unity\Modules\SkeletonUtility Modules\SkeletonUtilityKinematicShadow.cs" />
-     <Compile Include="Assets\Spine\Runtime\spine-csharp\EventData.cs" />
-     <Compile Include="Assets\Spine\Runtime\spine-csharp\TransformConstraintData.cs" />
-     <Compile Include="Assets\Scripts\SoundManager.cs" />
-     <Compile Include="Assets\Spine\Runtime\spine-unity\Asset Types\SpineAtlasAsset.cs" />
-     <Compile Include="Assets\Spine\Runtime\spine-unity\Modules\SkeletonGraphic\BoneFollowerGraphic.cs" />
-     <Compile Include="Assets\Spine\Runtime\spine-csharp\Attachments\RegionAttachment.cs" />
-     <Compile Include="Assets\Spine\Runtime\spine-unity\Components\SkeletonRenderer.cs" />
-     <Compile Include="Assets\Spine\Runtime\spine-csharp\Attachments\AttachmentLoader.cs" />
-     <Compile Include="Assets\Scripts\Restaurant.cs" />
-     <Compile Include="Assets\Scripts\SettingPopup.cs" />
-     <Compile Include="Assets\Spine\Runtime\spine-unity\Modules\SkeletonGraphic\SkeletonGraphicMirror.cs" />
-     <Compile Include="Assets\Scripts\ElevatorPopup.cs" />
-     <Compile Include="Assets\Spine\Runtime\spine-unity\Modules\YieldInstructions\WaitForSpineEvent.cs" />
-     <Compile Include="Assets\Spine\Runtime\spine-unity\Mesh Generation\DoubleBuffered.cs" />
-     <Compile Include="Assets\Scripts\RestaurantProperties.cs" />
-     <Compile Include="Assets\Scripts\ManagerController.cs" />
-     <Compile Include="Assets\Scripts\ObjectPool.cs" />
-     <Compile Include="Assets\Scripts\GameProcess.cs" />
-     <Compile Include="Assets\Spine\Runtime\spine-csharp\PathConstraint.cs" />
-     <Compile Include="Assets\Scripts\ManagerState.cs" />
-     <Compile Include="Assets\Spine\Runtime\spine-unity\Modules\SkeletonRenderSeparator\SkeletonRenderSeparator.cs" />
-     <Compile Include="Assets\Spine\Runtime\spine-unity\Components\BoneFollower.cs" />
-     <Compile Include="Assets\Scripts\ElevatorProperties.cs" />
-     <Compile Include="Assets\Spine\Runtime\spine-csharp\MathUtils.cs" />
-     <Compile Include="Assets\Scripts\Constant.cs" />
-     <Compile Include="Assets\Scripts\Boost.cs" />
-     <Compile Include="Assets\Scripts\ManagerPopup.cs" />
-     <Compile Include="Assets\Spine\Runtime\spine-unity\Modules\Timeline\PlayableHandle Component\SkeletonAnimationPlayableHandle.cs" />
-     <Compile Include="Assets\Spine\Runtime\spine-unity\Modules\Timeline\PlayableHandle Component\SpinePlayableHandleBase.cs" />
-     <Compile Include="Assets\Scripts\KitchenPopup.cs" />
-     <Compile Include="Assets\Spine\Runtime\spine-unity\SkeletonUtility\SkeletonUtility.cs" />
-     <Compile Include="Assets\Spine\Runtime\spine-unity\SkeletonExtensions.cs" />
-     <Compile Include="Assets\Spine\Runtime\spine-unity\Modules\Timeline\SpineSkeletonFlip\SpineSkeletonFlipMixerBehaviour.cs" />
-     <Compile Include="Assets\Spine\Runtime\spine-unity\Modules\YieldInstructions\WaitForSpineTrackEntryEnd.cs" />
-     <Compile Include="Assets\Spine\Runtime\spine-unity\Components\PointFollower.cs" />
-     <Compile Include="Assets\Spine\Runtime\spine-unity\Modules\SkeletonUtility Modules\SkeletonUtilityGroundConstraint.cs" />
-     <Compile Include="Assets\Spine\Runtime\spine-csharp\Skeleton.cs" />
-     <Compile Include="Assets\Scripts\KitchenController.cs" />
-     <Compile Include="Assets\Scripts\CoinItemPool.cs" />
-     <Compile Include="Assets\Scripts\BarrierData.cs" />
-     <Compile Include="Assets\Scripts\RestaurantController.cs" />
-     <Compile Include="Assets\Spine\Runtime\spine-unity\Modules\Timeline\SpineAnimationState\SpineAnimationStateTrack.cs" />
-     <Compile Include="Assets\Spine\Runtime\spine-unity\Modules\Ragdoll\SkeletonRagdoll2D.cs" />
-     <Compile Include="Assets\Scripts\BoostController.cs" />
-     <Compile Include="Assets\Spine\Runtime\spine-unity\Modules\YieldInstructions\WaitForSpineAnimationComplete.cs" />
-     <Compile Include="Assets\Spine\Runtime\spine-csharp\Attachments\BoundingBoxAttachment.cs" />
-     <Compile Include="Assets\Scripts\SellManagerPopup.cs" />
-     <Compile Include="Assets\Spine\Runtime\spine-csharp\Slot.cs" />
-     <Compile Include="Assets\Spine\Runtime\spine-csharp\SkeletonJson.cs" />
-     <Compile Include="Assets\Spine\Runtime\spine-unity\Modules\Timeline\SpineAnimationState\SpineAnimationStateMixerBehaviour.cs" />
-     <Compile Include="Assets\Scripts\ElevatorController.cs" />
-     <Compile Include="Assets\Spine\Runtime\spine-unity\Modules\Timeline\SpineSkeletonFlip\SpineSkeletonFlipBehaviour.cs" />
-     <Compile Include="Assets\Scripts\ManagerSkill.cs" />
-     <Compile Include="Assets\Spine\Runtime\spine-csharp\Attachments\VertexAttachment.cs" />
-     <Compile Include="Assets\Spine\Runtime\spine-unity\SpineAttributes.cs" />
-     <Compile Include="Assets\Scripts\Rating.cs" />
-     <Compile Include="Assets\Scripts\NFTMarketplace.cs" />
-     <Compile Include="Assets\Scripts\RestaurantPopup.cs" />
-     <Compile Include="Assets\Spine\Runtime\spine-csharp\BoneData.cs" />
-     <Compile Include="Assets\Scripts\ManagerProfile.cs" />
-     <Compile Include="Assets\Spine\Runtime\spine-unity\Modules\TK2D\SpriteCollectionAttachmentLoader.cs" />
-     <Compile Include="Assets\Scripts\Experience.cs" />
-     <Compile Include="Assets\Scripts\GameManager.cs" />
-     <Compile Include="Assets\Spine\Runtime\spine-csharp\AnimationState.cs" />
-     <Compile Include="Assets\Scripts\BarrierController.cs" />
-     <Compile Include="Assets\Spine\Runtime\spine-csharp\IkConstraintData.cs" />
-     <Compile Include="Assets\Scripts\Notification.cs" />
-     <Compile Include="Assets\Spine\Runtime\spine-unity\Modules\SkeletonUtility Modules\SkeletonUtilityEyeConstraint.cs" />
-     <Compile Include="Assets\Scripts\Location.cs" />
-     <Compile Include="Assets\Scripts\CoinItem.cs" />
-     <Compile Include="Assets\Spine\Runtime\spine-csharp\Attachments\AtlasAttachmentLoader.cs" />
-     <Compile Include="Assets\Scripts\ShopManager.cs" />
-     <Compile Include="Assets\Spine\Runtime\spine-unity\SkeletonUtility\SkeletonUtilityConstraint.cs" />
-     <Compile Include="Assets\Spine\Runtime\spine-csharp\Event.cs" />
-     <Compile Include="Assets\Scripts\OverviewPopup.cs" />
-     <Compile Include="Assets\Spine\Runtime\spine-csharp\ExposedList.cs" />
-     <Compile Include="Assets\Scripts\GetFreeCoin.cs" />
-     <Compile Include="Assets\Spine\Runtime\spine-csharp\IkConstraint.cs" />
-     <Compile Include="Assets\Spine\Runtime\spine-unity\Modules\SkeletonGraphic\SkeletonGraphic.cs" />
-     <Compile Include="Assets\Spine\Runtime\spine-unity\Modules\CustomMaterials\SkeletonRendererCustomMaterials.cs" />
-     <Compile Include="Assets\Spine\Runtime\spine-csharp\IUpdatable.cs" />
-     <Compile Include="Assets\Spine\Runtime\spine-csharp\Json.cs" />
-     <Compile Include="Assets\Spine\Runtime\spine-csharp\Attachments\PathAttachment.cs" />
-     <Compile Include="Assets\Spine\Runtime\spine-csharp\Attachments\AttachmentType.cs" />
-     <Compile Include="Assets\Scripts\SoundSetting.cs" />
-     <Compile Include="Assets\Spine\Runtime\spine-csharp\SlotData.cs" />
-     <Compile Include="Assets\Spine\Runtime\spine-unity\Asset Types\BlendModeMaterialsAsset.cs" />
-     <Compile Include="Assets\Spine\Runtime\spine-csharp\Attachments\ClippingAttachment.cs" />
-     <Compile Include="Assets\Spine\Runtime\spine-csharp\BlendMode.cs" />
-     <Compile Include="Assets\Spine\Runtime\spine-csharp\Attachments\MeshAttachment.cs" />
-     <Compile Include="Assets\Scripts\BarrierState.cs" />
-     <Compile Include="Assets\Spine\Runtime\spine-csharp\TransformConstraint.cs" />
-     <Compile Include="Assets\Scripts\ManagerItem.cs" />
-     <Compile Include="Assets\Spine\Runtime\spine-unity\Asset Types\SkeletonDataModifierAsset.cs" />
-     <Compile Include="Assets\Spine\Runtime\spine-csharp\Attachments\Attachment.cs" />
-     <Compile Include="Assets\Scripts\JumpCash.cs" />
-     <Compile Include="Assets\Scripts\KitchenData.cs" />
-     <Compile Include="Assets\Spine\Runtime\spine-csharp\PathConstraintData.cs" />
-     <Compile Include="Assets\Spine\Runtime\spine-unity\Asset Types\SkeletonDataAsset.cs" />
-     <Compile Include="Assets\Scripts\DataManager.cs" />
-     <Compile Include="Assets\Spine\Runtime\spine-unity\Asset Types\AtlasAssetBase.cs" />
-     <Compile Include="Assets\Scripts\getWeb3Address.cs" />
-     <Compile Include="Assets\Spine\Runtime\spine-csharp\Skin.cs" />
-     <Compile Include="Assets\Spine\Runtime\spine-unity\SkeletonUtility\SkeletonUtilityBone.cs" />
-     <Compile Include="Assets\Scripts\BoostData.cs" />
-     <Compile Include="Assets\Scripts\KitchenProperties.cs" />
-     <Compile Include="Assets\Spine\Runtime\spine-unity\Modules\Ragdoll\SkeletonRagdoll.cs" />
-     <Compile Include="Assets\Scripts\TransporterController.cs" />
-     <Compile Include="Assets\Spine\Runtime\spine-unity\Modules\AnimationMatchModifier\AnimationMatchModifierAsset.cs" />
-     <Compile Include="Assets\Spine\Runtime\spine-unity\Modules\Timeline\SpineSkeletonFlip\SpineSkeletonFlipTrack.cs" />
-     <Compile Include="Assets\Scripts\Inventory.cs" />
-     <Compile Include="Assets\Spine\Runtime\spine-csharp\Triangulator.cs" />
-     <Compile Include="Assets\Spine\Runtime\spine-unity\Modules\SlotBlendModes\SlotBlendModes.cs" />
-     <Compile Include="Assets\Scripts\MiniJSON.cs" />
-     <Compile Include="Assets\Scripts\RestaurantData.cs" />
-     <Compile Include="Assets\Spine\Runtime\spine-unity\Asset Types\EventDataReferenceAsset.cs" />
-     <Compile Include="Assets\Scripts\RandomChef.cs" />
-     <Compile Include="Assets\Scripts\Item.cs" />
-     <Compile Include="Assets\Scripts\OverviewItem.cs" />
-     <Compile Include="Assets\Scripts\InventoryItem.cs" />
-     <Compile Include="Assets\Spine\Runtime\spine-csharp\SkeletonClipping.cs" />
-     <Compile Include="Assets\Spine\Runtime\spine-csharp\SkeletonBinary.cs" />
-     <Compile Include="Assets\Spine\Runtime\spine-csharp\AnimationStateData.cs" />
-     <Compile Include="Assets\Spine\Runtime\spine-csharp\Attachments\PointAttachment.cs" />
-     <Compile Include="Assets\Scripts\AdsControl.cs" />
-     <Compile Include="Assets\Scripts\Configuration.cs" />
-     <Compile Include="Assets\Spine\Runtime\spine-csharp\Atlas.cs" />
-     <Compile Include="Assets\Scripts\ElevatorData.cs" />
-     <Compile Include="Assets\Spine\Runtime\spine-csharp\SkeletonBounds.cs" />
-     <Compile Include="Assets\Spine\Runtime\spine-unity\Modules\Ghost\SkeletonGhostRenderer.cs" />
-     <Compile Include="Assets\Spine\Runtime\spine-unity\Modules\BoundingBoxFollower\BoundingBoxFollower.cs" />
-     <Compile Include="Assets\Scripts\OfflinePopup.cs" />
-     <Compile Include="Assets\Spine\Runtime\spine-unity\Modules\Ghost\SkeletonGhost.cs" />
-     <Compile Include="Assets\Spine\Runtime\spine-csharp\Bone.cs" />
-     <Compile Include="Assets\Spine\Runtime\spine-unity\ISkeletonAnimation.cs" />
-     <Compile Include="Assets\Spine\Runtime\spine-csharp\IConstraint.cs" />
-     <Compile Include="Assets\Spine\Runtime\spine-unity\Modules\Timeline\SpineSkeletonFlip\SpineSkeletonFlipClip.cs" />
-     <Compile Include="Assets\Scripts\BoostManager.cs" />
-     <Compile Include="Assets\Scripts\InAppPurchase.cs" />
-     <Compile Include="Assets\Spine\Runtime\spine-unity\Modules\AttachmentTools\AttachmentTools.cs" />
-     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
-     <None Include="Assets\Spine\version.txt" />
-     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
-     <None Include="Assets\Spine\Runtime\spine-unity\Modules\SkeletonRenderSeparator\SkeletonRenderSeparator.txt" />
-     <None Include="Assets\Texts\Manager.txt" />
-     <None Include="Assets\Spine\Runtime\spine-unity\Shaders\Utility\HiddenPass.shader" />
-     <None Include="Assets\Spine\Runtime\spine-unity\Modules\Shaders\Sprite\CGIncludes\ShaderShared.cginc" />
-     <None Include="Assets\Spine\Runtime\spine-unity\Modules\Shaders\Sprite\CGIncludes\ShaderMaths.cginc" />
-     <None Include="Assets\Spine\Runtime\spine-unity\Modules\Shaders\Sprite\CGIncludes\SpriteSpecular.cginc" />
-     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
-     <None Include="Assets\Spine\Runtime\spine-unity\Modules\Shaders\Spine-Skeleton-Tint.shader" />
-     <None Include="Assets\Spine\Runtime\spine-unity\Modules\Shaders\Sprite\SpriteVertexLighting.cginc" />
-     <None Include="Assets\Texts\Manager.atlas.txt" />
-     <None Include="Assets\Spine\Runtime\spine-unity\Modules\Shaders\Sprite\CameraNormalsTexture.shader" />
-     <None Include="Assets\Spine\Runtime\spine-unity\Shaders\BlendModes\Spine-Skeleton-PMA-Additive.shader" />
-     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
-     <None Include="Assets\Texts\Factory_Mainchar_01.atlas.txt" />
-     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
-     <None Include="Assets\Spine\Runtime\spine-unity\Modules\Shaders\Sprite\SpritesUnlit.shader" />
-     <None Include="Assets\Spine\Runtime\spine-unity\Modules\AnimationMatchModifier\AnimationMatchModifierAsset.txt" />
-     <None Include="Assets\Spine\Runtime\spine-unity\Modules\Shaders\Sprite\SpriteLighting.cginc" />
-     <None Include="Assets\Spine\Runtime\spine-unity\Modules\Shaders\Spine-Skeleton-Fill.shader" />
-     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
-     <None Include="Assets\Resources\BillingMode.txt" />
-     <None Include="Assets\Spine\Runtime\spine-unity\Shaders\Utility\Hidden-Spine-Bones.shader" />
-     <None Include="Assets\Firebase\m2repository\com\google\firebase\firebase-app-unity\maven-metadata.xml" />
-     <None Include="Assets\Spine\Runtime\spine-unity\Modules\Shaders\Sprite\SpriteUnlit.cginc" />
-     <None Include="Assets\Spine\Runtime\spine-unity\Modules\SkeletonGraphic\Shaders\Spine-SkeletonGraphic-TintBlack.shader" />
-     <None Include="Assets\Spine\Runtime\spine-unity\Modules\Shaders\Sprite\CGIncludes\SpriteUnlit.cginc" />
-     <None Include="Assets\Spine\Runtime\spine-unity\Modules\Shaders\Sprite\CameraDepthNormalsTexture.shader" />
-     <None Include="Assets\Spine\Runtime\spine-unity\Modules\Shaders\Sprite\CGIncludes\SpriteShadows.cginc" />
-     <None Include="Assets\Spine\Runtime\spine-unity\Modules\Shaders\Sprite\CGIncludes\SpriteVertexLighting.cginc" />
-     <None Include="Assets\Spine\Runtime\spine-unity\Modules\Shaders\Sprite\CameraDepthTexture.shader" />
-     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
-     <None Include="Assets\Spine\Runtime\spine-unity\Modules\Ghost\Shaders\Spine-Special-Skeleton-Ghost.shader" />
-     <None Include="Assets\Spine\Runtime\spine-unity\Modules\Shaders\Sprite\SpritePixelLighting.cginc" />
-     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
-     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
-     <None Include="Assets\Spine\Runtime\spine-unity.txt" />
-     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF.shader" />
-     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
-     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
-     <None Include="Assets\UnityAds\link.xml" />
-     <None Include="Assets\Firebase\m2repository\com\google\firebase\firebase-analytics-unity\maven-metadata.xml" />
-     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
-     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
-     <None Include="Assets\Spine\Runtime\spine-unity\Modules\Shaders\Spine-Special-Skeleton-Grayscale.shader" />
-     <None Include="Assets\Spine\Runtime\spine-unity\Modules\SkeletonGraphic\Shaders\Spine-SkeletonGraphic.shader" />
-     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
-     <None Include="Assets\Texts\Factory_Mainchar_02.txt" />
-     <None Include="Assets\Spine\Runtime\spine-unity\Shaders\BlendModes\Spine-Skeleton-PMA-Multiply.shader" />
-     <None Include="Assets\Spine\Runtime\spine-unity\Modules\Shaders\Sprite\SpriteDepthNormalsTexture.shader" />
-     <None Include="Assets\Spine\Runtime\spine-unity\Modules\Shaders\Sprite\CGIncludes\SpriteLighting.cginc" />
-     <None Include="Assets\Spine\Runtime\spine-unity\Modules\Shaders\Sprite\SpritesVertexLit.shader" />
-     <None Include="Assets\Texts\Factory_Mainchar_03.txt" />
-     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
-     <None Include="Assets\Spine\Runtime\spine-unity\Modules\CustomMaterials\SkeletonRendererCustomMaterials.txt" />
-     <None Include="Assets\Spine\Runtime\spine-unity\Shaders\Spine-SkeletonLit.shader" />
-     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
-     <None Include="Assets\Texts\Factory_Mainchar_01.txt" />
-     <None Include="Assets\Spine\Runtime\spine-unity\Shaders\Spine-Skeleton.shader" />
-     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
-     <None Include="Assets\Texts\Factory_Mainchar_02.atlas.txt" />
-     <None Include="Assets\Spine\Runtime\spine-unity\Shaders\BlendModes\Spine-Skeleton-PMA-Screen.shader" />
-     <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
-     <None Include="Assets\Spine\Runtime\spine-unity\Modules\Shaders\Sprite\ShaderShared.cginc" />
-     <None Include="Assets\Spine\Runtime\spine-unity\Shaders\Spine-Skeleton-TintBlack.shader" />
-     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
-     <None Include="Assets\Spine\Runtime\spine-unity\Modules\Shaders\Sprite\SpriteShadows.cginc" />
-     <None Include="Assets\Texts\Factory_Mainchar_03.atlas.txt" />
-     <None Include="Assets\Spine\Runtime\spine-unity\Modules\Shaders\Sprite\SpritesPixelLit.shader" />
-     <None Include="Assets\Spine\Runtime\spine-unity\Modules\Shaders\Sprite\CGIncludes\SpritePixelLighting.cginc" />
-     <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
+     <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.29\UnityEngine.TestRunner\TestRunner\TestListenerWrapper.cs" />
+     <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.29\UnityEngine.TestRunner\Utils\AssemblyProvider\ITestAssemblyProvider.cs" />
+     <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.29\UnityEngine.TestRunner\Utils\AssemblyProvider\IScriptingRuntimeProxy.cs" />
+     <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.29\UnityEngine.TestRunner\NUnitExtensions\Runner\UnityTestExecutionContext.cs" />
+     <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.29\UnityEngine.TestRunner\TestRunner\RemoteHelpers\RemoteTestResultData.cs" />
+     <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.29\UnityEngine.TestRunner\Utils\Vector4ComparerWithEqualsOperator.cs" />
+     <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.29\UnityEngine.TestRunner\TestRunner\PlaymodeTestsControllerSettings.cs" />
+     <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.29\UnityEngine.TestRunner\Utils\Vector4EqualityComparer.cs" />
+     <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.29\UnityEngine.TestRunner\NUnitExtensions\Commands\ImmediateEnumerableCommand.cs" />
+     <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.29\UnityEngine.TestRunner\NUnitExtensions\Attributes\UnityPlatformAttribute.cs" />
+     <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.29\UnityEngine.TestRunner\NUnitExtensions\Commands\TestCommandPcHelper.cs" />
+     <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.29\UnityEngine.TestRunner\NUnitExtensions\Attributes\ConditionalIgnoreAttribute.cs" />
+     <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.29\UnityEngine.TestRunner\Utils\StacktraceFilter.cs" />
+     <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.29\UnityEngine.TestRunner\TestRunner\PlaymodeTestsController.cs" />
+     <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.29\UnityEngine.TestRunner\NUnitExtensions\Runner\PlaymodeWorkItemFactory.cs" />
+     <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.29\UnityEngine.TestRunner\Utils\AssemblyProvider\PlayerTestAssemblyProvider.cs" />
+     <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.29\UnityEngine.TestRunner\Assertions\LogScope\LogScope.cs" />
+     <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.29\UnityEngine.TestRunner\NUnitExtensions\Runner\TestCommandBuilder.cs" />
+     <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.29\UnityEngine.TestRunner\NUnitExtensions\ActionDelegator.cs" />
+     <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.29\UnityEngine.TestRunner\Utils\Vector2ComparerWithEqualsOperator.cs" />
+     <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.29\UnityEngine.TestRunner\NUnitExtensions\Attributes\UnityCombinatorialStrategy.cs" />
+     <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.29\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs" />
+     <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.29\UnityEngine.TestRunner\Utils\TestRunCallbackListener.cs" />
+     <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.29\UnityEngine.TestRunner\TestRunner\Callbacks\TestResultRendererCallback.cs" />
+     <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.29\UnityEngine.TestRunner\AssemblyInfo.cs" />
+     <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.29\UnityEngine.TestRunner\NUnitExtensions\Runner\CoroutineTestWorkItem.cs" />
+     <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.29\UnityEngine.TestRunner\NUnitExtensions\Commands\OuterUnityTestActionCommand.cs" />
+     <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.29\UnityEngine.TestRunner\Utils\Vector3ComparerWithEqualsOperator.cs" />
+     <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.29\UnityEngine.TestRunner\TestRunner\TestPlatform.cs" />
+     <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.29\UnityEngine.TestRunner\Assertions\InvalidSignatureException.cs" />
+     <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.29\UnityEngine.TestRunner\TestRunner\Callbacks\PlayerQuitHandler.cs" />
+     <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.29\UnityEngine.TestRunner\NUnitExtensions\Runner\CompositeWorkItem.cs" />
+     <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.29\UnityEngine.TestRunner\NUnitExtensions\TestResultExtensions.cs" />
+     <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.29\UnityEngine.TestRunner\Utils\MonoBehaviourTest\IMonoBehaviourTest.cs" />
+     <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.29\UnityEngine.TestRunner\Utils\MonoBehaviourTest\MonoBehaviourTest.cs" />
+     <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.29\UnityEngine.TestRunner\NUnitExtensions\Filters\AssemblyNameFilter.cs" />
+     <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.29\UnityEngine.TestRunner\NUnitExtensions\TestExtensions.cs" />
+     <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.29\UnityEngine.TestRunner\TestRunner\RemoteHelpers\RemoteTestResultDataWithTestData.cs" />
+     <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.29\UnityEngine.TestRunner\NUnitExtensions\Commands\BeforeAfterTestCommandBase.cs" />
+     <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.29\UnityEngine.TestRunner\Assertions\AllocatingGCMemoryConstraint.cs" />
+     <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.29\UnityEngine.TestRunner\NUnitExtensions\Attributes\UnityTearDownAttribute.cs" />
+     <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.29\UnityEngine.TestRunner\NUnitExtensions\IAsyncTestAssemblyBuilder.cs" />
+     <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.29\UnityEngine.TestRunner\Assertions\UnhandledLogMessageException.cs" />
+     <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.29\UnityEngine.TestRunner\NUnitExtensions\Attributes\UnityTestAttribute.cs" />
+     <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.29\UnityEngine.TestRunner\Assertions\UnityTestTimeoutException.cs" />
+     <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.29\UnityEngine.TestRunner\Utils\FloatEqualityComparer.cs" />
+     <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.29\UnityEngine.TestRunner\Utils\QuaternionEqualityComparer.cs" />
+     <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.29\UnityEngine.TestRunner\NUnitExtensions\Runner\UnityTestAssemblyRunner.cs" />
+     <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.29\UnityEngine.TestRunner\NUnitExtensions\Runner\FailCommand.cs" />
+     <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.29\UnityEngine.TestRunner\Utils\IOuterUnityTestAction.cs" />
+     <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.29\UnityEngine.TestRunner\NUnitExtensions\Runner\IEnumerableTestMethodCommand.cs" />
+     <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.29\UnityEngine.TestRunner\NUnitExtensions\Commands\TestActionCommand.cs" />
+     <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.29\UnityEngine.TestRunner\NUnitExtensions\Commands\SetUpTearDownCommand.cs" />
+     <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.29\UnityEngine.TestRunner\Assertions\LogScope\LogMatch.cs" />
+     <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.29\UnityEngine.TestRunner\NUnitExtensions\ConstructDelegator.cs" />
+     <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.29\UnityEngine.TestRunner\Assertions\LogScope\ILogScope.cs" />
+     <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.29\UnityEngine.TestRunner\Utils\PostBuildCleanupAttribute.cs" />
+     <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.29\UnityEngine.TestRunner\TestRunner\Callbacks\TestResultRenderer.cs" />
+     <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.29\UnityEngine.TestRunner\TestRunner\Messages\IEditModeTestYieldInstruction.cs" />
+     <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.29\UnityEngine.TestRunner\TestRunner\RemoteHelpers\RemoteTestData.cs" />
+     <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.29\UnityEngine.TestRunner\NUnitExtensions\Commands\EnumerableRepeatedTestCommand.cs" />
+     <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.29\UnityEngine.TestRunner\NUnitExtensions\Runner\WorkItemFactory.cs" />
+     <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.29\UnityEngine.TestRunner\NUnitExtensions\Commands\EnumerableTestState.cs" />
+     <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.29\UnityEngine.TestRunner\NUnitExtensions\Runner\UnityWorkItem.cs" />
+     <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.29\UnityEngine.TestRunner\Utils\Vector3EqualityComparer.cs" />
+     <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.29\UnityEngine.TestRunner\NUnitExtensions\Filters\FullNameFilter.cs" />
+     <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.29\UnityEngine.TestRunner\TestRunner\ITestRunnerListener.cs" />
+     <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.29\UnityEngine.TestRunner\Utils\ColorEqualityComparer.cs" />
+     <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.29\UnityEngine.TestRunner\Assertions\ConstraintsExtensions.cs" />
+     <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.29\UnityEngine.TestRunner\Utils\Vector2EqualityComparer.cs" />
+     <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.29\UnityEngine.TestRunner\Utils\Utils.cs" />
+     <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.29\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestMustExpectAllLogsAttribute.cs" />
+     <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.29\UnityEngine.TestRunner\Assertions\LogScope\LogEvent.cs" />
+     <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.29\UnityEngine.TestRunner\Utils\AttributeHelper.cs" />
+     <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.29\UnityEngine.TestRunner\NUnitExtensions\Commands\BeforeAfterTestCommandState.cs" />
+     <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.29\UnityEngine.TestRunner\Utils\AssemblyProvider\IAssemblyWrapper.cs" />
+     <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.29\UnityEngine.TestRunner\Assertions\Is.cs" />
+     <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.29\UnityEngine.TestRunner\Utils\AssemblyProvider\AssemblyWrapper.cs" />
+     <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.29\UnityEngine.TestRunner\NUnitExtensions\Filters\CategoryFilterExtended.cs" />
+     <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.29\UnityEngine.TestRunner\Utils\TestRunCallbackAttribute.cs" />
+     <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.29\UnityEngine.TestRunner\NUnitExtensions\BaseDelegator.cs" />
+     <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.29\UnityEngine.TestRunner\NUnitExtensions\Commands\UnityTestMethodCommand.cs" />
+     <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.29\UnityEngine.TestRunner\TestRunner\SynchronousFilter.cs" />
+     <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.29\UnityEngine.TestRunner\NUnitExtensions\Commands\EnumerableApplyChangesToContextCommand.cs" />
+     <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.29\UnityEngine.TestRunner\TestRunner\RuntimeTestRunnerFilter.cs" />
+     <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.29\UnityEngine.TestRunner\Utils\CoroutineRunner.cs" />
+     <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.29\UnityEngine.TestRunner\NUnitExtensions\UnityTestAssemblyBuilder.cs" />
+     <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.29\UnityEngine.TestRunner\NUnitExtensions\IStateSerializer.cs" />
+     <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.29\UnityEngine.TestRunner\Assertions\LogAssert.cs" />
+     <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.29\UnityEngine.TestRunner\NUnitExtensions\Runner\RestoreTestContextAfterDomainReload.cs" />
+     <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.29\UnityEngine.TestRunner\TestRunner\Callbacks\PlayModeRunnerCallback.cs" />
+     <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.29\UnityEngine.TestRunner\NUnitExtensions\Commands\EnumerableSetUpTearDownCommand.cs" />
+     <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.29\UnityEngine.TestRunner\Utils\IPrebuildSceneSetup.cs" />
+     <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.29\UnityEngine.TestRunner\NUnitExtensions\Attributes\UnitySetUpAttribute.cs" />
+     <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.29\UnityEngine.TestRunner\NUnitExtensions\Runner\UnityWorkItemDataHolder.cs" />
+     <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.29\UnityEngine.TestRunner\TestRunner\Callbacks\RemoteTestResultSender.cs" />
+     <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.29\UnityEngine.TestRunner\Utils\AssemblyProvider\IAssemblyLoadProxy.cs" />
+     <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.29\UnityEngine.TestRunner\Assertions\UnexpectedLogMessageException.cs" />
+     <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.29\UnityEngine.TestRunner\Utils\ITestRunCallback.cs" />
+     <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.29\UnityEngine.TestRunner\NUnitExtensions\Commands\EnumerableRetryTestCommand.cs" />
+     <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.29\UnityEngine.TestRunner\TestRunner\RemoteHelpers\IRemoteTestResultDataFactory.cs" />
+     <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.29\UnityEngine.TestRunner\TestRunner\RemoteHelpers\RemoteTestResultDataFactory.cs" />
+     <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.29\UnityEngine.TestRunner\NUnitExtensions\Runner\UnityLogCheckDelegatingCommand.cs" />
+     <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.29\UnityEngine.TestRunner\TestRunner\TestEnumeratorWrapper.cs" />
+     <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.29\UnityEngine.TestRunner\Utils\IPostBuildCleanup.cs" />
+     <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.29\UnityEngine.TestRunner\Utils\AssemblyProvider\ScriptingRuntimeProxy.cs" />
+     <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.29\UnityEngine.TestRunner\TestRunner\RemoteHelpers\PlayerConnectionMessageIds.cs" />
+     <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.29\UnityEngine.TestRunner\NUnitExtensions\Commands\EnumerableTestMethodCommand.cs" />
+     <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.29\UnityEngine.TestRunner\Utils\AssemblyProvider\AssemblyLoadProxy.cs" />
+     <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.29\UnityEngine.TestRunner\Utils\PrebuildSceneSetupAttribute.cs" />
+     <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.29\UnityEngine.TestRunner\NUnitExtensions\Runner\DefaultTestWorkItem.cs" />
+     <None Include="Library\PackageCache\com.unity.test-framework@1.1.29\UnityEngine.TestRunner\UnityEngine.TestRunner.asmdef" />
  <Reference Include="UnityEngine">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
  </Reference>
@@ -496,59 +377,23 @@
  <Reference Include="UnityEditor.UnityConnectModule">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/Managed/UnityEngine/UnityEditor.UnityConnectModule.dll</HintPath>
  </Reference>
- <Reference Include="UDP">
- <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Assets/Plugins/UDP/UDP.dll</HintPath>
+ <Reference Include="UnityEditor.Graphs">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
  </Reference>
- <Reference Include="Firebase.App">
- <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Assets/Firebase/Plugins/Firebase.App.dll</HintPath>
+ <Reference Include="UnityEditor.WebGL.Extensions">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll</HintPath>
  </Reference>
- <Reference Include="UnityStore">
- <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Assets/Plugins/UnityChannel/UnityStore.dll</HintPath>
+ <Reference Include="UnityEditor.OSXStandalone.Extensions">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll</HintPath>
  </Reference>
- <Reference Include="UnityEngine.Monetization.Editor">
- <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Assets/UnityAds/UnityEngine.Monetization.Editor.dll</HintPath>
+ <Reference Include="UnityEditor.Android.Extensions">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll</HintPath>
  </Reference>
- <Reference Include="Unity.Analytics.Editor">
- <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Library/PackageCache/com.unity.analytics@3.6.12/Unity.Analytics.Editor.dll</HintPath>
+ <Reference Include="UnityEditor.WindowsStandalone.Extensions">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
  </Reference>
- <Reference Include="Unity.Analytics.StandardEvents">
- <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Library/PackageCache/com.unity.analytics@3.6.12/AnalyticsStandardEvents/Unity.Analytics.StandardEvents.dll</HintPath>
- </Reference>
- <Reference Include="ChannelPurchase">
- <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Assets/Plugins/UnityChannel/ChannelPurchase.dll</HintPath>
- </Reference>
- <Reference Include="Firebase.TaskExtension">
- <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Assets/Firebase/Plugins/Firebase.TaskExtension.dll</HintPath>
- </Reference>
- <Reference Include="Unity.Analytics.Tracker">
- <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Library/PackageCache/com.unity.analytics@3.6.12/Unity.Analytics.Tracker.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.Advertisements.Editor">
- <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Assets/UnityAds/UnityEngine.Advertisements.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Newtonsoft.Json">
- <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Library/PackageCache/com.unity.nuget.newtonsoft-json@2.0.0/Runtime/Newtonsoft.Json.dll</HintPath>
- </Reference>
- <Reference Include="BouncyCastle.Crypto">
- <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Assets/Plugins/BouncyCastle.Crypto.dll</HintPath>
- </Reference>
- <Reference Include="Jint">
- <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Assets/Plugins/Jint/Jint.dll</HintPath>
- </Reference>
- <Reference Include="Firebase.Analytics">
- <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Assets/Firebase/Plugins/Firebase.Analytics.dll</HintPath>
- </Reference>
- <Reference Include="Unity.Tasks">
- <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Assets/Parse/Plugins/dotNet45/Unity.Tasks.dll</HintPath>
- </Reference>
- <Reference Include="Google.MiniJson">
- <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Assets/Firebase/Plugins/Google.MiniJson.dll</HintPath>
- </Reference>
- <Reference Include="Unity.Compat">
- <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Assets/Parse/Plugins/dotNet45/Unity.Compat.dll</HintPath>
- </Reference>
- <Reference Include="Firebase.Platform">
- <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Assets/Firebase/Plugins/Firebase.Platform.dll</HintPath>
+ <Reference Include="nunit.framework">
+ <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll</HintPath>
  </Reference>
  <Reference Include="netstandard">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
@@ -895,100 +740,6 @@
  <Reference Include="System.Xml.Serialization">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Serialization.dll</HintPath>
  </Reference>
- <Reference Include="Unity.2D.Tilemap.Editor">
- <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.2D.Sprite.Editor">
- <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
- </Reference>
- <Reference Include="UnityEditor.UI">
- <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.UI">
- <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
- </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{f5a2b3ce-10f2-9dd6-f8ae-8e4338e48758}</Project>
-      <Name>Assembly-CSharp-firstpass</Name>
-    </ProjectReference>
-    <ProjectReference Include="Purchasing.Common.csproj">
-      <Project>{a09a5bc7-0204-4020-d295-7fd46c99a525}</Project>
-      <Name>Purchasing.Common</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.VSCode.Editor.csproj">
-      <Project>{eb87b761-cca4-389a-87de-48d90a47ea89}</Project>
-      <Name>Unity.VSCode.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="UnityEngine.Purchasing.csproj">
-      <Project>{65e2cd9d-a37d-62d4-5e2c-b6cbaab1bbbe}</Project>
-      <Name>UnityEngine.Purchasing</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.TextMeshPro.Editor.csproj">
-      <Project>{dbff93b3-60ba-95b5-8f94-024403a8d9b2}</Project>
-      <Name>Unity.TextMeshPro.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.VisualStudio.Editor.csproj">
-      <Project>{5cbe2949-9072-9a29-38a2-ae79699d105d}</Project>
-      <Name>Unity.VisualStudio.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.Timeline.csproj">
-      <Project>{d946cf63-b3f7-de46-87da-75ea7a85ec69}</Project>
-      <Name>Unity.Timeline</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.TextMeshPro.csproj">
-      <Project>{9789592f-980d-d40f-adc4-b1c6fc64fd75}</Project>
-      <Name>Unity.TextMeshPro</Name>
-    </ProjectReference>
-    <ProjectReference Include="UnityEngine.Purchasing.SecurityStub.csproj">
-      <Project>{6959bbd8-736c-92a7-41ba-1b93cf9d3901}</Project>
-      <Name>UnityEngine.Purchasing.SecurityStub</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.Rider.Editor.csproj">
-      <Project>{5f9ffa79-2446-7441-2b3c-a96755bb60e5}</Project>
-      <Name>Unity.Rider.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.PlasticSCM.Editor.csproj">
-      <Project>{2adc4181-f3c8-ab20-4488-d0260dee3b7c}</Project>
-      <Name>Unity.PlasticSCM.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Analytics.csproj">
-      <Project>{4670a2b2-86c4-7a71-00df-6b116baa1886}</Project>
-      <Name>Analytics</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.Analytics.DataPrivacy.csproj">
-      <Project>{8fe8c54a-8185-a8e5-191a-23973d57f75b}</Project>
-      <Name>Unity.Analytics.DataPrivacy</Name>
-    </ProjectReference>
-    <ProjectReference Include="UnityEngine.Purchasing.SecurityCore.csproj">
-      <Project>{1a0ea4d4-2d47-1e06-c524-3cd8e5c2fd27}</Project>
-      <Name>UnityEngine.Purchasing.SecurityCore</Name>
-    </ProjectReference>
-    <ProjectReference Include="UnityEngine.Purchasing.Codeless.csproj">
-      <Project>{77743f95-ea4f-4fa8-26a1-7d8092ebf1ca}</Project>
-      <Name>UnityEngine.Purchasing.Codeless</Name>
-    </ProjectReference>
-    <ProjectReference Include="GoogleMobileAds.csproj">
-      <Project>{6292939a-2923-3cd3-77f7-24b590e639f2}</Project>
-      <Name>GoogleMobileAds</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.Timeline.Editor.csproj">
-      <Project>{d6a110d0-d97f-0454-133d-2ca9271f1497}</Project>
-      <Name>Unity.Timeline.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="UnityEngine.Purchasing.Stores.csproj">
-      <Project>{28431f7f-abfc-3e73-933c-839088d9ea53}</Project>
-      <Name>UnityEngine.Purchasing.Stores</Name>
-    </ProjectReference>
-    <ProjectReference Include="UnityEditor.Purchasing.csproj">
-      <Project>{5f17faad-87e2-abf7-9903-53d0cdc4357e}</Project>
-      <Name>UnityEditor.Purchasing</Name>
-    </ProjectReference>
-    <ProjectReference Include="GoogleMobileAds.Editor.csproj">
-      <Project>{7ccae933-caf0-d81e-f57c-e7d3718854a8}</Project>
-      <Name>GoogleMobileAds.Editor</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
