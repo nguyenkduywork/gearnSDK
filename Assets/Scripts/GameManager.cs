@@ -59,7 +59,7 @@ public class GameManager : Singleton<GameManager>
     private void Start()
     {
 	    this.database = Singleton<DataManager>.Instance.database;
-		GameUtilities.String.ToText(this.mainScreenDiamond, this.database.diamond.ToString());
+	    GameUtilities.String.ToText(this.mainScreenDiamond, this.database.diamond.ToString());
 		GameUtilities.String.ToText(this.shopScreenDiamond, this.database.diamond.ToString());
 		GameUtilities.String.ToText(this.mainScreenCash, GameUtilities.Currencies.Convert(this.database.cash));
 		GameUtilities.String.ToText(this.shopScreenCash, GameUtilities.Currencies.Convert(this.database.cash));
