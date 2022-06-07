@@ -689,6 +689,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   yourButton: {fileID: 384605731}
+  mainScreenCash: {fileID: 1789880861211680899}
+  shopScreenCash: {fileID: 1789880861211680349}
 --- !u!1001 &1216220113385027686
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -70928,11 +70930,6 @@ MonoBehaviour:
     price: 24.99
     valueLabel: {fileID: 1789880861211680097}
     priceLabel: {fileID: 1789880861211680142}
-  - id: diamondpack5
-    value: 22000
-    price: 49.99
-    valueLabel: {fileID: 0}
-    priceLabel: {fileID: 0}
   shopRectransform: {fileID: 1789880861211679633}
   packHeader: {fileID: 1789880861211678551}
   targetPopup: {fileID: 1789880861211678032}
