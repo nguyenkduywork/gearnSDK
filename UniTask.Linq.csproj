@@ -54,74 +54,74 @@
   <ItemGroup>
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\External\UniTask\Runtime\Linq\Select.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\External\UniTask\Runtime\Linq\AsyncEnumeratorBase.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\External\UniTask\Runtime\Linq\ToLookup.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\External\UniTask\Runtime\Linq\Empty.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\External\UniTask\Runtime\Linq\TakeUntil.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\External\UniTask\Runtime\Linq\Take.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\External\UniTask\Runtime\Linq\SkipUntilCanceled.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\External\UniTask\Runtime\Linq\Join.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\External\UniTask\Runtime\Linq\Repeat.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\External\UniTask\Runtime\Linq\Subscribe.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\External\UniTask\Runtime\Linq\Cast.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\External\UniTask\Runtime\Linq\Never.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\External\UniTask\Runtime\Linq\Union.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\External\UniTask\Runtime\Linq\TakeLast.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\External\UniTask\Runtime\Linq\AsUniTaskAsyncEnumerable.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\External\UniTask\Runtime\Linq\ToDictionary.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\External\UniTask\Runtime\Linq\ElementAt.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\External\UniTask\Runtime\Linq\MinMax.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\External\UniTask\Runtime\Linq\ToUniTaskAsyncEnumerable.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\External\UniTask\Runtime\Linq\Where.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\External\UniTask\Runtime\Linq\GroupBy.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\External\UniTask\Runtime\Linq\First.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\External\UniTask\Runtime\Linq\OfType.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\External\UniTask\Runtime\Linq\Except.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\External\UniTask\Runtime\Linq\DistinctUntilChanged.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\External\UniTask\Runtime\Linq\Publish.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\External\UniTask\Runtime\Linq\Throw.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\External\UniTask\Runtime\Linq\ForEach.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\External\UniTask\Runtime\Linq\All.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\External\UniTask\Runtime\Linq\Sum.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\External\UniTask\Runtime\Linq\Max.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\External\UniTask\Runtime\Linq\Range.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\External\UniTask\Runtime\Linq\DefaultIfEmpty.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\External\UniTask\Runtime\Linq\Zip.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\External\UniTask\Runtime\Linq\TakeUntilCanceled.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\External\UniTask\Runtime\Linq\Aggregate.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\External\UniTask\Runtime\Linq\Skip.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\External\UniTask\Runtime\Linq\GroupJoin.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\External\UniTask\Runtime\Linq\Do.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\External\UniTask\Runtime\Linq\ToLookup.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\External\UniTask\Runtime\Linq\Single.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\External\UniTask\Runtime\Linq\SkipLast.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\External\UniTask\Runtime\Linq\Empty.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\External\UniTask\Runtime\Linq\ToArray.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\External\UniTask\Runtime\Linq\Average.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\External\UniTask\Runtime\Linq\TakeWhile.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\External\UniTask\Runtime\Linq\Contains.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\External\UniTask\Runtime\Linq\TakeUntil.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\External\UniTask\Runtime\Linq\Take.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\External\UniTask\Runtime\Linq\SkipUntil.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\External\UniTask\Runtime\Linq\SkipUntilCanceled.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\External\UniTask\Runtime\Linq\Create.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\External\UniTask\Runtime\Linq\Reverse.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\External\UniTask\Runtime\Linq\Join.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\External\UniTask\Runtime\Linq\UnityExtensions\EveryValueChanged.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\External\UniTask\Runtime\Linq\UnityExtensions\EveryUpdate.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\External\UniTask\Runtime\Linq\Pairwise.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\External\UniTask\Runtime\Linq\Repeat.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\External\UniTask\Runtime\Linq\Subscribe.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\External\UniTask\Runtime\Linq\Cast.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\External\UniTask\Runtime\Linq\SequenceEqual.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\External\UniTask\Runtime\Linq\Never.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\External\UniTask\Runtime\Linq\Union.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\External\UniTask\Runtime\Linq\TakeLast.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\External\UniTask\Runtime\Linq\AsUniTaskAsyncEnumerable.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\External\UniTask\Runtime\Linq\ToList.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\External\UniTask\Runtime\Linq\Distinct.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\External\UniTask\Runtime\Linq\ToObservable.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\External\UniTask\Runtime\Linq\ToDictionary.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\External\UniTask\Runtime\Linq\ElementAt.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\External\UniTask\Runtime\Linq\CombineLatest.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\External\UniTask\Runtime\Linq\MinMax.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\External\UniTask\Runtime\Linq\ToUniTaskAsyncEnumerable.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\External\UniTask\Runtime\Linq\ToHashSet.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\External\UniTask\Runtime\Linq\Where.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\External\UniTask\Runtime\Linq\Intersect.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\External\UniTask\Runtime\Linq\GroupBy.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\External\UniTask\Runtime\Linq\Return.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\External\UniTask\Runtime\Linq\SelectMany.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\External\UniTask\Runtime\Linq\First.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\External\UniTask\Runtime\Linq\OfType.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\External\UniTask\Runtime\Linq\Except.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\External\UniTask\Runtime\Linq\Concat.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\External\UniTask\Runtime\Linq\DistinctUntilChanged.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\External\UniTask\Runtime\Linq\Publish.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\External\UniTask\Runtime\Linq\Last.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\External\UniTask\Runtime\Linq\LongCount.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\External\UniTask\Runtime\Linq\Buffer.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\External\UniTask\Runtime\Linq\Throw.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\External\UniTask\Runtime\Linq\ForEach.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\External\UniTask\Runtime\Linq\All.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\External\UniTask\Runtime\Linq\Sum.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\External\UniTask\Runtime\Linq\Max.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\External\UniTask\Runtime\Linq\Any.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\External\UniTask\Runtime\Linq\Queue.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\External\UniTask\Runtime\Linq\Count.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\External\UniTask\Runtime\Linq\OrderBy.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\External\UniTask\Runtime\Linq\Range.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\External\UniTask\Runtime\Linq\Min.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\External\UniTask\Runtime\Linq\AppendPrepend.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\External\UniTask\Runtime\Linq\DefaultIfEmpty.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\External\UniTask\Runtime\Linq\Zip.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\External\UniTask\Runtime\Linq\UnityExtensions\Timer.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\External\UniTask\Runtime\Linq\SkipWhile.cs" />
      <None Include="Packages\io.moralis.web3-unity-sdk\Runtime\External\UniTask\Runtime\Linq\UniTask.Linq.asmdef" />
@@ -386,9 +386,6 @@
  <Reference Include="ChannelPurchase">
  <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Assets/Plugins/UnityChannel/ChannelPurchase.dll</HintPath>
  </Reference>
- <Reference Include="log4net">
- <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Packages/io.moralis.web3-unity-sdk/Runtime/External/log4net.dll</HintPath>
- </Reference>
  <Reference Include="Firebase.TaskExtension">
  <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Assets/Firebase/Plugins/Firebase.TaskExtension.dll</HintPath>
  </Reference>
@@ -398,20 +395,11 @@
  <Reference Include="Unity.Analytics.Tracker">
  <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Library/PackageCache/com.unity.analytics@3.6.12/Unity.Analytics.Tracker.dll</HintPath>
  </Reference>
- <Reference Include="QRCoder">
- <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Packages/io.moralis.web3-unity-sdk/Runtime/External/QRCoder.1.3.4/lib/net35/QRCoder.dll</HintPath>
- </Reference>
  <Reference Include="Google.JarResolver">
  <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Assets/ExternalDependencyManager/Editor/1.2.171/Google.JarResolver.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Advertisements.Editor">
  <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Assets/UnityAds/UnityEngine.Advertisements.Editor.dll</HintPath>
- </Reference>
- <Reference Include="BouncyCastle.Crypto">
- <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Packages/io.moralis.web3-unity-sdk/Runtime/External/BouncyCastle.Crypto/BouncyCastle.Crypto.dll</HintPath>
- </Reference>
- <Reference Include="System.Drawing.Common">
- <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Packages/io.moralis.web3-unity-sdk/Runtime/External/System.Drawing.Common/netstandard2.0/System.Drawing.Common.dll</HintPath>
  </Reference>
  <Reference Include="Newtonsoft.Json">
  <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Library/PackageCache/com.unity.nuget.newtonsoft-json@3.0.2/Runtime/Newtonsoft.Json.dll</HintPath>
@@ -419,8 +407,11 @@
  <Reference Include="Google.PackageManagerResolver">
  <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Assets/ExternalDependencyManager/Editor/1.2.171/Google.PackageManagerResolver.dll</HintPath>
  </Reference>
- <Reference Include="QRCoder.Unity">
- <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Packages/io.moralis.web3-unity-sdk/Runtime/External/QRCoder.Unity.1.0.2/lib/net35/QRCoder.Unity.dll</HintPath>
+ <Reference Include="BouncyCastle.Crypto">
+ <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Assets/Plugins/BouncyCastle.Crypto.dll</HintPath>
+ </Reference>
+ <Reference Include="Jint">
+ <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Assets/Plugins/Jint/Jint.dll</HintPath>
  </Reference>
  <Reference Include="Firebase.Editor">
  <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Assets/Firebase/Editor/Firebase.Editor.dll</HintPath>
@@ -440,11 +431,23 @@
  <Reference Include="Google.MiniJson">
  <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Assets/Firebase/Plugins/Google.MiniJson.dll</HintPath>
  </Reference>
+ <Reference Include="Firebase.Platform">
+ <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Assets/Firebase/Plugins/Firebase.Platform.dll</HintPath>
+ </Reference>
  <Reference Include="Unity.Compat">
  <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Assets/Parse/Plugins/dotNet45/Unity.Compat.dll</HintPath>
  </Reference>
- <Reference Include="Firebase.Platform">
- <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Assets/Firebase/Plugins/Firebase.Platform.dll</HintPath>
+ <Reference Include="QRCoder">
+ <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Packages/io.moralis.web3-unity-sdk/Runtime/External/QRCoder.1.3.4/lib/net35/QRCoder.dll</HintPath>
+ </Reference>
+ <Reference Include="log4net">
+ <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Packages/io.moralis.web3-unity-sdk/Runtime/External/log4net.dll</HintPath>
+ </Reference>
+ <Reference Include="QRCoder.Unity">
+ <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Packages/io.moralis.web3-unity-sdk/Runtime/External/QRCoder.Unity.1.0.2/lib/net35/QRCoder.Unity.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Drawing.Common">
+ <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Packages/io.moralis.web3-unity-sdk/Runtime/External/System.Drawing.Common/netstandard2.0/System.Drawing.Common.dll</HintPath>
  </Reference>
  <Reference Include="netstandard">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>

@@ -28,7 +28,6 @@ public class MintToken : MonoBehaviour
     public void retireMonnaie()
     {
         database = Singleton<DataManager>.Instance.database;
-
         if (!(database.cash > 0))
         {
             Debug.Log("You don't have enough money");

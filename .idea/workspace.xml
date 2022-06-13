@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f579d663-f9ee-40ed-9d82-5848be26560c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe0.log" afterDir="false" />
-    </list>
+    <list default="true" id="f579d663-f9ee-40ed-9d82-5848be26560c" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,6 +31,7 @@
       <updated>1654077002985</updated>
       <workItem from="1654077002986" duration="18000" />
       <workItem from="1654088191297" duration="49000" />
+      <workItem from="1655124177276" duration="98000" />
     </task>
     <servers />
   </component>
