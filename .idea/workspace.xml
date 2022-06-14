@@ -1,7 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f579d663-f9ee-40ed-9d82-5848be26560c" name="Changes" comment="" />
+    <list default="true" id="f579d663-f9ee-40ed-9d82-5848be26560c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/Analytics.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Analytics.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assembly-CSharp-Editor-firstpass.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp-Editor-firstpass.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assembly-CSharp-Editor.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp-Editor.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assembly-CSharp-firstpass.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp-firstpass.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GoogleMobileAds.Editor.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/GoogleMobileAds.Editor.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GoogleMobileAds.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/GoogleMobileAds.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IdleRestaurant_Src.sln" beforeDir="false" afterPath="$PROJECT_DIR$/IdleRestaurant_Src.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Purchasing.Common.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Purchasing.Common.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Unity.Analytics.DataPrivacy.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Unity.Analytics.DataPrivacy.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Unity.CollabProxy.Editor.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Unity.CollabProxy.Editor.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Unity.PlasticSCM.Editor.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Unity.PlasticSCM.Editor.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Unity.Rider.Editor.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Unity.Rider.Editor.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Unity.Services.Core.Editor.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Unity.Services.Core.Editor.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Unity.TextMeshPro.Editor.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Unity.TextMeshPro.Editor.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Unity.TextMeshPro.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Unity.TextMeshPro.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Unity.Timeline.Editor.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Unity.Timeline.Editor.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Unity.Timeline.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Unity.Timeline.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Unity.VSCode.Editor.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Unity.VSCode.Editor.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Unity.VisualStudio.Editor.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Unity.VisualStudio.Editor.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UnityEditor.Purchasing.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/UnityEditor.Purchasing.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UnityEditor.TestRunner.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/UnityEditor.TestRunner.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UnityEngine.Purchasing.AppleCore.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/UnityEngine.Purchasing.AppleCore.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UnityEngine.Purchasing.AppleMacosStub.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/UnityEngine.Purchasing.AppleMacosStub.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UnityEngine.Purchasing.AppleStub.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/UnityEngine.Purchasing.AppleStub.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UnityEngine.Purchasing.Codeless.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/UnityEngine.Purchasing.Codeless.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UnityEngine.Purchasing.SecurityCore.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/UnityEngine.Purchasing.SecurityCore.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UnityEngine.Purchasing.SecurityStub.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/UnityEngine.Purchasing.SecurityStub.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UnityEngine.Purchasing.Stores.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/UnityEngine.Purchasing.Stores.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UnityEngine.Purchasing.WinRTCore.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/UnityEngine.Purchasing.WinRTCore.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UnityEngine.Purchasing.WinRTStub.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/UnityEngine.Purchasing.WinRTStub.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UnityEngine.Purchasing.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/UnityEngine.Purchasing.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UnityEngine.TestRunner.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/UnityEngine.TestRunner.csproj" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,6 +66,7 @@
       <workItem from="1654077002986" duration="18000" />
       <workItem from="1654088191297" duration="49000" />
       <workItem from="1655124177276" duration="98000" />
+      <workItem from="1655199601365" duration="600000" />
     </task>
     <servers />
   </component>

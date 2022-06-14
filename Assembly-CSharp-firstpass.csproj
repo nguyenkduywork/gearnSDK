@@ -52,35 +52,35 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\Plugins\AsyncAwaitUtil\Source\AwaitExtensions.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\HexByteConvertorExtensions.cs" />
      <Compile Include="Assets\Plugins\AsyncAwaitUtil\Tests\AsyncUtilTests.cs" />
      <Compile Include="Assets\Plugins\AsyncAwaitUtil\Tests\Util\TestButtonHandler.cs" />
-     <Compile Include="Assets\Plugins\AsyncAwaitUtil\Source\WaitForBackgroundThread.cs" />
-     <Compile Include="Assets\Plugins\AsyncAwaitUtil\Source\Awaiters.cs" />
-     <Compile Include="Assets\Plugins\UnityChannel\XiaomiSupport\AppStoreSettings.cs" />
-     <Compile Include="Assets\Plugins\AsyncAwaitUtil\Source\AwaitExtensions.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\AddressUtil.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\DeterministicDSAExtensions.cs" />
      <Compile Include="Assets\Plugins\AsyncAwaitUtil\Source\TaskExtensions.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\ConvertorForRLPEncodingExtensions.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\EthereumMessageSigner.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\EthECDSASignature.cs" />
+     <Compile Include="Assets\Plugins\AsyncAwaitUtil\Source\WaitForBackgroundThread.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\MessageSigner.cs" />
      <Compile Include="Assets\Plugins\AsyncAwaitUtil\Source\Internal\SyncContextUtil.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\DeterministicECDSA.cs" />
      <Compile Include="Assets\Plugins\AsyncAwaitUtil\Source\IEnumeratorAwaitExtensions.cs" />
      <Compile Include="Assets\Plugins\AsyncAwaitUtil\Source\Internal\AsyncCoroutineRunner.cs" />
-     <Compile Include="Assets\Plugins\AsyncAwaitUtil\Source\WaitForUpdate.cs" />
-     <Compile Include="Assets\Plugins\Nethereum\ECDSASignature.cs" />
-     <Compile Include="Assets\Plugins\Nethereum\AddressUtil.cs" />
-     <Compile Include="Assets\Plugins\Nethereum\EthECKeys.cs" />
-     <Compile Include="Assets\Plugins\Nethereum\ByteUtil.cs" />
-     <Compile Include="Assets\Plugins\Nethereum\EthereumMessageSigner.cs" />
-     <Compile Include="Assets\Plugins\Nethereum\ECDSASignatureFactory.cs" />
-     <Compile Include="Assets\Plugins\Nethereum\AddressExtensions.cs" />
-     <Compile Include="Assets\Plugins\Nethereum\EthECDSASignature.cs" />
-     <Compile Include="Assets\Plugins\Nethereum\KeccakDigest.cs" />
-     <Compile Include="Assets\Plugins\Nethereum\HexByteConvertorExtensions.cs" />
-     <Compile Include="Assets\Plugins\Nethereum\ConvertorForRLPEncodingExtensions.cs" />
-     <Compile Include="Assets\Plugins\Nethereum\Sha3Keccack.cs" />
-     <Compile Include="Assets\Plugins\Nethereum\MessageSigner.cs" />
-     <Compile Include="Assets\Plugins\Nethereum\HexBigIntegerConvertorExtensions.cs" />
-     <Compile Include="Assets\Plugins\Nethereum\DeterministicECDSA.cs" />
      <Compile Include="Assets\Plugins\Nethereum\ECKey.cs" />
-     <Compile Include="Assets\Plugins\Nethereum\DeterministicDSAExtensions.cs" />
      <Compile Include="Assets\Plugins\Nethereum\EthECDSASignatureFactory.cs" />
+     <Compile Include="Assets\Plugins\AsyncAwaitUtil\Source\Awaiters.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\KeccakDigest.cs" />
+     <Compile Include="Assets\Plugins\UnityChannel\XiaomiSupport\AppStoreSettings.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\ByteUtil.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\Sha3Keccack.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\AddressExtensions.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\ECDSASignature.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\EthECKeys.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\ECDSASignatureFactory.cs" />
+     <Compile Include="Assets\Plugins\Nethereum\HexBigIntegerConvertorExtensions.cs" />
+     <Compile Include="Assets\Plugins\AsyncAwaitUtil\Source\WaitForUpdate.cs" />
      <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
      <None Include="Assets\Plugins\Android\GoogleMobileAdsPlugin.androidlib\AndroidManifest.xml" />
      <None Include="Assets\Plugins\Android\FirebaseApp.androidlib\AndroidManifest.xml" />
@@ -307,14 +307,14 @@
  <Reference Include="UnityStore">
  <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Assets/Plugins/UnityChannel/UnityStore.dll</HintPath>
  </Reference>
- <Reference Include="Unity.Analytics.StandardEvents">
- <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Library/PackageCache/com.unity.analytics@3.6.12/AnalyticsStandardEvents/Unity.Analytics.StandardEvents.dll</HintPath>
- </Reference>
  <Reference Include="UnityEngine.Monetization.Editor">
  <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Assets/UnityAds/UnityEngine.Monetization.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.Editor">
  <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Library/PackageCache/com.unity.analytics@3.6.12/Unity.Analytics.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Analytics.StandardEvents">
+ <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Library/PackageCache/com.unity.analytics@3.6.12/AnalyticsStandardEvents/Unity.Analytics.StandardEvents.dll</HintPath>
  </Reference>
  <Reference Include="ChannelPurchase">
  <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Assets/Plugins/UnityChannel/ChannelPurchase.dll</HintPath>
@@ -346,11 +346,11 @@
  <Reference Include="Google.MiniJson">
  <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Assets/Firebase/Plugins/Google.MiniJson.dll</HintPath>
  </Reference>
- <Reference Include="Unity.Compat">
- <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Assets/Parse/Plugins/dotNet45/Unity.Compat.dll</HintPath>
- </Reference>
  <Reference Include="Firebase.Platform">
  <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Assets/Firebase/Plugins/Firebase.Platform.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Compat">
+ <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Assets/Parse/Plugins/dotNet45/Unity.Compat.dll</HintPath>
  </Reference>
  <Reference Include="netstandard">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
@@ -743,13 +743,13 @@
       <Project>{6959bbd8-736c-92a7-41ba-1b93cf9d3901}</Project>
       <Name>UnityEngine.Purchasing.SecurityStub</Name>
     </ProjectReference>
-    <ProjectReference Include="Unity.Rider.Editor.csproj">
-      <Project>{5f9ffa79-2446-7441-2b3c-a96755bb60e5}</Project>
-      <Name>Unity.Rider.Editor</Name>
-    </ProjectReference>
     <ProjectReference Include="Unity.PlasticSCM.Editor.csproj">
       <Project>{2adc4181-f3c8-ab20-4488-d0260dee3b7c}</Project>
       <Name>Unity.PlasticSCM.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Rider.Editor.csproj">
+      <Project>{5f9ffa79-2446-7441-2b3c-a96755bb60e5}</Project>
+      <Name>Unity.Rider.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Analytics.csproj">
       <Project>{4670a2b2-86c4-7a71-00df-6b116baa1886}</Project>

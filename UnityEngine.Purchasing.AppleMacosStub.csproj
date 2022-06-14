@@ -298,9 +298,6 @@
  <Reference Include="UnityStore">
  <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Assets/Plugins/UnityChannel/UnityStore.dll</HintPath>
  </Reference>
- <Reference Include="Unity.Analytics.StandardEvents">
- <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Library/PackageCache/com.unity.analytics@3.6.12/AnalyticsStandardEvents/Unity.Analytics.StandardEvents.dll</HintPath>
- </Reference>
  <Reference Include="Unity.Plastic.Newtonsoft.Json">
  <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Library/PackageCache/com.unity.collab-proxy@1.15.7/Lib/Editor/PlasticSCM/Unity.Plastic.Newtonsoft.Json.dll</HintPath>
  </Reference>
@@ -309,6 +306,9 @@
  </Reference>
  <Reference Include="Unity.Analytics.Editor">
  <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Library/PackageCache/com.unity.analytics@3.6.12/Unity.Analytics.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Analytics.StandardEvents">
+ <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Library/PackageCache/com.unity.analytics@3.6.12/AnalyticsStandardEvents/Unity.Analytics.StandardEvents.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Plastic.Antlr3.Runtime">
  <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Library/PackageCache/com.unity.collab-proxy@1.15.7/Lib/Editor/PlasticSCM/Unity.Plastic.Antlr3.Runtime.dll</HintPath>
@@ -361,11 +361,11 @@
  <Reference Include="Google.MiniJson">
  <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Assets/Firebase/Plugins/Google.MiniJson.dll</HintPath>
  </Reference>
- <Reference Include="Unity.Compat">
- <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Assets/Parse/Plugins/dotNet45/Unity.Compat.dll</HintPath>
- </Reference>
  <Reference Include="Firebase.Platform">
  <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Assets/Firebase/Plugins/Firebase.Platform.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Compat">
+ <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Assets/Parse/Plugins/dotNet45/Unity.Compat.dll</HintPath>
  </Reference>
  <Reference Include="netstandard">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>

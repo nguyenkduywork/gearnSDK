@@ -1066,8 +1066,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   yourButton: {fileID: 384605731}
-  mainScreenCash: {fileID: 1789880861211680899}
-  shopScreenCash: {fileID: 1789880861211680349}
   gameManager: {fileID: 1789880861211681027}
 --- !u!1001 &2065362856
 PrefabInstance:
