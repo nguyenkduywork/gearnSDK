@@ -5,9 +5,12 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Web3Connect/web3Connect.unity
     guid: b88312bfcea385e47a7ae43129742fd7
+  - enabled: 1
+    path: Assets/Web3Connect/WalletLogin.unity
+    guid: cc28e1075e9584f1698219d041278648
   - enabled: 1
     path: Assets/Game Resource/Scene/Splash.unity
     guid: a578fa22c8cd95f4c8d92140eb42f271

@@ -52,107 +52,177 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Kits\AuthenticationKit\Scripts\AuthenticationKit.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Kits\AuthenticationKit\Scripts\AuthenticationKitView.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Abstractions\IServiceHubComposer.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Queries\Live\ErrorMessage.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\SolanaApi\CloudApi\AccountApi.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Abstractions\IUserService.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Utilities\FlexibleDictionaryWrapper.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Models\BlockTransaction.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\CloudApi\TokenApi.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Moralis.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Services\ClientServices\CommandRunnerExtensions.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Queries\Live\SubscribeRequest.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Services\Infrastructure\MoralisCurrentUserService.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Objects\MoralisAcl.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Operations\MoralisSetOperation.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Api\StorageApi.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Queries\Live\SubscribableWebSocket.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Models\Block.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\MoralisSettings.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Services\Models\DataTransferLevel.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Abstractions\IServiceHubMutator.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\HostManifestData.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\ServerConnectionData.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Models\ReservesCollection.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Queries\QueryServiceExtensions.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Interfaces\ITokenApi.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\UnityFileHelper.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\EvmContractManager.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Models\Trade.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Interfaces\ITokenApi.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Utilities\Conversion.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Api\AccountApi.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Utilities\JsonUtilities.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Exceptions\InitializationRequiredException.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Abstractions\IMetadataService.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Interfaces\IStorageApi.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Abstractions\IDiskFileCacheService.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Api\ResolveApi.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Models\NftMetadataCollection.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\DeadRpcReadClient.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Abstractions\ICurrentObjectService.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Models\NftMetadataCollection.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Models\Erc20Price.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\SolanaApi\Client\ApiException.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Services\ClientServices\MoralisCommandRunner.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Api\TokenApi.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Abstractions\IServiceHub.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\SolanaApi\Models\Enums.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Resources.Designer.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Utilities\FileUtilities.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\SolanaApi\Models\NativeBalance.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\SolanaApi\Interfaces\INftApi.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\UnityNewtosoftSerializer.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Models\NftContractMetadata.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Abstractions\ISessionService.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\SolanaApi\Api\AccountApi.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Queries\Live\ConnectRequest.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Models\RunContractDto.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\MoralisCloud.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Services\ClientServices\MoralisUserService.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Utilities\Formatters.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Models\Ens.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Constants\MoralisConstants.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Exceptions\InitializedAlreadyException.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Kits\AuthenticationKit\Scripts\AuthenticationKitView.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Services\Infrastructure\MoralisQueryService.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Models\NativeErc20Price.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Services\Infrastructure\MetadataService.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Interfaces\IInitializableAsync.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Services\ClientServices\MoralisObjectService.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\MoralisSessionTokenResponse.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Utilities\XamarinAttributes.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Utilities\FlexibleListWrapper.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Services\RelativeCacheLocationMutator.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Models\LogEventResponse.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Services\ClientServices\MoralisFileService.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\MoralisClient.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Exceptions\ObservableInvalidValueException.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Abstractions\ICurrentUserService.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Objects\MoralisSession.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Interfaces\IAccountApi.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Abstractions\IInstallationService.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Data\Observable.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Models\Erc20Transaction.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Services\ClientServices\MoralisLiveQueryManager.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Abstractions\ICustomServiceHub.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Exceptions\SwitchDefaultException.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\SolanaApi\Interfaces\ISolanaApi.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Services\Models\WebRequest.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\MoralisClient.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Objects\MoralisGeoPoint.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Abstractions\IDataCache.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\ISubscriptionQuery.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\CloudApi\AccountApi.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\SolanaApi\Models\WebRequest.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\MoralisLoginTokenResponse.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Abstractions\IDataTransferLevel.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Services\Infrastructure\InstallationService.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\SolanaApi\Models\SplNft.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\SolanaApi\Models\FileParameter.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Events\ObservableUnityEvent.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Abstractions\IWebClient.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Models\NftCollection.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Utilities\ReflectionUtilities.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Client\ApiClient.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Client\ApiException.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Models\Erc20Allowance.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Abstractions\IMoralisCommandRunner.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Queries\Live\QueryEventMessage.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Models\ChainList.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\MoralisSubscriptionQuery.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Abstractions\ILiveQueryCallbacks.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Services\ClientServices\FileServiceExtensions.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\SupportedEvmChains.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Queries\Live\UnscubscribeRequest.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Abstractions\IObjectState.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Models\Log.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Models\Resolve.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Utilities\MoralisFileExtensions.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Models\TradeCollection.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\EnvironmentData.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\UI\ReadMe\ReadMe.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Objects\MoralisGeoDistance.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Queries\MoralisQuery.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\MobileLogin.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\CloudApi\NativeApi.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Operations\MoralisUniqueAddOperation.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Web3GL.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Models\WebRequest.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Models\Erc20Metadata.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Enums.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Queries\Live\MoralisClientWebSocket.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Abstractions\CustomServiceHub.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Operations\MoralisDeleteOperation.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Components\EnsureUniqueInScene.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\SolanaApi\Models\Portfolio.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Models\Erc20TransactionCollection.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Utilities\ThreadingUtilities.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Objects\MoralisFile.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Utilities\LateInitializer.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Abstractions\ICacheService.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Client\Web3ApiClient.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Queries\Live\ActionEvent.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\SolanaApi\Models\MetaplexNft.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\IdentifierBasedRelativeCacheLocationGenerator.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Queries\Live\LiveQueryClientStatus.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Interfaces\IDefiApi.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Queries\Live\OperationTypes.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Objects\MoralisUser.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Services\Models\MoralisCommand.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\SolanaApi\CloudApi\NftApi.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\SolanaApi\Client\ApiClient.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Models\FileParameter.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Interfaces\IWebClient.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Utilities\Validators.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Models\HistoricalNftTransfer.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Models\NativeBalance.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Models\BlockDate.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\SolanaApi\Models\SplTokenBalanace.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Queries\QueryExtensions.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Services\ClientServices\MoralisService.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Interfaces\IWeb3Api.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\WalletSelectItem.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\EvmContractItem.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Models\IpfsFile.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\SolanaApi\Interfaces\IWebClient.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Kits\AuthenticationKit\Scripts\AuthenticationKitState.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\ResourceWrapper.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Services\ClientServices\UserServiceExtensions.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\CloudApi\DefiApi.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Services\ClientServices\MoralisSessionService.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Objects\MoralisRole.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Abstractions\IUserService.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Models\BlockTransaction.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\CloudApi\TokenApi.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Moralis.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Services\Infrastructure\MoralisCurrentUserService.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Objects\MoralisAcl.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Api\StorageApi.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Queries\Live\SubscribableWebSocket.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Abstractions\IServiceHubMutator.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\ServerConnectionData.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\UnityFileHelper.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Api\AccountApi.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Models\Trade.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Abstractions\IDiskFileCacheService.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Api\ResolveApi.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Abstractions\ICurrentObjectService.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Kits\AuthenticationKit\Scripts\AuthenticationKit.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\SolanaApi\Models\Enums.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Resources.Designer.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\SolanaApi\Models\NativeBalance.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\SolanaApi\Interfaces\INftApi.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Models\RunContractDto.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Services\ClientServices\MoralisUserService.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Constants\MoralisConstants.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Exceptions\InitializedAlreadyException.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Models\NativeErc20Price.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Interfaces\IInitializableAsync.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\MoralisSessionTokenResponse.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Services\ClientServices\MoralisFileService.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\MoralisClient.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Abstractions\ICurrentUserService.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Interfaces\IAccountApi.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Objects\MoralisSession.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Abstractions\IInstallationService.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Data\Observable.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Models\Erc20Transaction.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Services\ClientServices\MoralisLiveQueryManager.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Abstractions\IDataCache.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Objects\MoralisGeoPoint.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\ISubscriptionQuery.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\SolanaApi\Models\WebRequest.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Abstractions\IDataTransferLevel.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Utilities\IdentityEqualityComparer.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Abstractions\ICloudFunctionService.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Abstractions\IWebClient.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Client\Configuration.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Models\Transaction.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Kits\AuthenticationKit\Scripts\AuthenticationKitStateObservable.cs" />
@@ -162,154 +232,84 @@
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Models\LogEventByAddress.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\MoralisLoginTokenRequest.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Operations\MoralisFieldOperations.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Models\NftCollection.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\DesignPatterns\CreationalPatterns\Singleton\SingletonMonobehaviour\SingletonMonoBehaviour.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Abstractions\IAuthenticationProvider.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Utilities\ReflectionUtilities.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Client\ApiClient.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Models\IpfsFileRequest.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Models\NftOwner.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Abstractions\IHostManifestData.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\MoralisDynamic.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Services\OrchestrationServiceHub.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\SolanaApi\Models\NftMetadata.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Client\ApiException.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\MoralisLiveQueriesGL.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Models\Erc20Allowance.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Utilities\AssemblyLister.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\UniversalWebClient.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Abstractions\IMutableServiceHub.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Interfaces\IInitializable.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Abstractions\IMoralisCommandRunner.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Models\NftTransfer.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Queries\Live\QueryEventMessage.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Abstractions\IQueryService.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Models\ChainList.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Services\ClientServices\MoralisLiveQueryClient.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\ChainEntry.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\CloudApi\ResolveApi.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Services\Models\CountQueryResult.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\MoralisSubscriptionQuery.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Services\ClientServices\MoralisCloudFunctionService.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Services\Infrastructure\MoralisCacheService.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Models\NftContractMetadataCollection.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Abstractions\IServerConnectionData.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Models\NftMetadata.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Abstractions\ILiveQueryCallbacks.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\MoralisLiveQueryCallbacks.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\MoralisSingleton.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Services\ClientServices\FileServiceExtensions.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\SupportedEvmChains.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\MoralisServiceHub.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Queries\Live\UnscubscribeRequest.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\EvmContractInstance.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Abstractions\IClientWebSocket.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Abstractions\IObjectState.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Models\Log.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\EvmContractInstance.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Models\Erc721Metadata.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Services\AbsoluteCacheLocationMutator.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Models\Resolve.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Utilities\MoralisFileExtensions.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Models\TradeCollection.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\CloudApi\StorageApi.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\EnvironmentData.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\UI\ReadMe\ReadMe.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Objects\MoralisGeoDistance.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Queries\MoralisQuery.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\MobileLogin.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Queries\MutableObjectState.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\CloudApi\NativeApi.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Operations\MoralisUniqueAddOperation.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Queries\Live\Enums.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\SolanaApi\Client\SolanaApiClient.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Web3GL.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Interfaces\IResolveApi.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\SolanaApi\Api\NftApi.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Models\TransactionCollection.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Models\NftTransferCollection.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Models\WebRequest.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Models\Erc20Metadata.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Enums.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\AotTypeEnforcer.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Queries\Live\MoralisClientWebSocket.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Interfaces\INativeApi.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Operations\MoralisIncrementOperation.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Abstractions\CustomServiceHub.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Operations\MoralisAddOperation.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Operations\MoralisDeleteOperation.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Models\TradesCollection.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Components\EnsureUniqueInScene.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Api\NativeApi.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\SolanaApi\MoralisSolanaClient.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\SolanaApi\Models\Portfolio.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Models\Erc20TransactionCollection.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Abstractions\IRelativeCacheLocationGenerator.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Utilities\ThreadingUtilities.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Exceptions\UnexpectedStateException.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Objects\MoralisFile.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Abstractions\IObjectService.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Utilities\LateInitializer.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Abstractions\ICacheService.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Client\Web3ApiClient.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Models\LogEvent.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Services\ServiceHub.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Abstractions\IMoralisFieldOperation.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Queries\Live\ActionEvent.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Abstractions\ILiveQueryClient.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\SolanaApi\Models\MetaplexNft.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Services\ClientServices\SessionServiceExtensions.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\IdentifierBasedRelativeCacheLocationGenerator.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Queries\Live\LiveQueryClientStatus.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Interfaces\IDefiApi.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Queries\Live\OperationTypes.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Objects\MoralisUser.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Exceptions\MoralisFailureException.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Services\Models\MoralisCommand.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Abstractions\IJsonSerializer.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\SolanaApi\Client\Configuration.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\SolanaApi\Models\CloudFunctionResult.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\SolanaApi\CloudApi\NftApi.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Abstractions\ILiveQueryService.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\SolanaApi\Client\ApiClient.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\MoralisServerSettings.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\SolanaApi\UniversalWebClient.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Models\FileParameter.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Queries\Live\MoralisLiveQueryDelegates.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Interfaces\IWebClient.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Objects\MoralisFileState.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Utilities\Validators.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Models\HistoricalNftTransfer.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Abstractions\IUser.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Api\DefiApi.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Models\NativeBalance.cs" />
+     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Abstractions\IUser.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Abstractions\LiveQueryCallbacks.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Kits\AuthenticationKit\Scripts\AuthenticationKitPlatform.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Abstractions\IFileService.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Models\BlockDate.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Models\Erc20TokenBalance.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Models\CloudFunctionResult.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Models\NftOwnerCollection.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\SolanaApi\Models\SplTokenBalanace.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Queries\QueryExtensions.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\MoralisLiveQueryController.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Services\ClientServices\MoralisService.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Services\ClientServices\UniversalWebClient.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\WalletSelectItem.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Interfaces\IWeb3Api.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Kits\AuthenticationKit\Scripts\AuthenticationKitUnityEvent.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Models\Nft.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\EvmContractItem.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Parameter.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\Models\IpfsFile.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\SolanaApi\Interfaces\IWebClient.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Utilities\InternalExtensions.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Services\MutableServiceHub.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Kits\AuthenticationKit\Scripts\AuthenticationKitState.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\ResourceWrapper.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Services\ClientServices\UserServiceExtensions.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Web3Api\CloudApi\DefiApi.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Services\ClientServices\MoralisSessionService.cs" />
-     <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\Core\Platform\Objects\MoralisRole.cs" />
      <Compile Include="Packages\io.moralis.web3-unity-sdk\Runtime\SolanaApi\Interfaces\IAccountApi.cs" />
      <None Include="Packages\io.moralis.web3-unity-sdk\Runtime\Moralis.Web3UnitySdk.asmdef" />
  <Reference Include="UnityEngine">
@@ -573,6 +573,9 @@
  <Reference Include="ChannelPurchase">
  <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Assets/Plugins/UnityChannel/ChannelPurchase.dll</HintPath>
  </Reference>
+ <Reference Include="log4net">
+ <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Packages/io.moralis.web3-unity-sdk/Runtime/External/log4net.dll</HintPath>
+ </Reference>
  <Reference Include="Firebase.TaskExtension">
  <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Assets/Firebase/Plugins/Firebase.TaskExtension.dll</HintPath>
  </Reference>
@@ -582,11 +585,17 @@
  <Reference Include="Unity.Analytics.Tracker">
  <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Library/PackageCache/com.unity.analytics@3.6.12/Unity.Analytics.Tracker.dll</HintPath>
  </Reference>
+ <Reference Include="QRCoder">
+ <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Packages/io.moralis.web3-unity-sdk/Runtime/External/QRCoder.1.3.4/lib/net35/QRCoder.dll</HintPath>
+ </Reference>
  <Reference Include="Google.JarResolver">
  <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Assets/ExternalDependencyManager/Editor/1.2.171/Google.JarResolver.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Advertisements.Editor">
  <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Assets/UnityAds/UnityEngine.Advertisements.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Drawing.Common">
+ <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Packages/io.moralis.web3-unity-sdk/Runtime/External/System.Drawing.Common/netstandard2.0/System.Drawing.Common.dll</HintPath>
  </Reference>
  <Reference Include="Newtonsoft.Json">
  <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Library/PackageCache/com.unity.nuget.newtonsoft-json@3.0.2/Runtime/Newtonsoft.Json.dll</HintPath>
@@ -596,6 +605,9 @@
  </Reference>
  <Reference Include="BouncyCastle.Crypto">
  <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Assets/Plugins/BouncyCastle.Crypto.dll</HintPath>
+ </Reference>
+ <Reference Include="QRCoder.Unity">
+ <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Packages/io.moralis.web3-unity-sdk/Runtime/External/QRCoder.Unity.1.0.2/lib/net35/QRCoder.Unity.dll</HintPath>
  </Reference>
  <Reference Include="Jint">
  <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Assets/Plugins/Jint/Jint.dll</HintPath>
@@ -618,23 +630,11 @@
  <Reference Include="Google.MiniJson">
  <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Assets/Firebase/Plugins/Google.MiniJson.dll</HintPath>
  </Reference>
- <Reference Include="Firebase.Platform">
- <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Assets/Firebase/Plugins/Firebase.Platform.dll</HintPath>
- </Reference>
  <Reference Include="Unity.Compat">
  <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Assets/Parse/Plugins/dotNet45/Unity.Compat.dll</HintPath>
  </Reference>
- <Reference Include="QRCoder">
- <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Packages/io.moralis.web3-unity-sdk/Runtime/External/QRCoder.1.3.4/lib/net35/QRCoder.dll</HintPath>
- </Reference>
- <Reference Include="log4net">
- <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Packages/io.moralis.web3-unity-sdk/Runtime/External/log4net.dll</HintPath>
- </Reference>
- <Reference Include="QRCoder.Unity">
- <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Packages/io.moralis.web3-unity-sdk/Runtime/External/QRCoder.Unity.1.0.2/lib/net35/QRCoder.Unity.dll</HintPath>
- </Reference>
- <Reference Include="System.Drawing.Common">
- <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Packages/io.moralis.web3-unity-sdk/Runtime/External/System.Drawing.Common/netstandard2.0/System.Drawing.Common.dll</HintPath>
+ <Reference Include="Firebase.Platform">
+ <HintPath>C:/Users/nguye/OneDrive/Desktop/IdleRestaurant_Src/Assets/Firebase/Plugins/Firebase.Platform.dll</HintPath>
  </Reference>
  <Reference Include="netstandard">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
