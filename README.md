@@ -22,6 +22,8 @@
 <h2> Scripts </h2>
 <ul>
   <li> ETHBalance: a script that show your ETH Rinkeby balance </li>
+  <li> ERC20BalanceGearn: a script that show your ERC20 token balance </li>
   <li> GetWalletAddress </li>
+  <li> RefreshButton </li>
   <li> MintToken: A script that: verify the user has more than 185000 in game cash, if the condition is verified, takes all in game cash,
        then mint 185 IRC tokens on the Rinkeby blockchain to the user's wallet (Contract address of IRC is: 0xD40d1f9854e989225c88935E79d2EF0033d4369c) </li>
