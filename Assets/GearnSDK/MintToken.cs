@@ -1,37 +1,53 @@
-using System;
+using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class MintToken : MonoBehaviour
 {
+    //The button to mint a token
     public Button yourButton;
     
-    private Database database;
-    
+    //GameManager object, used here to deduct in game coins
     [SerializeField]
     private GameManager gameManager;
-
-    string address = "";
+    
+    //The user's wallet address
+    string address;
+    //Function name in the smart contract
     string method = "mint";
+    //Smart contract's abi
     string abi = "[ { \"inputs\": [], \"stateMutability\": \"nonpayable\", \"type\": \"constructor\" }, { \"anonymous\": false, \"inputs\": [ { \"indexed\": true, \"internalType\": \"address\", \"name\": \"owner\", \"type\": \"address\" }, { \"indexed\": true, \"internalType\": \"address\", \"name\": \"spender\", \"type\": \"address\" }, { \"indexed\": false, \"internalType\": \"uint256\", \"name\": \"value\", \"type\": \"uint256\" } ], \"name\": \"Approval\", \"type\": \"event\" }, { \"anonymous\": false, \"inputs\": [ { \"indexed\": true, \"internalType\": \"address\", \"name\": \"from\", \"type\": \"address\" }, { \"indexed\": true, \"internalType\": \"address\", \"name\": \"to\", \"type\": \"address\" }, { \"indexed\": false, \"internalType\": \"uint256\", \"name\": \"value\", \"type\": \"uint256\" } ], \"name\": \"Transfer\", \"type\": \"event\" }, { \"inputs\": [ { \"internalType\": \"address\", \"name\": \"owner\", \"type\": \"address\" }, { \"internalType\": \"address\", \"name\": \"spender\", \"type\": \"address\" } ], \"name\": \"allowance\", \"outputs\": [ { \"internalType\": \"uint256\", \"name\": \"\", \"type\": \"uint256\" } ], \"stateMutability\": \"view\", \"type\": \"function\" }, { \"inputs\": [ { \"internalType\": \"address\", \"name\": \"spender\", \"type\": \"address\" }, { \"internalType\": \"uint256\", \"name\": \"amount\", \"type\": \"uint256\" } ], \"name\": \"approve\", \"outputs\": [ { \"internalType\": \"bool\", \"name\": \"\", \"type\": \"bool\" } ], \"stateMutability\": \"nonpayable\", \"type\": \"function\" }, { \"inputs\": [ { \"internalType\": \"address\", \"name\": \"account\", \"type\": \"address\" } ], \"name\": \"balanceOf\", \"outputs\": [ { \"internalType\": \"uint256\", \"name\": \"\", \"type\": \"uint256\" } ], \"stateMutability\": \"view\", \"type\": \"function\" }, { \"inputs\": [ { \"internalType\": \"address\", \"name\": \"\", \"type\": \"address\" } ], \"name\": \"claimByAddress\", \"outputs\": [ { \"internalType\": \"uint256\", \"name\": \"\", \"type\": \"uint256\" } ], \"stateMutability\": \"view\", \"type\": \"function\" }, { \"inputs\": [], \"name\": \"decimals\", \"outputs\": [ { \"internalType\": \"uint8\", \"name\": \"\", \"type\": \"uint8\" } ], \"stateMutability\": \"view\", \"type\": \"function\" }, { \"inputs\": [ { \"internalType\": \"address\", \"name\": \"spender\", \"type\": \"address\" }, { \"internalType\": \"uint256\", \"name\": \"subtractedValue\", \"type\": \"uint256\" } ], \"name\": \"decreaseAllowance\", \"outputs\": [ { \"internalType\": \"bool\", \"name\": \"\", \"type\": \"bool\" } ], \"stateMutability\": \"nonpayable\", \"type\": \"function\" }, { \"inputs\": [ { \"internalType\": \"address\", \"name\": \"spender\", \"type\": \"address\" }, { \"internalType\": \"uint256\", \"name\": \"addedValue\", \"type\": \"uint256\" } ], \"name\": \"increaseAllowance\", \"outputs\": [ { \"internalType\": \"bool\", \"name\": \"\", \"type\": \"bool\" } ], \"stateMutability\": \"nonpayable\", \"type\": \"function\" }, { \"inputs\": [ { \"internalType\": \"address\", \"name\": \"to\", \"type\": \"address\" }, { \"internalType\": \"uint256\", \"name\": \"amount\", \"type\": \"uint256\" } ], \"name\": \"mint\", \"outputs\": [], \"stateMutability\": \"nonpayable\", \"type\": \"function\" }, { \"inputs\": [], \"name\": \"name\", \"outputs\": [ { \"internalType\": \"string\", \"name\": \"\", \"type\": \"string\" } ], \"stateMutability\": \"view\", \"type\": \"function\" }, { \"inputs\": [], \"name\": \"symbol\", \"outputs\": [ { \"internalType\": \"string\", \"name\": \"\", \"type\": \"string\" } ], \"stateMutability\": \"view\", \"type\": \"function\" }, { \"inputs\": [], \"name\": \"totalSupply\", \"outputs\": [ { \"internalType\": \"uint256\", \"name\": \"\", \"type\": \"uint256\" } ], \"stateMutability\": \"view\", \"type\": \"function\" }, { \"inputs\": [ { \"internalType\": \"address\", \"name\": \"to\", \"type\": \"address\" }, { \"internalType\": \"uint256\", \"name\": \"amount\", \"type\": \"uint256\" } ], \"name\": \"transfer\", \"outputs\": [ { \"internalType\": \"bool\", \"name\": \"\", \"type\": \"bool\" } ], \"stateMutability\": \"nonpayable\", \"type\": \"function\" }, { \"inputs\": [ { \"internalType\": \"address\", \"name\": \"from\", \"type\": \"address\" }, { \"internalType\": \"address\", \"name\": \"to\", \"type\": \"address\" }, { \"internalType\": \"uint256\", \"name\": \"amount\", \"type\": \"uint256\" } ], \"name\": \"transferFrom\", \"outputs\": [ { \"internalType\": \"bool\", \"name\": \"\", \"type\": \"bool\" } ], \"stateMutability\": \"nonpayable\", \"type\": \"function\" } ]";
+    //Contract's address
     string contract = "0xD40d1f9854e989225c88935E79d2EF0033d4369c";
+    //Value in wei to be sent to the contract, here 0
     string value = "0";
+    //Gas limit to be used for the transaction
     string gasLimit = "";
     string gasPrice = "";
-    string args = "";
+    //Arguments for the function call
+    string args;
+    //Chain ID of the network the contract is deployed on, here Rinkeby so 4
     string chainId= "4";
+    //The data to be sent to the contract
     private string data;
     async void Start()
     {
+        //Get the user's wallet address, when using ChainSafe, the address is in PlayerPrefs, with the key "Account"
         address = PlayerPrefs.GetString("Account");
-        //args = "[\"" + address + "\", \"" + mintAmount + "\"]";
+        
+        //Arguments used for the function call, here we need the wallet address and the amount of IRC to be sent
         args = string.Format("[\"{0}\", \"{1}\"]", address, "185000000000000000000");
+        
+        //Create the data to be sent to the contract
         data = await EVM.CreateContractData(abi, method, args);
+        
+        //Initialize the button to mint tokens using
         Button btn = yourButton.GetComponent<Button>();
-        btn.onClick.AddListener(retireMonnaie);
+        btn.onClick.AddListener(mintButton);
     }
     
-    public async void retireMonnaie()
+    //Retrieve all in-game money from the user (in the database) if the user has more than 185000 in game cash
+    public void retireMonnaie()
     {
         //Get the current cash in the database
         double currentCash = Singleton<DataManager>.Instance.database.cash;
@@ -41,13 +57,20 @@ public class MintToken : MonoBehaviour
             Singleton<SoundManager>.Instance.Play("Notification");
             return;
         }
-        //Notification.instance.Confirm(delegate
-        //{
-            //Take all cash from user
-        //    gameManager.SetCash(-currentCash);
-        //    Singleton<SoundManager>.Instance.Play("Purchased");
-        //}, "Mint 185 IRC tokens for all of your current coins?");
+        //Remove all in-game money from the user
         gameManager.SetCash(-currentCash);
+    }
+
+    //Send the transaction to the blockchain
+    private async Task SendTransactionWeb3()
+    {
         await Web3Wallet.SendTransaction(chainId, contract, value, data, gasLimit, gasPrice);
+    }
+    
+    //Function called when the button is clicked
+    private async void mintButton()
+    {
+        retireMonnaie();
+        await SendTransactionWeb3();
     }
 }
