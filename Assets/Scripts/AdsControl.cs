@@ -42,11 +42,11 @@ public class AdsControl : MonoBehaviour
         if (Advertisement.isSupported)
         { // If the platform is supported,
 #if UNITY_IOS
-			Advertisement.Initialize (UnityID_IOS); // initialize Unity Ads.
+			//Advertisement.Initialize (UnityID_IOS); // initialize Unity Ads.
 #endif
 
 #if UNITY_ANDROID
-            Advertisement.Initialize(UnityID_Android); // initialize Unity Ads.
+            //Advertisement.Initialize(UnityID_Android); // initialize Unity Ads.
 #endif
         }
         options = new ShowOptions();

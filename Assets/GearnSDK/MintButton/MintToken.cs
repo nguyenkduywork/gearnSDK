@@ -1,3 +1,4 @@
+using System;
 using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.UI;
@@ -30,12 +31,22 @@ public class MintToken : MonoBehaviour
     string chainId= "4";
     //The data to be sent to the contract
     private string data;
+    //User's current in game cash
+    private double currentCash;
+
+    private string transaction;
+    
+    string chain = "ethereum";
+    string network = "rinkeby";
+    private string txConfirmed;
     async void Start()
     {
-        //Get the user's wallet address, when using ChainSafe, the address is in PlayerPrefs, with the key "Account"
+        //Get the user's wallet address, when using ChainSafe,
+        //the address is in PlayerPrefs, with the key "Account"
         address = PlayerPrefs.GetString("Account");
         
-        //Arguments used for the function call, here we need the wallet address and the amount of IRC to be sent
+        //Arguments used for the function call,
+        //here we need the wallet address and the amount of IRC to be sent
         args = string.Format("[\"{0}\", \"{1}\"]", address, "185000000000000000000");
         
         //Create the data to be sent to the contract
@@ -46,31 +57,59 @@ public class MintToken : MonoBehaviour
         btn.onClick.AddListener(mintButton);
     }
     
-    //Retrieve all in-game money from the user (in the database) if the user has more than 185000 in game cash
+    //Retrieve all in-game money from the user (in the database)
     public void retireMonnaie()
     {
+        //Remove all in-game money from the user
+        gameManager.SetCash(-currentCash);
+    }
+
+    //Send the transaction to the blockchain,
+    //the transaction variable is the transaction address
+    private async Task SendTransactionWeb3()
+    {
+        transaction = await Web3Wallet.SendTransaction(chainId, contract, value, data, gasLimit, gasPrice);
+        Debug.Log(transaction);
+    }
+
+    //Method used to return the current cash if the transaction failed
+    void ReturnMoney()
+    {
+        gameManager.SetCash(currentCash);
+    }
+    
+    //Get the transaction's status
+    async void getStatus()
+    {
+        txConfirmed = await EVM.TxStatus(chain, network, transaction);
+        Debug.Log(txConfirmed);
+        if(!txConfirmed.Equals("success")) ReturnMoney();
+    }
+    
+    //Function called when the button is clicked,
+    //if the user has more than 185000 in game cash
+    private async void mintButton()
+    {
         //Get the current cash in the database
-        double currentCash = Singleton<DataManager>.Instance.database.cash;
+        currentCash = Singleton<DataManager>.Instance.database.cash;
         if (currentCash <= 185000)
         {
             Notification.instance.Warning("Minimum coin required: 185000");
             Singleton<SoundManager>.Instance.Play("Notification");
             return;
         }
-        //Remove all in-game money from the user
-        gameManager.SetCash(-currentCash);
-    }
-
-    //Send the transaction to the blockchain
-    private async Task SendTransactionWeb3()
-    {
-        await Web3Wallet.SendTransaction(chainId, contract, value, data, gasLimit, gasPrice);
-    }
-    
-    //Function called when the button is clicked
-    private async void mintButton()
-    {
+        //Take all in-game money from the user
         retireMonnaie();
-        await SendTransactionWeb3();
+        //Send the transaction to the blockchain
+        try
+        {
+            await SendTransactionWeb3();
+        }
+        catch (Exception e)
+        {
+            ReturnMoney();
+        }
+        Invoke("getStatus",30);
+        
     }
 }
