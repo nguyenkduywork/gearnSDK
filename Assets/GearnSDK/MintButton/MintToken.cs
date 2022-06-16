@@ -41,17 +41,6 @@ public class MintToken : MonoBehaviour
     private string txConfirmed;
     async void Start()
     {
-        //Get the user's wallet address, when using ChainSafe,
-        //the address is in PlayerPrefs, with the key "Account"
-        address = PlayerPrefs.GetString("Account");
-        
-        //Arguments used for the function call,
-        //here we need the wallet address and the amount of IRC to be sent
-        args = string.Format("[\"{0}\", \"{1}\"]", address, "185000000000000000000");
-        
-        //Create the data to be sent to the contract
-        data = await EVM.CreateContractData(abi, method, args);
-        
         //Initialize the button to mint tokens using
         Button btn = yourButton.GetComponent<Button>();
         btn.onClick.AddListener(mintButton);
@@ -68,6 +57,17 @@ public class MintToken : MonoBehaviour
     //the transaction variable is the transaction address
     private async Task SendTransactionWeb3()
     {
+        //Get the user's wallet address, when using ChainSafe,
+        //the address is in PlayerPrefs, with the key "Account"
+        address = PlayerPrefs.GetString("Account");
+        
+        //Arguments used for the function call,
+        //here we need the wallet address and the amount of IRC to be sent
+        args = string.Format("[\"{0}\", \"{1}\"]", address, "185000000000000000000");
+        
+        //Create the data to be sent to the contract
+        data = await EVM.CreateContractData(abi, method, args);
+        
         transaction = await Web3Wallet.SendTransaction(chainId, contract, value, data, gasLimit, gasPrice);
         Debug.Log(transaction);
     }
