@@ -53,7 +53,7 @@ public class MintToken : MonoBehaviour
         gameManager.SetCash(-currentCash);
     }
 
-    //Send the transaction to the blockchain,
+    //Create the transaction to the blockchain,
     //the transaction variable is the transaction address
     private async Task SendTransactionWeb3()
     {
@@ -105,6 +105,7 @@ public class MintToken : MonoBehaviour
         {
             await SendTransactionWeb3();
         }
+        //Why does the exception doesnt shown in mobile version (confirmed by using Android Logcat)? -- TODO
         catch (Exception e)
         {
             ReturnMoney();
