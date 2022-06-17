@@ -109,6 +109,7 @@ public class MintToken : MonoBehaviour
         {
             ReturnMoney();
         }
+        //Test, should the transaction failed, return the in-game money
         Invoke("getStatus",30);
         
     }
