@@ -39,6 +39,7 @@ public class MintToken : MonoBehaviour
     string chain = "ethereum";
     string network = "rinkeby";
     private string txConfirmed;
+    private string errorMess;
     async void Start()
     {
         //Initialize the button to mint tokens using
@@ -67,9 +68,15 @@ public class MintToken : MonoBehaviour
         
         //Create the data to be sent to the contract
         data = await EVM.CreateContractData(abi, method, args);
-        
-        transaction = await Web3Wallet.SendTransaction(chainId, contract, value, data, gasLimit, gasPrice);
-        Debug.Log(transaction);
+        try{
+            transaction = await Web3Wallet.SendTransaction(chainId, contract, value, data, gasLimit, gasPrice);
+            Debug.Log(transaction);
+        }
+        catch(Exception e)
+        {
+            errorMess = e.Message;
+            GUIUtility.systemCopyBuffer = errorMess;
+        }
     }
 
     //Method used to return the current cash if the transaction failed
@@ -81,9 +88,25 @@ public class MintToken : MonoBehaviour
     //Get the transaction's status
     async void getStatus()
     {
-        txConfirmed = await EVM.TxStatus(chain, network, transaction);
-        Debug.Log(txConfirmed);
-        if(!txConfirmed.Equals("success")) ReturnMoney();
+        try{
+            txConfirmed = await EVM.TxStatus(chain, network, transaction);
+        }
+        catch(Exception e)
+        {
+            txConfirmed = "error";
+        }
+        
+        if(txConfirmed.Equals("error") || txConfirmed.Equals("fail"))
+        {
+            Notification.instance.Warning("Transaction failed or unrealized");
+            Singleton<SoundManager>.Instance.Play("Notification");
+            ReturnMoney();
+        }
+        else if(txConfirmed.Equals("success"))
+        {
+            Notification.instance.Warning("Transaction successful");
+            Singleton<SoundManager>.Instance.Play("Notification");
+        }
     }
     
     //Function called when the button is clicked,
@@ -101,17 +124,19 @@ public class MintToken : MonoBehaviour
         //Take all in-game money from the user
         retireMonnaie();
         //Send the transaction to the blockchain
-        try
+        await SendTransactionWeb3();
+        if(GUIUtility.systemCopyBuffer.Equals(errorMess))
         {
-            await SendTransactionWeb3();
-        }
-        //Why does the exception doesnt shown in mobile version (confirmed by using Android Logcat)? -- TODO
-        catch (Exception e)
-        {
+            Notification.instance.Warning("Transaction canceled");
+            Singleton<SoundManager>.Instance.Play("Notification");
             ReturnMoney();
+            return;
         }
+        
+        Notification.instance.Warning("Processing transaction");
+        Singleton<SoundManager>.Instance.Play("Notification");
         //Test, should the transaction failed, return the in-game money
         Invoke("getStatus",30);
-        
     }
 }
+    
