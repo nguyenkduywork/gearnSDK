@@ -50,6 +50,7 @@ public class MintToken : MonoBehaviour
     //Retrieve all in-game money from the user (in the database)
     public void retireMonnaie()
     {
+        currentCash = Singleton<DataManager>.Instance.database.cash;
         //Remove all in-game money from the user
         gameManager.SetCash(-currentCash);
     }
@@ -68,22 +69,10 @@ public class MintToken : MonoBehaviour
         
         //Create the data to be sent to the contract
         data = await EVM.CreateContractData(abi, method, args);
-        try{
-            transaction = await Web3Wallet.SendTransaction(chainId, contract, value, data, gasLimit, gasPrice);
-            Debug.Log(transaction);
-        }
-        catch(Exception e)
-        {
-            errorMess = e.Message;
-            GUIUtility.systemCopyBuffer = errorMess;
-        }
+        
+        transaction = await Web3Wallet.SendTransaction(chainId, contract, value, data, gasLimit, gasPrice);
     }
-
-    //Method used to return the current cash if the transaction failed
-    void ReturnMoney()
-    {
-        gameManager.SetCash(currentCash);
-    }
+    
     
     //Get the transaction's status
     async void getStatus()
@@ -96,16 +85,16 @@ public class MintToken : MonoBehaviour
             txConfirmed = "error";
         }
         
-        if(txConfirmed.Equals("error") || txConfirmed.Equals("fail"))
+        if(!txConfirmed.Equals("success"))
         {
             Notification.instance.Warning("Transaction failed or unrealized");
             Singleton<SoundManager>.Instance.Play("Notification");
-            ReturnMoney();
         }
-        else if(txConfirmed.Equals("success"))
+        else
         {
             Notification.instance.Warning("Transaction successful");
             Singleton<SoundManager>.Instance.Play("Notification");
+            retireMonnaie();
         }
     }
     
@@ -121,22 +110,24 @@ public class MintToken : MonoBehaviour
             Singleton<SoundManager>.Instance.Play("Notification");
             return;
         }
-        //Take all in-game money from the user
-        retireMonnaie();
+        
         //Send the transaction to the blockchain
-        await SendTransactionWeb3();
-        if(GUIUtility.systemCopyBuffer.Equals(errorMess))
+        try
+        {
+            await SendTransactionWeb3();
+        }
+        catch
         {
             Notification.instance.Warning("Transaction canceled");
             Singleton<SoundManager>.Instance.Play("Notification");
-            ReturnMoney();
+            getStatus();  
             return;
         }
-        
+
         Notification.instance.Warning("Processing transaction");
         Singleton<SoundManager>.Instance.Play("Notification");
-        //Test, should the transaction failed, return the in-game money
-        Invoke("getStatus",30);
+        //Wait for 25 seconds for the transaction to be confirmed on the blockchain
+        Invoke("getStatus",25);
     }
 }
     
