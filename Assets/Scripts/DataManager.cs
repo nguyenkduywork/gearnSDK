@@ -26,7 +26,7 @@ public class DataManager : Singleton<DataManager>
 		this.database = JsonUtility.FromJson<Database>(text);
 	}
 
-	private void SaveDatabase()
+	public void SaveDatabase()
 	{
 		this.database.restaurant[this.database.targetRestaurant].dateTime = DateTime.Now.ToString();
 		string value = JsonUtility.ToJson(this.database);
@@ -45,4 +45,5 @@ public class DataManager : Singleton<DataManager>
 			this.SaveDatabase();
 		}
 	}
+	
 }
