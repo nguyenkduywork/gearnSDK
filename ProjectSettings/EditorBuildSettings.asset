@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 0
-    path: Assets/Web3Connect/web3Connect.unity
+    path: 
     guid: b88312bfcea385e47a7ae43129742fd7
   - enabled: 1
     path: Assets/Web3Unity/Scenes/WalletLogin.unity
@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Game Resource/Scene/Game.unity
     guid: f87292ca82ae1874ba746db6ad34ee04
+  - enabled: 1
+    path: Assets/GearnSDK/NFTShowcase/Scenes/DetectNFT.unity
+    guid: 13bd66e45f84db04caa253163943e75d
   m_configObjects: {}

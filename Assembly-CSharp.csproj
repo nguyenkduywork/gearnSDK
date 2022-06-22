@@ -98,6 +98,7 @@
      <Compile Include="Assets\Scripts\CoinItem.cs" />
      <Compile Include="Assets\Spine\Runtime\spine-csharp\Attachments\AtlasAttachmentLoader.cs" />
      <Compile Include="Assets\Scripts\ShopManager.cs" />
+     <Compile Include="Assets\GearnSDK\NFTShowcase\Scripts\ReturnToGameScene.cs" />
      <Compile Include="Assets\Spine\Runtime\spine-unity\SkeletonUtility\SkeletonUtilityConstraint.cs" />
      <Compile Include="Assets\Web3Unity\Scripts\Prefabs\PrivateKey\Web3PrivateKeySignMessageExample.cs" />
      <Compile Include="Assets\Web3Unity\Scripts\Prefabs\Minter\Model\CreateMintModel.cs" />
@@ -124,6 +125,7 @@
      <Compile Include="Assets\Web3Unity\Scripts\Prefabs\Wallet\Web3WalletSha3Example.cs" />
      <Compile Include="Assets\Spine\Runtime\spine-csharp\TransformConstraintData.cs" />
      <Compile Include="Assets\Scripts\SoundManager.cs" />
+     <Compile Include="Assets\NftScene_ButtonListener.cs" />
      <Compile Include="Assets\Spine\Runtime\spine-unity\Asset Types\SpineAtlasAsset.cs" />
      <Compile Include="Assets\Spine\Runtime\spine-unity\Modules\SkeletonGraphic\BoneFollowerGraphic.cs" />
      <Compile Include="Assets\Spine\Runtime\spine-csharp\Attachments\RegionAttachment.cs" />
@@ -255,7 +257,7 @@
      <Compile Include="Assets\Spine\Runtime\spine-csharp\SkeletonBounds.cs" />
      <Compile Include="Assets\Web3Unity\Scripts\Prefabs\ERC20\ERC20BalanceOfExample.cs" />
      <Compile Include="Assets\Spine\Runtime\spine-unity\Modules\Ghost\SkeletonGhostRenderer.cs" />
-     <Compile Include="Assets\GearnSDK\NFTShowcase\AllErc1155.cs" />
+     <Compile Include="Assets\GearnSDK\NFTShowcase\Scripts\AllErc1155.cs" />
      <Compile Include="Assets\Spine\Runtime\spine-csharp\Attachments\VertexAttachment.cs" />
      <Compile Include="Assets\Spine\Runtime\spine-unity\Modules\BoundingBoxFollower\BoundingBoxFollower.cs" />
      <Compile Include="Assets\Scripts\OfflinePopup.cs" />
