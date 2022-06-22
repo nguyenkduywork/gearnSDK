@@ -79,6 +79,8 @@ public class MintToken : MonoBehaviour
     {
         try{
             txConfirmed = await EVM.TxStatus(chain, network, transaction);
+            //reinitialize the transaction variable
+            transaction = null;
         }
         catch(Exception e)
         {
@@ -96,18 +98,23 @@ public class MintToken : MonoBehaviour
             Singleton<SoundManager>.Instance.Play("Notification");
             retireMonnaie();
         }
+        yourButton.enabled = true;
     }
     
     //Function called when the button is clicked,
     //if the user has more than 185000 in game cash
     private async void mintButton()
     {
+        //Disable the button to prevent multiple clicks
+        yourButton.enabled = false;
         //Get the current cash in the database
         currentCash = Singleton<DataManager>.Instance.database.cash;
         if (currentCash <= 185000)
         {
             Notification.instance.Warning("Minimum coin required: 185000");
             Singleton<SoundManager>.Instance.Play("Notification");
+            //Re-enable the button
+            yourButton.enabled = true;
             return;
         }
         
@@ -120,7 +127,7 @@ public class MintToken : MonoBehaviour
         {
             Notification.instance.Warning("Transaction canceled");
             Singleton<SoundManager>.Instance.Play("Notification");
-            getStatus();  
+            getStatus();
             return;
         }
 
