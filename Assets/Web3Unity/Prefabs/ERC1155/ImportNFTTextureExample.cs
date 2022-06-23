@@ -9,6 +9,14 @@ public class ImportNFTTextureExample : MonoBehaviour
     public class Response {
         public string image;
     }
+    
+    private class NFTs
+    {
+        public string contract { get; set; }
+        public string tokenId { get; set; }
+        public string uri { get; set; }
+        public string balance { get; set; }
+    }
 
     async void Start()
     {
