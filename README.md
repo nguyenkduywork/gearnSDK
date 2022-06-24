@@ -11,12 +11,24 @@
 <Table>
   <tr>
     <th> BuyNFT </th>
-    <th> ETH </th>
+    <th> GetBalances </th>
+    <th> MintButton </th>
   </tr>
   <tr>
     <td> Contains a button that will open Opensea Marketplace </td>
-    <td> Contains a text field that shows your ETH Rinkeby balance </td>
+    <td> Contains text fields that shows your ETH Rinkeby and ERC20 balances </td>
+    <td> Contains a button and its script to mint IRC token, this script can be changed easily to call custom solidy scripts (you need to change its abi and function parameters) </td>
   </tr>
+  <tr>
+    <th> RefreshButton </th>
+    <th> NFTShowcase </th>
+    <th> GetUserAddress </th>
+  </tr>
+  <tr>
+    <td> Contains a button that refreshes our balances </td>
+    <td> Contains a scene, scripts and prefabs to see your wallet's ERC1155 tokens </td>
+    <td> Contains a text field which shows your wallet's public address </td>
+  </tr>  
 </Table>
 
 <h2> Scripts </h2>
