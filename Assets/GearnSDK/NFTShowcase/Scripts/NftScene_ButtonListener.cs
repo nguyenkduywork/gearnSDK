@@ -14,6 +14,13 @@ public class NftScene_ButtonListener : MonoBehaviour
         dataManager = FindObjectOfType<DataManager>();
     }
 
+    private void Start()
+    {
+        //This is used to send the wallet address to the NFT showcase scene
+        string walletAddress = PlayerPrefs.GetString("Account");
+        PlayerPrefs.SetString("wallet", walletAddress);
+    }
+
     //Move to next scene when click on the button
     public void MoveToNftScene()
     {

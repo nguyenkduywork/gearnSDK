@@ -126,7 +126,7 @@
      <Compile Include="Assets\Web3Unity\Scripts\Prefabs\Wallet\Web3WalletSha3Example.cs" />
      <Compile Include="Assets\Spine\Runtime\spine-csharp\TransformConstraintData.cs" />
      <Compile Include="Assets\Scripts\SoundManager.cs" />
-     <Compile Include="Assets\NftScene_ButtonListener.cs" />
+     <Compile Include="Assets\GearnSDK\NFTShowcase\Scripts\NftScene_ButtonListener.cs" />
      <Compile Include="Assets\Spine\Runtime\spine-unity\Asset Types\SpineAtlasAsset.cs" />
      <Compile Include="Assets\Spine\Runtime\spine-unity\Modules\SkeletonGraphic\BoneFollowerGraphic.cs" />
      <Compile Include="Assets\Spine\Runtime\spine-csharp\Attachments\RegionAttachment.cs" />
