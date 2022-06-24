@@ -17,7 +17,7 @@
   <tr>
     <td> Contains a button that will open Opensea Marketplace </td>
     <td> Contains text fields that shows your ETH Rinkeby and ERC20 balances </td>
-    <td> Contains a button and its script to mint IRC token, this script can be changed easily to call custom solidy scripts (you need to change its abi and function parameters) </td>
+    <td> Contains a button and its script to mint IRC token, this script can be easily changed to call custom <b>Solidity</b> scripts (you need to change its abi and function parameters) </td>
   </tr>
   <tr>
     <th> RefreshButton </th>
