@@ -5,6 +5,8 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
+//This class is used to save the wallet address and bring it to the nft showcase scene when
+//the user clicks on the button "your NFTs"
 public class NftScene_ButtonListener : MonoBehaviour
 {
     DataManager dataManager;
