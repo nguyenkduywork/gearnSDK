@@ -105,16 +105,25 @@ public class ShowUserERC1155 : MonoBehaviour
         return imageUri;
     }
 
-    private static async Task<Response> getJSONfromUri(string uri)
+    private async Task<Response> getJSONfromUri(string uri)
     {
+        Response data;
         // fetch json from uri
         UnityWebRequest webRequest = UnityWebRequest.Get(uri);
         print("unity web request: " + webRequest);
         await webRequest.SendWebRequest();
+        try
+        {
+            data =
+                JsonUtility.FromJson<Response>(System.Text.Encoding.UTF8.GetString(webRequest.downloadHandler.data));
+            return data;
+        }
+        catch (System.Exception e)
+        {
+            Debug.Log(e);
+        }
 
-        Response data =
-            JsonUtility.FromJson<Response>(System.Text.Encoding.UTF8.GetString(webRequest.downloadHandler.data));
-        return data;
+        return null;
     }
 
     private async Task<string> getTokenUri()
@@ -141,6 +150,7 @@ public class ShowUserERC1155 : MonoBehaviour
             foreach (NFTs erc1155 in erc1155s)
             {
                 contract = erc1155.contract;
+                Debug.Log(contract);
                 tokenId = erc1155.tokenId;
             }
             Debug.Log("You have " + erc1155s.Length + " ERC1155 NFTs");
