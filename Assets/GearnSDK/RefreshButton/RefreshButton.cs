@@ -16,7 +16,7 @@ public class RefreshButton : MonoBehaviour
         btn.onClick.AddListener(Refresh);
     }
     
-    void Refresh()
+    public void Refresh()
     {
         ethBalance.ShowETHBalance();
         ircBalance.ShowERC20Balance();
