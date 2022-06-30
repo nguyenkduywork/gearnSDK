@@ -1,3 +1,5 @@
+using System.Linq;
+using System.Numerics;
 using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.Networking;
@@ -25,6 +27,8 @@ public class ShowUserERC1155 : MonoBehaviour
     NFTs[] erc1155s;
 
     [SerializeField] Button btn;
+    [SerializeField] Text ContractAddress;
+    [SerializeField] Text TokenId;
     private GameObject myNft;
     async void Start()
     {
@@ -32,6 +36,7 @@ public class ShowUserERC1155 : MonoBehaviour
         btn = GetComponent<Button>();
         myNft = GameObject.FindGameObjectWithTag("nft");
         myNft.GetComponent<Renderer>().material.mainTexture = null;
+        
         
         //Get the player's wallet address
         string account = PlayerPrefs.GetString("wallet");
@@ -50,6 +55,8 @@ public class ShowUserERC1155 : MonoBehaviour
         }
         contract = erc1155s[i].contract;
         tokenId = erc1155s[i].tokenId;
+        ContractAddress.text = contract;
+        TokenId.text = tokenId;
         i++;
 
         await UpdateMaterial();
@@ -101,7 +108,7 @@ public class ShowUserERC1155 : MonoBehaviour
             imageUri = imageUri.Replace("ipfs://", "https://ipfs.io/ipfs/");
         }
 
-        print("imageUri: " + imageUri);
+        //print("imageUri: " + imageUri);
         return imageUri;
     }
 
@@ -135,7 +142,7 @@ public class ShowUserERC1155 : MonoBehaviour
             uri = uri.Replace("ipfs://", "https://ipfs.io/ipfs/");
         }
 
-        print("uri: " + uri);
+        //print("uri: " + uri);
         return uri;
     }
 
@@ -147,11 +154,19 @@ public class ShowUserERC1155 : MonoBehaviour
         {
             erc1155s = JsonConvert.DeserializeObject<NFTs[]>(response);
             //Loop through all erc1155s and get the contract and tokenId
-            foreach (NFTs erc1155 in erc1155s)
+            //Use the function balanceOf to find the balance of each nft
+            for (int i = 0; i < erc1155s.Length; i++)
             {
-                contract = erc1155.contract;
-                Debug.Log(contract);
-                tokenId = erc1155.tokenId;
+                contract = erc1155s[i].contract;
+                tokenId = erc1155s[i].tokenId;
+                BigInteger balanceOf = await ERC1155.BalanceOf(chain, network, erc1155s[i].contract, account, erc1155s[i].tokenId);
+                Debug.Log(balanceOf);
+                //if the balance is 0, then delete it from the array and reduce the length of the array
+                if (balanceOf == 0)
+                {
+                    erc1155s = erc1155s.Where(x => x.tokenId != erc1155s[i].tokenId).ToArray();
+                    i--;
+                }
             }
             Debug.Log("You have " + erc1155s.Length + " ERC1155 NFTs");
             btn.gameObject.SetActive(true);

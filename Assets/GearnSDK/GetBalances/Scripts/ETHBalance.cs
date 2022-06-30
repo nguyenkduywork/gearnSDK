@@ -31,6 +31,6 @@ public class ETHBalance : MonoBehaviour
         balanceDouble = balanceDouble / 1000000000000000000;
         //Convert to string
         balance = balanceDouble.ToString();
-        myText.text = balance;
+        if(myText!=null) myText.text = balance;
     }
 }

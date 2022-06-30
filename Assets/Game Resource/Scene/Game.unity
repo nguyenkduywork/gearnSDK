@@ -1087,17 +1087,37 @@ PrefabInstance:
     - target: {fileID: 3991146809759781189, guid: aa682190601a6fd4abef1e6b96a2918e,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3991146809759781189, guid: aa682190601a6fd4abef1e6b96a2918e,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3991146809759781189, guid: aa682190601a6fd4abef1e6b96a2918e,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 2010900397}
+      objectReference: {fileID: 1498267227}
+    - target: {fileID: 3991146809759781189, guid: aa682190601a6fd4abef1e6b96a2918e,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 3991146809759781189, guid: aa682190601a6fd4abef1e6b96a2918e,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: 
+      value: MoveToBalanceScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 3991146809759781189, guid: aa682190601a6fd4abef1e6b96a2918e,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: GoToBalanceScene, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3991146809759781189, guid: aa682190601a6fd4abef1e6b96a2918e,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 3991146809759781191, guid: aa682190601a6fd4abef1e6b96a2918e,
         type: 3}
@@ -1112,6 +1132,24 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 1498267224}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1498267226 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3991146809759781191, guid: aa682190601a6fd4abef1e6b96a2918e,
+    type: 3}
+  m_PrefabInstance: {fileID: 1498267224}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1498267227
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1498267226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10dd694c3f175cb41a7332513a23b768, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &1504129023 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3484749147732104890, guid: f75a3ea6eeaa3c142938b41fa7e1802c,

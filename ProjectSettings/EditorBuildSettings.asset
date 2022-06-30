@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/GearnSDK/NFTShowcase/Scenes/DetectNFT.unity
     guid: 13bd66e45f84db04caa253163943e75d
+  - enabled: 1
+    path: Assets/GearnSDK/GetBalances/Scenes/TokenBalances.unity
+    guid: 13566bb1ead2d534cb8dab20e88e5c54
   m_configObjects: {}

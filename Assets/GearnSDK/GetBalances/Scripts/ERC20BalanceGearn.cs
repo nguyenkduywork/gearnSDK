@@ -30,6 +30,6 @@ public class ERC20BalanceGearn : MonoBehaviour
         //divide by 10^18
         BigInteger balanceOfDivided = balanceOf / BigInteger.Pow(10, 18);
         //Display the balance
-        CoinText.text = balanceOfDivided.ToString();
+        if(CoinText!=null) CoinText.text = balanceOfDivided.ToString();
     }
 }
