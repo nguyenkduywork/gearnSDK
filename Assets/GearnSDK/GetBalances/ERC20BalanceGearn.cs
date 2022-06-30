@@ -16,7 +16,7 @@ public class ERC20BalanceGearn : MonoBehaviour
         //Network name, this varies depending on the chain
         network = "rinkeby";
         //ERC20 contract address
-        contract = "0xD40d1f9854e989225c88935E79d2EF0033d4369c";
+        contract = "0x9B7E19548fb3E11CF24cd2140FBE9271ef6E61EF";
         //User's wallet address
         account = PlayerPrefs.GetString("Account");
         

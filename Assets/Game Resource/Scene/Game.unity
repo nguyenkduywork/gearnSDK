@@ -75748,6 +75748,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1789880861211679600}
     m_Modifications:
+    - target: {fileID: 3991146809669394073, guid: aa682190601a6fd4abef1e6b96a2918e,
+        type: 3}
+      propertyPath: m_Text
+      value: IRC2
+      objectReference: {fileID: 0}
     - target: {fileID: 3991146809669394074, guid: aa682190601a6fd4abef1e6b96a2918e,
         type: 3}
       propertyPath: m_SizeDelta.x
@@ -75761,7 +75766,7 @@ PrefabInstance:
     - target: {fileID: 3991146809669394077, guid: aa682190601a6fd4abef1e6b96a2918e,
         type: 3}
       propertyPath: m_Name
-      value: IRCText
+      value: IRC2Text
       objectReference: {fileID: 0}
     - target: {fileID: 3991146809759781188, guid: aa682190601a6fd4abef1e6b96a2918e,
         type: 3}
@@ -76026,6 +76031,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1789880861211679600}
     m_Modifications:
+    - target: {fileID: 6344608831628760270, guid: 4abcda7f159ba6347bfae4bf70b53636,
+        type: 3}
+      propertyPath: m_Text
+      value: IRC2
+      objectReference: {fileID: 0}
     - target: {fileID: 6344608832655271240, guid: 4abcda7f159ba6347bfae4bf70b53636,
         type: 3}
       propertyPath: m_Pivot.x
@@ -76134,7 +76144,12 @@ PrefabInstance:
     - target: {fileID: 6344608832655271241, guid: 4abcda7f159ba6347bfae4bf70b53636,
         type: 3}
       propertyPath: m_Name
-      value: IRC
+      value: IRC2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6344608833682093572, guid: 4abcda7f159ba6347bfae4bf70b53636,
+        type: 3}
+      propertyPath: m_Name
+      value: IRC2 Amount Text
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4abcda7f159ba6347bfae4bf70b53636, type: 3}
