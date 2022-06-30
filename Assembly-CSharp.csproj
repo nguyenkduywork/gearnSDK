@@ -117,7 +117,7 @@
      <Compile Include="Assets\Spine\Runtime\spine-csharp\ExposedList.cs" />
      <Compile Include="Assets\Scripts\GetFreeCoin.cs" />
      <Compile Include="Assets\Spine\Runtime\spine-unity\Modules\SkeletonUtility Modules\SkeletonUtilityKinematicShadow.cs" />
-     <Compile Include="Assets\GearnSDK\GetBalances\ETHBalance.cs" />
+     <Compile Include="Assets\GearnSDK\GetBalances\Scripts\ETHBalance.cs" />
      <Compile Include="Assets\Web3Unity\Prefabs\ERC1155\ImportNFTTextureExample.cs" />
      <Compile Include="Assets\Spine\Runtime\spine-csharp\IkConstraint.cs" />
      <Compile Include="Assets\Web3Unity\Scripts\Prefabs\EVM\CustomRPCExample.cs" />
@@ -271,7 +271,7 @@
      <Compile Include="Assets\Spine\Runtime\spine-unity\ISkeletonAnimation.cs" />
      <Compile Include="Assets\Spine\Runtime\spine-csharp\IConstraint.cs" />
      <Compile Include="Assets\Spine\Runtime\spine-unity\Modules\Timeline\SpineSkeletonFlip\SpineSkeletonFlipClip.cs" />
-     <Compile Include="Assets\GearnSDK\GetBalances\ERC20BalanceGearn.cs" />
+     <Compile Include="Assets\GearnSDK\GetBalances\Scripts\ERC20BalanceGearn.cs" />
      <Compile Include="Assets\GearnSDK\GetUserAddress\GetWalletAddress.cs" />
      <Compile Include="Assets\Scripts\BoostManager.cs" />
      <Compile Include="Assets\Web3Unity\Scripts\Prefabs\EVM\NonceExample.cs" />
