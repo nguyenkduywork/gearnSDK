@@ -138,6 +138,7 @@
      <Compile Include="Assets\Scripts\Restaurant.cs" />
      <Compile Include="Assets\Spine\Runtime\spine-csharp\Json.cs" />
      <Compile Include="Assets\Scripts\SettingPopup.cs" />
+     <Compile Include="Assets\GearnSDK\GetBalances\Scripts\BurnButton.cs" />
      <Compile Include="Assets\Spine\Runtime\spine-csharp\Attachments\PathAttachment.cs" />
      <Compile Include="Assets\GearnSDK\GetBalances\Scripts\GoToBalanceScene.cs" />
      <Compile Include="Assets\Spine\Runtime\spine-csharp\Attachments\AttachmentType.cs" />
@@ -278,7 +279,6 @@
      <Compile Include="Assets\Web3Unity\Scripts\Prefabs\EVM\NonceExample.cs" />
      <Compile Include="Assets\Scripts\InAppPurchase.cs" />
      <Compile Include="Assets\Spine\Runtime\spine-unity\Modules\AttachmentTools\AttachmentTools.cs" />
-     <Compile Include="Assets\GearnSDK\GetBalances\Scripts\BurnButton.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\Spine\version.txt" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />

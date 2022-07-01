@@ -56,7 +56,7 @@ public class ShowUserERC1155 : MonoBehaviour
         contract = erc1155s[i].contract;
         tokenId = erc1155s[i].tokenId;
         ContractAddress.text = contract;
-        TokenId.text = tokenId;
+        TokenId.text = "Token id: " +tokenId;
         i++;
 
         await UpdateMaterial();
@@ -174,7 +174,7 @@ public class ShowUserERC1155 : MonoBehaviour
         catch
         {
             print("Error: " + response);
-            btn.gameObject.SetActive(true);
+            if(btn != null) btn.gameObject.SetActive(true);
         }
     }
 }
