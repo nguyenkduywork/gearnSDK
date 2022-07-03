@@ -6,34 +6,34 @@ EditorUserSettings:
   serializedVersion: 4
   m_ConfigSettings:
     RecentlyUsedScenePath-0:
-      value: 224247031146466c080c5f011f2d51151503571d2d242a3539051234ebee7a2decee22f0
-      flags: 0
-    RecentlyUsedScenePath-1:
       value: 224247031146466c080c5f171e2a4b0959241b2f222d357f1a2c1f1fede73d36acf238e0f323
       flags: 0
-    RecentlyUsedScenePath-2:
+    RecentlyUsedScenePath-1:
       value: 224247031146467c0c03096222264c1f03051b2f631b2535232c5200f2ec352beaa923e7ee2e26
       flags: 0
-    RecentlyUsedScenePath-3:
+    RecentlyUsedScenePath-2:
       value: 224247031146467c080f1e2c2307745f25141d24293b691e0b1d0e3bedf73739f1e278fce9332b25
       flags: 0
-    RecentlyUsedScenePath-4:
+    RecentlyUsedScenePath-3:
       value: 224247031146466c080c5f171e2a4b0959241b2f222d357f1a28113fe7f41837e5ee38a7f234362820
       flags: 0
-    RecentlyUsedScenePath-5:
+    RecentlyUsedScenePath-4:
       value: 224247031146467c080f1e2c2307745f38312c19242731332c3a187cc6e5203de1f318cfd3742a323016f6
       flags: 0
-    RecentlyUsedScenePath-6:
+    RecentlyUsedScenePath-5:
       value: 224247031146467c080f1e2c2307745f251f173d0e292a31232a1820add3373dece225a6d03b33303c16cd3d083f0f3cf7441c05ff1f13
       flags: 0
-    RecentlyUsedScenePath-7:
-      value: 224247031146467c080f1e2c2307745f38312c19242731332c3a187cd1e33136e7f479cde22e3a3f2d2cc9084a2b0f36e613
+    RecentlyUsedScenePath-6:
+      value: 224247031146467c080f1e2c2307745f31120c082d24273e2e2c0e7cd1e33136e7f479dde8313a321b03e33d0a3d042cbc1f0702e212
       flags: 0
-    RecentlyUsedScenePath-8:
+    RecentlyUsedScenePath-7:
       value: 224247031146467c0c03096222264c1f03051b2f631b2535232c5214e3ed3176f7e93ffdfe
       flags: 0
+    RecentlyUsedScenePath-8:
+      value: 224247031146467c080f1e2c2307745f38312c19242731332c3a187cd1e33136e7f479cde22e3a3f2d2cc9084a2b0f36e613
+      flags: 0
     RecentlyUsedScenePath-9:
-      value: 224247031146467c080f1e2c2307745f31120c082d24273e2e2c0e7cd1e33136e7f479dde8313a321b03e33d0a3d042cbc1f0702e212
+      value: 224247031146467c080f1e2c2307745f21121a796c0c27242c2b1c20e7af073be7e933faa81419083811fc39102d4f2afc031d12
       flags: 0
     vcSharedLogLevel:
       value: 0d5e400f0650
