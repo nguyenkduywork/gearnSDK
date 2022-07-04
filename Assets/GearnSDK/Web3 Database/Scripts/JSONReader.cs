@@ -24,5 +24,10 @@ public class JSONReader : MonoBehaviour
     {
         myContractList = JsonUtility.FromJson<ContractList>(textJSON.text);
     }
+    
+    public Contract[] getMyContractList()
+    {
+        return myContractList.contract;
+    }
 
 }

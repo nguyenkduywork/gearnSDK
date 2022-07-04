@@ -6,7 +6,7 @@ using UnityEngine.Networking;
 using Newtonsoft.Json;
 using UnityEngine.UI;
 
-public class ShowUserERC1155 : MonoBehaviour
+public class ApplyNftTexture : MonoBehaviour
 {
     public class Response {
         public string image;

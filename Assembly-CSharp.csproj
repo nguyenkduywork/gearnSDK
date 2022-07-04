@@ -70,7 +70,7 @@
      <Compile Include="Assets\Spine\Runtime\spine-csharp\BoneData.cs" />
      <Compile Include="Assets\Scripts\ManagerProfile.cs" />
      <Compile Include="Assets\Spine\Runtime\spine-unity\Modules\TK2D\SpriteCollectionAttachmentLoader.cs" />
-     <Compile Include="Assets\GearnSDK\NFTShowcase\Scripts\ShowUserERC1155.cs" />
+     <Compile Include="Assets\GearnSDK\NFTShowcase\Scripts\ApplyNftTexture.cs" />
      <Compile Include="Assets\Web3Unity\Scripts\Scenes\WalletLogin.cs" />
      <Compile Include="Assets\Spine\Runtime\spine-unity\Components\SkeletonMecanim.cs" />
      <Compile Include="Assets\Web3Unity\Scripts\Prefabs\Wallet\Web3WalletTransfer721Example.cs" />
@@ -280,6 +280,7 @@
      <Compile Include="Assets\Web3Unity\Scripts\Prefabs\EVM\NonceExample.cs" />
      <Compile Include="Assets\Scripts\InAppPurchase.cs" />
      <Compile Include="Assets\Spine\Runtime\spine-unity\Modules\AttachmentTools\AttachmentTools.cs" />
+     <Compile Include="Assets\GearnSDK\Web3 Database\Scripts\FindUserErc1155.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\Spine\version.txt" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />

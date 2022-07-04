@@ -7,6 +7,8 @@ TagManager:
   - Canvas
   - nft
   - refresh
+  - skin
+  - json
   layers:
   - Default
   - TransparentFX
