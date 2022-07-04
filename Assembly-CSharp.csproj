@@ -268,6 +268,7 @@
      <Compile Include="Assets\Web3Unity\Scripts\Prefabs\WebGL\WebGLSendContractExample.cs" />
      <Compile Include="Assets\Spine\Runtime\spine-csharp\Bone.cs" />
      <Compile Include="Assets\Web3Unity\Scripts\Prefabs\EVM\CreateContractDataExample.cs" />
+     <Compile Include="Assets\GearnSDK\Web3 Database\Scripts\JSONReader.cs" />
      <Compile Include="Assets\Web3Unity\Scripts\Prefabs\Minter\MintWeb3Wallet.cs" />
      <Compile Include="Assets\GearnSDK\RefreshButton\RefreshButton.cs" />
      <Compile Include="Assets\Spine\Runtime\spine-unity\ISkeletonAnimation.cs" />
@@ -279,7 +280,6 @@
      <Compile Include="Assets\Web3Unity\Scripts\Prefabs\EVM\NonceExample.cs" />
      <Compile Include="Assets\Scripts\InAppPurchase.cs" />
      <Compile Include="Assets\Spine\Runtime\spine-unity\Modules\AttachmentTools\AttachmentTools.cs" />
-     <Compile Include="Assets\GearnSDK\Web3 Database\Scripts\JSONReader.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\Spine\version.txt" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />

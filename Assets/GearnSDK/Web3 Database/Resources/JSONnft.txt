@@ -1,13 +1,19 @@
 {
     "contract": [
         {
-            "address": "test1"
+            "address": "0x7f04504AE8DB0689A0526d99074149FE6dDf838c",
+            "id": "1",
+            "name": "Factory 2"
         },
         {
-            "address": "test2"
+            "address": "0x7f04504AE8DB0689A0526d99074149FE6dDf838c",
+            "id": "12",
+            "name": "Factory 3"
         },
         {
-            "address": "test3"
-        }   
+            "address": "0x7f04504AE8DB0689A0526d99074149FE6dDf838c",
+            "id": "5",
+            "name": "Factory 4"
+        }           
     ]
 }

@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class JSONReader : MonoBehaviour
@@ -10,6 +8,8 @@ public class JSONReader : MonoBehaviour
     public class Contract
     {
         public string address;
+        public string id;
+        public string name;
     }
     
     [System.Serializable]
@@ -25,9 +25,4 @@ public class JSONReader : MonoBehaviour
         myContractList = JsonUtility.FromJson<ContractList>(textJSON.text);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
