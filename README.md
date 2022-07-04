@@ -46,7 +46,7 @@
   <li> ERC20BalanceGearn: a script that show your ERC20 token balance. </li>
   <li> GetWalletAddress. </li>
   <li> RefreshButton. </li>
-  <li> MintToken: A script that: verify the user has more than 185000 in game cash, then try to mint 185 IRC tokens on the Rinkeby blockchain to the user's wallet (Contract address of IRC is: 0xD40d1f9854e989225c88935E79d2EF0033d4369c). If the transaction is successful, take all in game cash. </li>
+  <li> MintToken: A script that: verify the user has in game Diamonds, then try to convert them into IRC2 tokens on the Rinkeby blockchain to the user's wallet (Contract address of IRC is: 0x9B7E19548fb3E11CF24cd2140FBE9271ef6E61EF) </li>
   <li> CallSolidityFuncForButton: A general script to call simple Solidity functions. </li>
   <li> BurnButton: A script to call the Burn function from Solidity and assign it to a button. Useful for "Web3 shopping" in game </li>  
   <li> JSONReader: A script that reads the contents in the JSON Text file </li>
