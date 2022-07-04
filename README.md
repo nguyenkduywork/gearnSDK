@@ -19,7 +19,7 @@
     <td> Contains text fields that shows your ETH Rinkeby and ERC20 balances </td>
     <td> Contains a button and its script to mint IRC token, this script can be easily changed to call custom <b>Solidity</b> scripts (you need to change its abi and function parameters) </td>
   </tr>
-  <tr>
+<tr>
     <th> RefreshButton </th>
     <th> NFTShowcase </th>
     <th> GetUserAddress </th>
@@ -28,6 +28,15 @@
     <td> Contains a button that refreshes our balances </td>
     <td> Contains a scene, scripts and prefabs to see your wallet's ERC1155 tokens </td>
     <td> Contains a text field which shows your wallet's public address </td>
+  </tr>
+  <tr>
+    <th> ReturnToGame </th>
+    <th> Web3 Database </th>
+  </tr>
+  <tr>
+    <td> Contains a button and a script to go back to the game scene </td>
+    <td> Contains 4 folders: Scenes, Materials, Scripts and Resources. In the Resources folder contains a txt file which you can
+    put your NFT addresses in. This acts as a database for NFTs</td>
   </tr>  
 </Table>
 
@@ -38,3 +47,8 @@
   <li> GetWalletAddress. </li>
   <li> RefreshButton. </li>
   <li> MintToken: A script that: verify the user has more than 185000 in game cash, then try to mint 185 IRC tokens on the Rinkeby blockchain to the user's wallet (Contract address of IRC is: 0xD40d1f9854e989225c88935E79d2EF0033d4369c). If the transaction is successful, take all in game cash. </li>
+  <li> CallSolidityFuncForButton: A general script to call simple Solidity functions. </li>
+  <li> BurnButton: A script to call the Burn function from Solidity and assign it to a button. Useful for "Web3 shopping" in game </li>  
+  <li> JSONReader: A script that reads the contents in the JSON Text file </li>
+  <li> ApplyNftTexture: A script that changes the material of a game object into the user's desired NFT's image </li>
+</ul>
