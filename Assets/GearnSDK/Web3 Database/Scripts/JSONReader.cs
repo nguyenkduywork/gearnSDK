@@ -9,6 +9,7 @@ public class JSONReader : MonoBehaviour
     {
         public string contract;
         public string tokenId;
+        public string path;
     }
     
     [System.Serializable]

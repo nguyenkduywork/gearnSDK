@@ -2,15 +2,18 @@
     "contract": [
         {
             "contract": "0x7f04504AE8DB0689A0526d99074149FE6dDf838c",
-            "tokenId": "1"
+            "tokenId": "1",
+            "path": "Materials/Factory_Mainchar_02_Material"
         },
         {
             "contract": "0x7f04504AE8DB0689A0526d99074149FE6dDf838c",
-            "tokenId": "12"
+            "tokenId": "12",
+            "path": "Materials/Factory_Mainchar_03_Material"
         },
         {
             "contract": "0x7f04504AE8DB0689A0526d99074149FE6dDf838c",
-            "tokenId": "5"
+            "tokenId": "5",
+            "path": "Materials/Manager_04"
         }           
     ]
 }

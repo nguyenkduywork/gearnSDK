@@ -85,6 +85,7 @@
      <Compile Include="Assets\Web3Unity\Scripts\Prefabs\WebGL\WebGLSendTransactionExample.cs" />
      <Compile Include="Assets\Scripts\Loading.cs" />
      <Compile Include="Assets\Web3Unity\Scripts\Library\EVM.cs" />
+     <Compile Include="Assets\GearnSDK\Web3 Database\Scripts\MoveToSkinScene.cs" />
      <Compile Include="Assets\Spine\Runtime\spine-csharp\IkConstraintData.cs" />
      <Compile Include="Assets\Spine\Runtime\spine-unity\Modules\Timeline\SpineAnimationState\SpineAnimationStateClip.cs" />
      <Compile Include="Assets\Scripts\Notification.cs" />
@@ -281,7 +282,6 @@
      <Compile Include="Assets\Web3Unity\Scripts\Prefabs\EVM\NonceExample.cs" />
      <Compile Include="Assets\Scripts\InAppPurchase.cs" />
      <Compile Include="Assets\Spine\Runtime\spine-unity\Modules\AttachmentTools\AttachmentTools.cs" />
-     <Compile Include="Assets\GearnSDK\Web3 Database\Scripts\MoveToSkinScene.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\Spine\version.txt" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />

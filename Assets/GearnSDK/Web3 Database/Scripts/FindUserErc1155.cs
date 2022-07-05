@@ -22,11 +22,15 @@ public class FindUserErc1155 : MonoBehaviour
     NFTs[] erc1155s;
     //make a list of indices of NFTs in the database that are also in erc1155s
     List<int> indices = new List<int>();
+    
+    GameObject skin;
 
     async void Start()
     {
         i = 0;
         
+        //find object with tag "skin" and assign it to skin
+        skin = GameObject.FindGameObjectWithTag("skin");
         //Get the player's wallet address
         string account = PlayerPrefs.GetString("wallet");
         
@@ -38,6 +42,25 @@ public class FindUserErc1155 : MonoBehaviour
         
         //Get the list of indices in the Json file that are also in erc1155s
         ListOfIndices(contractInDatabase);
+        
+        if(indices.Count == 0)
+        {
+            Debug.Log("User has no NFTs");
+            return;
+        }
+        
+        try
+        {
+            //change the material of the skin
+            skin.GetComponent<Renderer>().material = Resources.Load<Material>(contractInDatabase[indices[0]].path);
+        }
+        catch (System.Exception e)
+        { 
+            Debug.Log(e);
+        }
+        
+        
+        
     }
 
     //Get the list of indices in the Json file that are also in erc1155s
@@ -79,6 +102,7 @@ public class FindUserErc1155 : MonoBehaviour
             {
                 contract = erc1155s[i].contract;
                 tokenId = erc1155s[i].tokenId;
+                
                 BigInteger balanceOf = await ERC1155.BalanceOf(chain, network, erc1155s[i].contract, account, erc1155s[i].tokenId);
                 
                 //if the balance is 0, then delete it from the array and reduce the length of the array
