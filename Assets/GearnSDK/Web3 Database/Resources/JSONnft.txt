@@ -1,19 +1,16 @@
 {
     "contract": [
         {
-            "address": "0x7f04504AE8DB0689A0526d99074149FE6dDf838c",
-            "id": "1",
-            "name": "Factory 2"
+            "contract": "0x7f04504AE8DB0689A0526d99074149FE6dDf838c",
+            "tokenId": "1"
         },
         {
-            "address": "0x7f04504AE8DB0689A0526d99074149FE6dDf838c",
-            "id": "12",
-            "name": "Factory 3"
+            "contract": "0x7f04504AE8DB0689A0526d99074149FE6dDf838c",
+            "tokenId": "12"
         },
         {
-            "address": "0x7f04504AE8DB0689A0526d99074149FE6dDf838c",
-            "id": "5",
-            "name": "Factory 4"
+            "contract": "0x7f04504AE8DB0689A0526d99074149FE6dDf838c",
+            "tokenId": "5"
         }           
     ]
 }

@@ -7,9 +7,8 @@ public class JSONReader : MonoBehaviour
     [System.Serializable]
     public class Contract
     {
-        public string address;
-        public string id;
-        public string name;
+        public string contract;
+        public string tokenId;
     }
     
     [System.Serializable]
@@ -23,6 +22,13 @@ public class JSONReader : MonoBehaviour
     void Start()
     {
         myContractList = JsonUtility.FromJson<ContractList>(textJSON.text);
+        
+        //set the contract and tokenId to lowercase
+        for (int i = 0; i < myContractList.contract.Length; i++)
+        {
+            myContractList.contract[i].contract = myContractList.contract[i].contract.ToLower();
+            myContractList.contract[i].tokenId = myContractList.contract[i].tokenId.ToLower();
+        }
     }
     
     public Contract[] getMyContractList()

@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using System.Linq;
 using System.Numerics;
 using System.Threading.Tasks;
@@ -19,6 +20,8 @@ public class FindUserErc1155 : MonoBehaviour
     string tokenId;
     private int i;
     NFTs[] erc1155s;
+    //make a list of indices of NFTs in the database that are also in erc1155s
+    List<int> indices = new List<int>();
 
     async void Start()
     {
@@ -29,12 +32,40 @@ public class FindUserErc1155 : MonoBehaviour
         
         //Get all erc1155
         await GetErc1155ContractAndId(chain, network, account);
-
+        
+        //Get the list of NFTs from Json file
         JSONReader.Contract[] contractInDatabase = this.GetComponentInParent<JSONReader>().getMyContractList();
-        Debug.Log("contractInDatabase.Length: " + contractInDatabase.Length);
-
+        
+        //Get the list of indices in the Json file that are also in erc1155s
+        ListOfIndices(contractInDatabase);
     }
-    
+
+    //Get the list of indices in the Json file that are also in erc1155s
+    private void ListOfIndices(JSONReader.Contract[] contractInDatabase)
+    {
+        for (int i = 0; i < contractInDatabase.Length; i++)
+        {
+            for (int j = 0; j < erc1155s.Length; j++)
+            {
+                if (contractInDatabase[i].contract == erc1155s[j].contract &&
+                    contractInDatabase[i].tokenId == erc1155s[j].tokenId)
+                {
+                    //if the indices are already in the list, don't add them again
+                    if (!indices.Contains(i))
+                    {
+                        indices.Add(i);
+                    }
+                }
+            }
+        }
+
+        //print the list of indices
+        foreach (int i in indices)
+        {
+            Debug.Log(i);
+        }
+    }
+
     //Loop through all erc1155s and get the contract and tokenId
     //Use the function balanceOf to find the balance of each nft
     //if the balance is 0, then the nft is deleted from the array erc1155s
