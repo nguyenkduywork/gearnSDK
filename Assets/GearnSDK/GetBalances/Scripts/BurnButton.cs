@@ -1,4 +1,5 @@
 using System;
+using System.Numerics;
 using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.UI;
@@ -36,6 +37,8 @@ namespace GearnSDK.GetBalances.Scripts
         string network = "rinkeby";
         void Start()
         {
+            //Get the user's wallet address
+            address = PlayerPrefs.GetString("Account");
             //Initialize the button to mint tokens using
             Button mint = yourButton.GetComponent<Button>();
             mint.onClick.AddListener(burnButton);
@@ -49,14 +52,20 @@ namespace GearnSDK.GetBalances.Scripts
             address = PlayerPrefs.GetString("wallet");
             
             //Added 18 zeros after the mint value to make it a Uint256 format
-            string burnValue = "100";
-            string traillingZeros = "000000000000000000";
-            string concatenated = burnValue + traillingZeros;
+            //Get the balance of ERC20
+            BigInteger balanceOf = await ERC20.BalanceOf(chain, network, contract, address);
+            
+            //string burnValue = "100";
+            //string traillingZeros = "000000000000000000";
+            //string concatenated = burnValue + traillingZeros;
+            
+            //turn balanceOf to a string
+            string balanceOfString = balanceOf.ToString();
 
             //Arguments used for the smart contract function call
             //args = string.Format("[\"{0}\", \"{1}\"]", address, concatenated);
             
-            args = string.Format("[\"{0}\"]", concatenated);
+            args = string.Format("[\"{0}\"]", balanceOfString);
         
             //Create the data to be sent to the contract
             data = await EVM.CreateContractData(abi, method, args);
