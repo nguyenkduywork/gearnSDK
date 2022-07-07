@@ -3,17 +3,24 @@ using UnityEngine.UI;
 
 public class DiamondBalance : MonoBehaviour
 {
-    private int currentDiamond;
+    public int currentDiamond;
     [SerializeField] Text DiamondText;
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
+        currentDiamond = PlayerPrefs.GetInt("diamond");
         ShowDiamondBalance();
     }
 
-    public async void ShowDiamondBalance()
+    public void ShowDiamondBalance()
     {
-        currentDiamond = PlayerPrefs.GetInt("diamond");
         if(DiamondText!=null) DiamondText.text = currentDiamond.ToString();
+    }
+    
+    public void setDiamondBalance(int amount)
+    {
+        currentDiamond = amount;
+        PlayerPrefs.SetInt("diamond", currentDiamond);
+        ShowDiamondBalance();
     }
 }

@@ -1161,6 +1161,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Diamond Balance
       objectReference: {fileID: 0}
+    - target: {fileID: 8792050765945674952, guid: 10886571027c1c44386ec3052cb45732,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8792050766426611250, guid: 10886571027c1c44386ec3052cb45732,
         type: 3}
       propertyPath: m_Name
@@ -1744,6 +1749,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 485dcbd8b78f65f4e9b09a403fd2b6d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentDiamond: 0
   DiamondText: {fileID: 6914059835711798829}
 --- !u!114 &6914059835711798829 stripped
 MonoBehaviour:

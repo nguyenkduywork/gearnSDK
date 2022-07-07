@@ -9,7 +9,7 @@ public class ETHBalance : MonoBehaviour
     private string network;
     private string account;
     private string balance;
-    void Start()
+    void Awake()
     {
         //Chain name
         chain = "ethereum";

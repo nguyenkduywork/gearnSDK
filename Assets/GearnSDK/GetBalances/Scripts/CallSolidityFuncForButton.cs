@@ -7,6 +7,7 @@ namespace GearnSDK.GetBalances.Scripts
 {
     public class CallSolidityFuncForButton : MonoBehaviour
     {
+        public DiamondBalance diamondBalance;
         //The button to mint a token
         public Button yourButton;
         //The user's wallet address
@@ -32,10 +33,14 @@ namespace GearnSDK.GetBalances.Scripts
         private string data;
 
         private string transaction;
+        private string txConfirmed;
+        RefreshButton refreshButton;
         string chain = "ethereum";
         string network = "rinkeby";
         void Start()
         {
+            diamondBalance = FindObjectOfType<DiamondBalance>();
+            refreshButton = FindObjectOfType<RefreshButton>();
             //Initialize the button to mint tokens using
             Button mint = yourButton.GetComponent<Button>();
             mint.onClick.AddListener(mintButton);
@@ -49,7 +54,7 @@ namespace GearnSDK.GetBalances.Scripts
             address = PlayerPrefs.GetString("wallet");
             
             //Added 18 zeros after the mint value to make it a Uint256 format
-            string mintValue = "100";
+            string mintValue = diamondBalance.currentDiamond.ToString();
             string traillingZeros = "000000000000000000";
             string concatenated = mintValue + traillingZeros;
 
@@ -69,36 +74,57 @@ namespace GearnSDK.GetBalances.Scripts
         async void getStatus()
         {
             try{
-                await EVM.TxStatus(chain, network, transaction);
+                txConfirmed = await EVM.TxStatus(chain, network, transaction);
                 //reinitialize the transaction variable
                 transaction = null;
             }
-            catch(Exception e)
+            catch(Exception)
             {
-                Debug.Log(e);
+                txConfirmed = "error";
             }
+        
+            //Send a notification to the screen, this can be changed freely to fit the needs of the game
+            if(!txConfirmed.Equals("success"))
+            {
+                Debug.Log("Transaction failed");
+            }
+            else
+            {
+                Debug.Log("Transaction successful");
+            
+                //if transaction is successful, take all of the in-game diamond
+                diamondBalance.setDiamondBalance(0);
+                var transactionPassed = true;
+                // Save boolean using PlayerPrefs
+                PlayerPrefs.SetInt("transactionPassed", transactionPassed?1:0);
+            }
+            //reenable the button
             yourButton.enabled = true;
+            refreshButton.Refresh();
         }
     
         //Function called when the button is clicked,
         private async void mintButton()
         {
-            //Disable the button to prevent multiple clicks
-            yourButton.enabled = false;
+            if (diamondBalance.currentDiamond > 0)
+            {
+                //Disable the button to prevent multiple clicks
+                yourButton.enabled = false;
 
-            //Send the transaction to the blockchain
-            try
-            {
-                await SendTransactionWeb3();
+                //Send the transaction to the blockchain
+                try
+                {
+                    await SendTransactionWeb3();
+                }
+                catch
+                {
+                    getStatus();
+                    return;
+                }
+
+                //Wait for 20 seconds for the transaction to be confirmed on the blockchain
+                Invoke("getStatus", 20);
             }
-            catch
-            {
-                getStatus();
-                return;
-            }
-            
-            //Wait for 20 seconds for the transaction to be confirmed on the blockchain
-            Invoke("getStatus",20);
         }
     }
 }

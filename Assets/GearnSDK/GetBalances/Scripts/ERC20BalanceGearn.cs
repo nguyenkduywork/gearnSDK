@@ -9,7 +9,7 @@ public class ERC20BalanceGearn : MonoBehaviour
     private string network;
     private string contract;
     private string account;
-    void Start()
+    void Awake()
     {
         //Chain name
         chain = "ethereum";

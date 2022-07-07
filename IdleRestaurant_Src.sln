@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityEngine.TestRunner", "UnityEngine.TestRunner.csproj", "{ad489102-33ba-f9e4-47ab-d3646c2087c1}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{a861596c-57e0-bde9-be80-1e97349c26cf}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityEngine.TestRunner", "UnityEngine.TestRunner.csproj", "{ad489102-33ba-f9e4-47ab-d3646c2087c1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.Timeline", "Unity.Timeline.csproj", "{d946cf63-b3f7-de46-87da-75ea7a85ec69}"
 EndProject
@@ -71,14 +71,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{ad489102-33ba-f9e4-47ab-d3646c2087c1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{ad489102-33ba-f9e4-47ab-d3646c2087c1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{ad489102-33ba-f9e4-47ab-d3646c2087c1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{ad489102-33ba-f9e4-47ab-d3646c2087c1}.Release|Any CPU.Build.0 = Release|Any CPU
 		{a861596c-57e0-bde9-be80-1e97349c26cf}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{a861596c-57e0-bde9-be80-1e97349c26cf}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{a861596c-57e0-bde9-be80-1e97349c26cf}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{a861596c-57e0-bde9-be80-1e97349c26cf}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ad489102-33ba-f9e4-47ab-d3646c2087c1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ad489102-33ba-f9e4-47ab-d3646c2087c1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ad489102-33ba-f9e4-47ab-d3646c2087c1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ad489102-33ba-f9e4-47ab-d3646c2087c1}.Release|Any CPU.Build.0 = Release|Any CPU
 		{d946cf63-b3f7-de46-87da-75ea7a85ec69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{d946cf63-b3f7-de46-87da-75ea7a85ec69}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{d946cf63-b3f7-de46-87da-75ea7a85ec69}.Release|Any CPU.ActiveCfg = Release|Any CPU
