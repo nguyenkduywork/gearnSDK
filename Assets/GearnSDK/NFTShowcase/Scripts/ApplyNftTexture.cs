@@ -24,11 +24,15 @@ public class ApplyNftTexture : MonoBehaviour
     string contract;
     string tokenId;
     private int i;
+    
+    //Array of NFTs
     NFTs[] erc1155s;
 
     [SerializeField] Button btn;
     [SerializeField] Text ContractAddress;
     [SerializeField] Text TokenId;
+    
+    //The gameobject that will hold the image of NFTs
     private GameObject myNft;
     async void Start()
     {
@@ -41,8 +45,9 @@ public class ApplyNftTexture : MonoBehaviour
         //Get the player's wallet address
         string account = PlayerPrefs.GetString("wallet");
         
-        //Get all erc1155
+        //Get all erc1155 from user's wallet
         await GetErc1155ContractAndId(chain, network, account);
+        
         Debug.Log("Done getting NFTs' information");
     }
     
@@ -53,14 +58,19 @@ public class ApplyNftTexture : MonoBehaviour
         {
             i=0;
         }
+        
+        //Update the text of contract address and token id
         contract = erc1155s[i].contract;
         tokenId = erc1155s[i].tokenId;
         ContractAddress.text = contract;
         TokenId.text = "Token id: " +tokenId;
+        
         i++;
 
         await UpdateMaterial();
     }
+    
+    //Change the material of the gameobject to the image of NFTs
     private async Task UpdateMaterial()
     {
         //Get the uri of a token
@@ -108,7 +118,8 @@ public class ApplyNftTexture : MonoBehaviour
             imageUri = imageUri.Replace("ipfs://", "https://ipfs.io/ipfs/");
         }
 
-        //print("imageUri: " + imageUri);
+        print("imageUri: " + imageUri);
+        
         return imageUri;
     }
 
@@ -148,27 +159,41 @@ public class ApplyNftTexture : MonoBehaviour
 
     private async Task GetErc1155ContractAndId(string chain, string network, string account)
     {
+        //Prevent the user from clicking the button until the data is fetched
         btn.gameObject.SetActive(false);
         string response = await EVM.AllErc1155(chain, network, account, "", 500, 0);
         try
         {
             erc1155s = JsonConvert.DeserializeObject<NFTs[]>(response);
+            
             //Loop through all erc1155s and get the contract and tokenId
             //Use the function balanceOf to find the balance of each nft
             for (int i = 0; i < erc1155s.Length; i++)
             {
                 contract = erc1155s[i].contract;
                 tokenId = erc1155s[i].tokenId;
+                
+                //Get the balance of each nft
                 BigInteger balanceOf = await ERC1155.BalanceOf(chain, network, erc1155s[i].contract, account, erc1155s[i].tokenId);
-                Debug.Log(balanceOf);
+
                 //if the balance is 0, then delete it from the array and reduce the length of the array
                 if (balanceOf == 0)
                 {
+                    Debug.Log("Contract address: " + erc1155s[i].contract + ", token ID: " + erc1155s[i].tokenId 
+                              + " has a balance of " + balanceOf + " --> deleting it from the array");
                     erc1155s = erc1155s.Where(x => x.tokenId != erc1155s[i].tokenId).ToArray();
                     i--;
                 }
+                else
+                {
+                    Debug.Log("Contract address: " + erc1155s[i].contract + ", token ID: " 
+                              + erc1155s[i].tokenId + " has a balance of " + balanceOf);
+                }
             }
+            
             Debug.Log("You have " + erc1155s.Length + " ERC1155 NFTs");
+            
+            //Set the button active, the data is fetched
             btn.gameObject.SetActive(true);
         }
         catch
