@@ -8,8 +8,6 @@ namespace GearnSDK.GetBalances.Scripts
 {
     public class BurnButton : MonoBehaviour
     {
-        //The button to mint a token
-        public Button yourButton;
         //The user's wallet address
         string address;
         //Function name in the smart contract
@@ -31,10 +29,14 @@ namespace GearnSDK.GetBalances.Scripts
         string chainId= "4";
         //The data to be sent to the contract
         private string data;
-
-        private string transaction;
+        
         string chain = "ethereum";
         string network = "rinkeby";
+        
+        //The button to mint a token
+        public Button yourButton;
+        
+        private string transaction;
         void Start()
         {
             //Get the user's wallet address
@@ -51,7 +53,6 @@ namespace GearnSDK.GetBalances.Scripts
             //Get the user's wallet address
             address = PlayerPrefs.GetString("wallet");
             
-            //Added 18 zeros after the mint value to make it a Uint256 format
             //Get the balance of ERC20
             BigInteger balanceOf = await ERC20.BalanceOf(chain, network, contract, address);
             
@@ -63,8 +64,7 @@ namespace GearnSDK.GetBalances.Scripts
             string balanceOfString = balanceOf.ToString();
 
             //Arguments used for the smart contract function call
-            //args = string.Format("[\"{0}\", \"{1}\"]", address, concatenated);
-            
+
             args = string.Format("[\"{0}\"]", balanceOfString);
         
             //Create the data to be sent to the contract

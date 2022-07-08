@@ -428,7 +428,12 @@ PrefabInstance:
     - target: {fileID: 8126800013206753920, guid: c3e8a2b07d2b6804fad2387741ecca1f,
         type: 3}
       propertyPath: m_Text
-      value: Burn all of your ERC20 tokens
+      value: Import Web3 Diamonds to the game
+      objectReference: {fileID: 0}
+    - target: {fileID: 8126800013206753920, guid: c3e8a2b07d2b6804fad2387741ecca1f,
+        type: 3}
+      propertyPath: m_FontData.m_FontStyle
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c3e8a2b07d2b6804fad2387741ecca1f, type: 3}
@@ -1441,7 +1446,7 @@ PrefabInstance:
     - target: {fileID: 6914059835693988266, guid: 02bde885c58c21c42ae067f43551343a,
         type: 3}
       propertyPath: m_Text
-      value: Your ERC20 Tokens
+      value: Web3 Diamonds
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 02bde885c58c21c42ae067f43551343a, type: 3}
@@ -2020,7 +2025,14 @@ PrefabInstance:
     - target: {fileID: 8126800013206753920, guid: c3e8a2b07d2b6804fad2387741ecca1f,
         type: 3}
       propertyPath: m_Text
-      value: "Mint ERC20 tokens \nfrom your in-game diamonds"
+      value: 'Bridge your in-game diamonds
+
+        to Web3'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8126800013206753920, guid: c3e8a2b07d2b6804fad2387741ecca1f,
+        type: 3}
+      propertyPath: m_FontData.m_FontStyle
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c3e8a2b07d2b6804fad2387741ecca1f, type: 3}

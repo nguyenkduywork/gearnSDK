@@ -1,8 +1,4 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 //This class is used to save the wallet address and bring it to the nft showcase scene when
@@ -18,18 +14,19 @@ public class GoToBalanceScene : MonoBehaviour
     
     private void Start()
     {
+        //If the diamond amount has been changed when we are in the TokenBalances scene,
+        //we need to update the diamond amount in the dataManager
         var txConfirmed =  PlayerPrefs.GetInt("transactionPassed")==1;
         if (txConfirmed)
         {
+            //Set the diamond amount to the new value, saved from DiamondBalance class, function
+            //SetDiamondBalance()
             dataManager.database.diamond = PlayerPrefs.GetInt("diamond");
+            
             var transactionPassed = false;
-            // Save boolean using PlayerPrefs
+            //Reinitialize the transactionPassed variable to false
             PlayerPrefs.SetInt("transactionPassed", transactionPassed?1:0);
         }
-
-        //This is used to send the wallet address to the NFT showcase scene
-        string walletAddress = PlayerPrefs.GetString("Account");
-        PlayerPrefs.SetString("wallet", walletAddress);
         
     }
 
