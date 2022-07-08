@@ -36,10 +36,12 @@ namespace GearnSDK.MintButton
         private string data;
         //User's current in game diamonds
         int currentDiamond;
-
-        private string transaction;
+        
         string chain = "ethereum";
         string network = "rinkeby";
+        
+        private string transaction;
+        
         string txConfirmed;
         void Start()
         {
@@ -69,7 +71,6 @@ namespace GearnSDK.MintButton
             //Arguments used for the smart contract function call
             args = string.Format("[\"{0}\", \"{1}\"]", address, concatenated);
             
-            //args = string.Format("[\"{0}\"]", concatenated);
         
             //Create the data to be sent to the contract
             data = await EVM.CreateContractData(abi, method, args);
@@ -144,8 +145,8 @@ namespace GearnSDK.MintButton
             Notification.instance.Warning("Processing transaction");
             Singleton<SoundManager>.Instance.Play("Notification");
             
-            //Wait for 25 seconds for the transaction to be confirmed on the blockchain
-            Invoke("getStatus",25);
+            //Wait for 20 seconds for the transaction to be confirmed on the blockchain
+            Invoke("getStatus",20);
         }
     }
 }
