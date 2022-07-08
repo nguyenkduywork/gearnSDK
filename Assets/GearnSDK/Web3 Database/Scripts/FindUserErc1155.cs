@@ -29,7 +29,7 @@ public class FindUserErc1155 : MonoBehaviour
     {
         i = 0;
         
-        //find object with tag "skin" and assign it to skin
+        //find object with tag "skin" and assign it to skin variable
         skin = GameObject.FindGameObjectWithTag("skin");
         //Get the player's wallet address
         string account = PlayerPrefs.GetString("wallet");

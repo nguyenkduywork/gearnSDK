@@ -14,6 +14,7 @@ public class RefreshButton : MonoBehaviour
         diamondBalance = FindObjectOfType<DiamondBalance>();
         ethBalance = FindObjectOfType<ETHBalance>();
         erc20Balance = FindObjectOfType<ERC20BalanceGearn>();
+        
         Button btn = refreshButton.GetComponent<Button>();
         btn.onClick.AddListener(Refresh);
     }
