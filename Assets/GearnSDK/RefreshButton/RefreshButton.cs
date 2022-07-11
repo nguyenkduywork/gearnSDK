@@ -25,7 +25,13 @@ public class RefreshButton : MonoBehaviour
         {
             diamondBalance.ShowDiamondBalance();
         }
-        ethBalance.ShowETHBalance();
-        erc20Balance.ShowERC20Balance();
+        if(ethBalance != null)
+        {
+            ethBalance.ShowETHBalance();
+        }
+        if(erc20Balance != null)
+        {
+            erc20Balance.ShowERC20Balance();
+        }
     }
 }
