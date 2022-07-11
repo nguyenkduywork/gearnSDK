@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Numerics;
@@ -16,32 +17,30 @@ public class FindUserErc1155 : MonoBehaviour
     //Initialize the variables
     string chain = "ethereum";
     string network = "rinkeby";
-    string contract;
-    string tokenId;
-    private int i;
-    NFTs[] erc1155s;
-    //make a list of indices of NFTs in the database that are also in erc1155s
-    List<int> indices = new List<int>();
+    private string account;
     
+    //User's ERC1155 NFTs
+    NFTs[] erc1155s;
+    
+    //GameObjects to display the skin depends on NFT owned and on the database
     GameObject skin;
 
     async void Start()
     {
-        i = 0;
         
         //find object with tag "skin" and assign it to skin variable
         skin = GameObject.FindGameObjectWithTag("skin");
         //Get the player's wallet address
-        string account = PlayerPrefs.GetString("wallet");
+        account = PlayerPrefs.GetString("wallet");
         
         //Get all erc1155
-        await GetErc1155ContractAndId(chain, network, account);
+        await GetErc1155ContractAndId();
         
         //Get the list of NFTs from Json file
         JSONReader.Contract[] contractInDatabase = this.GetComponentInParent<JSONReader>().getMyContractList();
         
-        //Get the list of indices in the Json file that are also in erc1155s
-        ListOfIndices(contractInDatabase);
+        //make a list of indices of NFTs in the database that are also in erc1155s
+        List<int> indices = ListOfIndices(contractInDatabase);
         
         if(indices.Count == 0)
         {
@@ -54,7 +53,7 @@ public class FindUserErc1155 : MonoBehaviour
             //change the material of the skin
             skin.GetComponent<Renderer>().material = Resources.Load<Material>(contractInDatabase[indices[0]].path);
         }
-        catch (System.Exception e)
+        catch (Exception e)
         { 
             Debug.Log(e);
         }
@@ -64,8 +63,9 @@ public class FindUserErc1155 : MonoBehaviour
     }
 
     //Get the list of indices in the Json file that are also in erc1155s
-    private void ListOfIndices(JSONReader.Contract[] contractInDatabase)
+    private List<int> ListOfIndices(JSONReader.Contract[] contractInDatabase)
     {
+        List<int> indices = new List<int>();
         for (int i = 0; i < contractInDatabase.Length; i++)
         {
             for (int j = 0; j < erc1155s.Length; j++)
@@ -87,24 +87,22 @@ public class FindUserErc1155 : MonoBehaviour
         {
             Debug.Log(i);
         }
+
+        return indices;
     }
 
     //Loop through all erc1155s and get the contract and tokenId
     //Use the function balanceOf to find the balance of each nft
     //if the balance is 0, then the nft is deleted from the array erc1155s
-    private async Task GetErc1155ContractAndId(string chain, string network, string account)
+    private async Task GetErc1155ContractAndId()
     {
-        string response = await EVM.AllErc1155(chain, network, account, "", 500, 0);
         try
         {
+            string response = await EVM.AllErc1155(chain, network, account);
             erc1155s = JsonConvert.DeserializeObject<NFTs[]>(response);
             for (int i = 0; i < erc1155s.Length; i++)
             {
-                contract = erc1155s[i].contract;
-                tokenId = erc1155s[i].tokenId;
-                
                 BigInteger balanceOf = await ERC1155.BalanceOf(chain, network, erc1155s[i].contract, account, erc1155s[i].tokenId);
-                
                 //if the balance is 0, then delete it from the array and reduce the length of the array
                 if (balanceOf == 0)
                 {
@@ -121,9 +119,9 @@ public class FindUserErc1155 : MonoBehaviour
             }
             Debug.Log("You have " + erc1155s.Length + " ERC1155 NFTs");
         }
-        catch
+        catch(Exception e)
         {
-            print("Error: " + response);
+            print("Error: " + e);
         }
     }
     
