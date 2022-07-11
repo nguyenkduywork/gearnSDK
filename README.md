@@ -36,7 +36,7 @@
   <tr>
     <td> Contains a button and a script to go back to the game scene </td>
     <td> Contains 4 folders: Scenes, Materials, Scripts and Resources. In the Resources folder contains a txt file which you can
-    put your NFT addresses in. This acts as a database for NFTs</td>
+    put your NFT addresses in. This acts as a database for NFTs. ATTENTION: The Materials folder only works if put inside the Resources folder (Line 54 FindUserErc1155.cs)</td>
   </tr>  
 </Table>
 
