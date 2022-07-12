@@ -58,19 +58,7 @@ namespace GearnSDK.Web3_Database.Scripts
                 return;
             }
             changeSkin.gameObject.SetActive(true);
-
-            try
-            {
-                //change the material of the skin
-                skin.GetComponent<Renderer>().material = Resources.Load<Material>(contractInDatabase[indices[0]].path);
-            }
-            catch (Exception e)
-            { 
-                Debug.Log(e);
-            }
-        
-        
-        
+            
         }
         
         //Counter for onClick function
@@ -80,16 +68,12 @@ namespace GearnSDK.Web3_Database.Scripts
         {
             try
             {
-                if(i < indices.Count)
+                if(i < indices.Count - 1)
                 {
-                    //change the material of the skin
-                    skin.GetComponent<Renderer>().material = Resources.Load<Material>(contractInDatabase[indices[i]].path);
                     i++;
-                }
-                else
-                {
-                    i = 0;
-                }
+                } else { i = 0; }
+                //change the material of the skin
+                skin.GetComponent<Renderer>().material = Resources.Load<Material>(contractInDatabase[indices[i]].path);
             }
             catch (Exception e)
             { 
