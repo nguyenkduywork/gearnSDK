@@ -237,7 +237,7 @@
      <Compile Include="Assets\Web3Unity\Scripts\Prefabs\WebGL\WebGLSignVerifyExample.cs" />
      <Compile Include="Assets\Spine\Runtime\spine-unity\Modules\YieldInstructions\WaitForSpineAnimationComplete.cs" />
      <Compile Include="Assets\Scripts\RandomChef.cs" />
-     <Compile Include="Assets\GearnSDK\Web3 Database\Scripts\FindUserErc1155.cs" />
+     <Compile Include="Assets\GearnSDK\Web3 Database\Scripts\FindUserGameNft.cs" />
      <Compile Include="Assets\Scripts\Item.cs" />
      <Compile Include="Assets\Web3Unity\Scripts\Prefabs\PrivateKey\Web3PrivateKeyAddressExample.cs" />
      <Compile Include="Assets\Scripts\OverviewItem.cs" />
