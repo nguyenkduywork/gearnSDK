@@ -130,11 +130,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1750177081}
     m_Modifications:
-    - target: {fileID: 5848532758215466988, guid: d8f70a01f532c9a4da58d68ea688732b,
+    - target: {fileID: 931971, guid: d8f70a01f532c9a4da58d68ea688732b, type: 3}
+      propertyPath: yourButton
+      value: 
+      objectReference: {fileID: 253621493}
+    - target: {fileID: 6311391026886939817, guid: d8f70a01f532c9a4da58d68ea688732b,
         type: 3}
       propertyPath: yourButton
       value: 
       objectReference: {fileID: 253621493}
+    - target: {fileID: 6311391026886939817, guid: d8f70a01f532c9a4da58d68ea688732b,
+        type: 3}
+      propertyPath: diamondBalance
+      value: 
+      objectReference: {fileID: 6914059835711798819}
     - target: {fileID: 7058605354607233592, guid: d8f70a01f532c9a4da58d68ea688732b,
         type: 3}
       propertyPath: m_Name
@@ -245,8 +254,7 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 5848532758215466988, guid: d8f70a01f532c9a4da58d68ea688732b, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d8f70a01f532c9a4da58d68ea688732b, type: 3}
 --- !u!224 &931969 stripped
 RectTransform:
@@ -254,25 +262,6 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 931968}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &931970 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7058605354607233592, guid: d8f70a01f532c9a4da58d68ea688732b,
-    type: 3}
-  m_PrefabInstance: {fileID: 931968}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &931971
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 931970}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1894e8fc6a3b12043a211b7ec9128744, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  yourButton: {fileID: 253621493}
 --- !u!1 &78092893
 GameObject:
   m_ObjectHideFlags: 0
@@ -1209,11 +1198,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1750177081}
     m_Modifications:
-    - target: {fileID: 5848532758215466988, guid: d8f70a01f532c9a4da58d68ea688732b,
+    - target: {fileID: 6311391026886939817, guid: d8f70a01f532c9a4da58d68ea688732b,
         type: 3}
       propertyPath: yourButton
       value: 
       objectReference: {fileID: 7620441325584905351}
+    - target: {fileID: 6311391026886939817, guid: d8f70a01f532c9a4da58d68ea688732b,
+        type: 3}
+      propertyPath: diamondBalance
+      value: 
+      objectReference: {fileID: 6914059835711798819}
     - target: {fileID: 7058605354607233592, guid: d8f70a01f532c9a4da58d68ea688732b,
         type: 3}
       propertyPath: m_Name

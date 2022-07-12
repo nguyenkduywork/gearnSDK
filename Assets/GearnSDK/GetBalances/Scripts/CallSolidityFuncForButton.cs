@@ -7,16 +7,6 @@ namespace GearnSDK.GetBalances.Scripts
 {
     public class CallSolidityFuncForButton : MonoBehaviour
     {
-        public DiamondBalance diamondBalance;
-        
-        private string transaction;
-        
-        private string txConfirmed;
-        
-        RefreshButton refreshButton;
-        
-        //The button to mint a token
-        public Button yourButton;
         //The user's wallet address
         string address;
         //Function name in the smart contract
@@ -47,13 +37,22 @@ namespace GearnSDK.GetBalances.Scripts
         
         string chain = "ethereum";
         string network = "rinkeby";
+        
+        [SerializeField] DiamondBalance diamondBalance;
+        
+        private string transaction;
+        
+        private string txConfirmed;
+        
+        [SerializeField] RefreshButton refreshButton;
+        
+        //The button to mint a token
+        [SerializeField] Button yourButton;
         void Start()
         {
-            diamondBalance = FindObjectOfType<DiamondBalance>();
-            refreshButton = FindObjectOfType<RefreshButton>();
-            //Initialize the button to mint tokens using
-            Button mint = yourButton.GetComponent<Button>();
-            mint.onClick.AddListener(mintButton);
+            //Get the user's wallet address
+            address = PlayerPrefs.GetString("Account");
+            
         }
 
         //Create the transaction to the blockchain,
@@ -118,7 +117,7 @@ namespace GearnSDK.GetBalances.Scripts
         }
     
         //Function called when the button is clicked,
-        private async void mintButton()
+        public async void mintButton()
         {
             if (diamondBalance.currentDiamond > 0)
             {

@@ -43,11 +43,12 @@ namespace GearnSDK.MintButton
         private string transaction;
         
         string txConfirmed;
-        void Start()
+        
+        [SerializeField] Button btn;
+        
+        public void OnClick()
         {
-            //Initialize the button to mint tokens using
-            Button mint = yourButton.GetComponent<Button>();
-            mint.onClick.AddListener(mintButton);
+            mintButton();
         }
     
         //Retrieve all in-game diamond from the user

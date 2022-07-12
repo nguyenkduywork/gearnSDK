@@ -33,17 +33,19 @@ namespace GearnSDK.GetBalances.Scripts
         string chain = "ethereum";
         string network = "rinkeby";
         
-        //The button to mint a token
-        public Button yourButton;
+        //The button to burn tokens
+        [SerializeField] Button burnButton;
+        
+        [SerializeField] DiamondBalance diamondBalance;
+        
+        [SerializeField] RefreshButton refreshButton;
         
         private string transaction;
         void Start()
         {
             //Get the user's wallet address
             address = PlayerPrefs.GetString("Account");
-            //Initialize the button to mint tokens using
-            Button mint = yourButton.GetComponent<Button>();
-            mint.onClick.AddListener(burnButton);
+           
         }
 
         //Create the transaction to the blockchain,
@@ -86,14 +88,14 @@ namespace GearnSDK.GetBalances.Scripts
             {
                 Debug.Log(e);
             }
-            yourButton.enabled = true;
+            burnButton.enabled = true;
         }
     
         //Function called when the button is clicked
-        private async void burnButton()
+        public async void burn()
         {
             //Disable the button to prevent multiple clicks
-            yourButton.enabled = false;
+            burnButton.enabled = false;
 
             //Send the transaction to the blockchain
             try
