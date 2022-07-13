@@ -5,6 +5,8 @@
   <li> In Unity, open Assets/Web3Unity/Scences/WalletLogin, then go to File/Build Settings then click Add Open Scenes, make sure the WalletLogin scene is
     placed as the first scene, before the main game. </li>
   <li> In Assets/GearnSDK, you will see prefabs and scripts with detailed comments and explications.
+  
+  <li> Demo: <a href="https://www.youtube.com/watch?v=apa6zE67mM4"> Click here </a> </li>
 </ol>
 
 <h2> Prefabs </h2>
