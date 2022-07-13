@@ -41,6 +41,10 @@ namespace GearnSDK.GetBalances.Scripts
         [SerializeField] RefreshButton refreshButton;
         
         private string transaction;
+        
+        private string txConfirmed;
+        
+        string balanceOfString;
         void Start()
         {
             //Get the user's wallet address
@@ -58,12 +62,16 @@ namespace GearnSDK.GetBalances.Scripts
             //Get the balance of ERC20
             BigInteger balanceOf = await ERC20.BalanceOf(chain, network, contract, address);
             
+            /****************************/
+            
+            //Use this if you want to burn a particular amount of tokens
+            
             //string burnValue = "100";
             //string traillingZeros = "000000000000000000";
             //string concatenated = burnValue + traillingZeros;
             
             //turn balanceOf to a string
-            string balanceOfString = balanceOf.ToString();
+            balanceOfString = balanceOf.ToString();
 
             //Arguments used for the smart contract function call
 
@@ -80,15 +88,46 @@ namespace GearnSDK.GetBalances.Scripts
         async void getStatus()
         {
             try{
-                await EVM.TxStatus(chain, network, transaction);
+                txConfirmed = await EVM.TxStatus(chain, network, transaction);
                 //reinitialize the transaction variable
                 transaction = null;
             }
-            catch(Exception e)
+            catch(Exception)
             {
-                Debug.Log(e);
+                txConfirmed = "error";
             }
+        
+            //Send a notification to the screen, this can be changed freely to fit the needs of the game
+            if(!txConfirmed.Equals("success"))
+            {
+                Debug.Log("Transaction failed");
+            }
+            else
+            {
+                Debug.Log("Transaction successful");
+            
+                //if transaction is successful, take all of the in-game diamond
+                
+                //take away the last 18 characters in the balanceOfString string
+                balanceOfString = balanceOfString.Substring(0, balanceOfString.Length - 18);
+                
+                //change balanceOfString to integer
+                int balanceOfInt = int.Parse(balanceOfString);
+                
+                //change the in-game diamond balance to the new balance
+                diamondBalance.setDiamondBalance(balanceOfInt);
+                
+                
+                //This variable is used to send back to the game scene the new amount of diamonds the user has
+                //More explanation can be found in the GoToBalanceScene class
+                var transactionPassed = true;
+                
+                //Save the transaction's status to the player prefs
+                PlayerPrefs.SetInt("transactionPassed", transactionPassed?1:0);
+            }
+            //reenable the button
             burnButton.enabled = true;
+            refreshButton.Refresh();
         }
     
         //Function called when the button is clicked
