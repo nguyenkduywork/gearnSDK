@@ -66,8 +66,7 @@ namespace GearnSDK.MintButton
 
         public void OnClick()
         {
-            //mintButton();
-            Debug.Log(chain);
+            mintButton();
         }
     
         //Retrieve all in-game diamond from the user
