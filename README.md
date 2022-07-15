@@ -5,6 +5,8 @@
   <li> In Unity, open Assets/Web3Unity/Scences/WalletLogin, then go to File/Build Settings then click Add Open Scenes, make sure the WalletLogin scene is
     placed as the first scene, before the main game. </li>
   <li> In Assets/GearnSDK, you will see prefabs and scripts with detailed comments and explications.
+  
+  <li> Demo: <a href="https://www.youtube.com/watch?v=apa6zE67mM4"> Click here </a> </li>
 </ol>
 
 <h2> Prefabs </h2>
@@ -47,8 +49,10 @@
   <li> GetWalletAddress. </li>
   <li> RefreshButton. </li>
   <li> MintToken: A script that: verify the user has in game Diamonds, then try to convert them into IRC2 tokens on the Rinkeby blockchain to the user's wallet (Contract address of IRC is: 0x9B7E19548fb3E11CF24cd2140FBE9271ef6E61EF) </li>
-  <li> CallSolidityFuncForButton: A general script to call simple Solidity functions. </li>
+  <li> CallSolidityFuncForButton: A general script to call simple Solidity functions. Here I use mint function as an example </li>
   <li> BurnButton: A script to call the Burn function from Solidity and assign it to a button. Useful for "Web3 shopping" in game </li>  
-  <li> JSONReader: A script that reads the contents in the JSON Text file </li>
   <li> ApplyNftTexture: A script that changes the material of a game object into the user's desired NFT's image </li>
+  <li> NftScene_ButtonListener: A script that is used to save the wallet address and bring it to the nft showcase scene when the user clicks on the button "Your NFTs" </li>
+  <li> JSONReader: A script that reads the contents in the JSON Text file </li>
+  <li> FindUserGameNft: A script that compares the NFTs that the user has with the NFTs stored inside the JSON Text file, then apply the texture to a game object </li>
 </ul>
