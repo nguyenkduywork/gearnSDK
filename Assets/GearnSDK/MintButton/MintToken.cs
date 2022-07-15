@@ -8,47 +8,66 @@ namespace GearnSDK.MintButton
     public class MintToken : MonoBehaviour
     {
         //The button to mint a token
-        public Button yourButton;
+        public Button MintBouton;
+        
         //GameManager object to get the game data (diamonds)
         [SerializeField]
         private GameManager gameManager;
     
         //The user's wallet address
         string address;
+        
         //Function name in the smart contract
         string method = "mint";
-        //string method = "burn";
+
         //Smart contract's abi
-        private string abi =
-            "[ { \"inputs\": [], \"stateMutability\": \"nonpayable\", \"type\": \"constructor\" }, { \"anonymous\": false, \"inputs\": [ { \"indexed\": true, \"internalType\": \"address\", \"name\": \"owner\", \"type\": \"address\" }, { \"indexed\": true, \"internalType\": \"address\", \"name\": \"spender\", \"type\": \"address\" }, { \"indexed\": false, \"internalType\": \"uint256\", \"name\": \"value\", \"type\": \"uint256\" } ], \"name\": \"Approval\", \"type\": \"event\" }, { \"anonymous\": false, \"inputs\": [ { \"indexed\": true, \"internalType\": \"address\", \"name\": \"from\", \"type\": \"address\" }, { \"indexed\": true, \"internalType\": \"address\", \"name\": \"to\", \"type\": \"address\" }, { \"indexed\": false, \"internalType\": \"uint256\", \"name\": \"value\", \"type\": \"uint256\" } ], \"name\": \"Transfer\", \"type\": \"event\" }, { \"inputs\": [ { \"internalType\": \"address\", \"name\": \"owner\", \"type\": \"address\" }, { \"internalType\": \"address\", \"name\": \"spender\", \"type\": \"address\" } ], \"name\": \"allowance\", \"outputs\": [ { \"internalType\": \"uint256\", \"name\": \"\", \"type\": \"uint256\" } ], \"stateMutability\": \"view\", \"type\": \"function\" }, { \"inputs\": [ { \"internalType\": \"address\", \"name\": \"spender\", \"type\": \"address\" }, { \"internalType\": \"uint256\", \"name\": \"amount\", \"type\": \"uint256\" } ], \"name\": \"approve\", \"outputs\": [ { \"internalType\": \"bool\", \"name\": \"\", \"type\": \"bool\" } ], \"stateMutability\": \"nonpayable\", \"type\": \"function\" }, { \"inputs\": [ { \"internalType\": \"address\", \"name\": \"account\", \"type\": \"address\" } ], \"name\": \"balanceOf\", \"outputs\": [ { \"internalType\": \"uint256\", \"name\": \"\", \"type\": \"uint256\" } ], \"stateMutability\": \"view\", \"type\": \"function\" }, { \"inputs\": [ { \"internalType\": \"uint256\", \"name\": \"amount\", \"type\": \"uint256\" } ], \"name\": \"burn\", \"outputs\": [], \"stateMutability\": \"nonpayable\", \"type\": \"function\" }, { \"inputs\": [ { \"internalType\": \"address\", \"name\": \"account\", \"type\": \"address\" }, { \"internalType\": \"uint256\", \"name\": \"amount\", \"type\": \"uint256\" } ], \"name\": \"burnFrom\", \"outputs\": [], \"stateMutability\": \"nonpayable\", \"type\": \"function\" }, { \"inputs\": [ { \"internalType\": \"address\", \"name\": \"\", \"type\": \"address\" } ], \"name\": \"claimByAddress\", \"outputs\": [ { \"internalType\": \"uint256\", \"name\": \"\", \"type\": \"uint256\" } ], \"stateMutability\": \"view\", \"type\": \"function\" }, { \"inputs\": [], \"name\": \"decimals\", \"outputs\": [ { \"internalType\": \"uint8\", \"name\": \"\", \"type\": \"uint8\" } ], \"stateMutability\": \"view\", \"type\": \"function\" }, { \"inputs\": [ { \"internalType\": \"address\", \"name\": \"spender\", \"type\": \"address\" }, { \"internalType\": \"uint256\", \"name\": \"subtractedValue\", \"type\": \"uint256\" } ], \"name\": \"decreaseAllowance\", \"outputs\": [ { \"internalType\": \"bool\", \"name\": \"\", \"type\": \"bool\" } ], \"stateMutability\": \"nonpayable\", \"type\": \"function\" }, { \"inputs\": [ { \"internalType\": \"address\", \"name\": \"spender\", \"type\": \"address\" }, { \"internalType\": \"uint256\", \"name\": \"addedValue\", \"type\": \"uint256\" } ], \"name\": \"increaseAllowance\", \"outputs\": [ { \"internalType\": \"bool\", \"name\": \"\", \"type\": \"bool\" } ], \"stateMutability\": \"nonpayable\", \"type\": \"function\" }, { \"inputs\": [ { \"internalType\": \"address\", \"name\": \"to\", \"type\": \"address\" }, { \"internalType\": \"uint256\", \"name\": \"amount\", \"type\": \"uint256\" } ], \"name\": \"mint\", \"outputs\": [], \"stateMutability\": \"nonpayable\", \"type\": \"function\" }, { \"inputs\": [], \"name\": \"name\", \"outputs\": [ { \"internalType\": \"string\", \"name\": \"\", \"type\": \"string\" } ], \"stateMutability\": \"view\", \"type\": \"function\" }, { \"inputs\": [], \"name\": \"symbol\", \"outputs\": [ { \"internalType\": \"string\", \"name\": \"\", \"type\": \"string\" } ], \"stateMutability\": \"view\", \"type\": \"function\" }, { \"inputs\": [], \"name\": \"totalSupply\", \"outputs\": [ { \"internalType\": \"uint256\", \"name\": \"\", \"type\": \"uint256\" } ], \"stateMutability\": \"view\", \"type\": \"function\" }, { \"inputs\": [ { \"internalType\": \"address\", \"name\": \"to\", \"type\": \"address\" }, { \"internalType\": \"uint256\", \"name\": \"amount\", \"type\": \"uint256\" } ], \"name\": \"transfer\", \"outputs\": [ { \"internalType\": \"bool\", \"name\": \"\", \"type\": \"bool\" } ], \"stateMutability\": \"nonpayable\", \"type\": \"function\" }, { \"inputs\": [ { \"internalType\": \"address\", \"name\": \"from\", \"type\": \"address\" }, { \"internalType\": \"address\", \"name\": \"to\", \"type\": \"address\" }, { \"internalType\": \"uint256\", \"name\": \"amount\", \"type\": \"uint256\" } ], \"name\": \"transferFrom\", \"outputs\": [ { \"internalType\": \"bool\", \"name\": \"\", \"type\": \"bool\" } ], \"stateMutability\": \"nonpayable\", \"type\": \"function\" } ]";
+        private string abi; 
+            
         //Contract's address
-        string contract = "0x9B7E19548fb3E11CF24cd2140FBE9271ef6E61EF";
+        string contract;
+        
         //Value in wei to be sent to the contract, here 0
         string value = "0";
+        
         //Gas limit to be used for the transaction
         string gasLimit = "";
         string gasPrice = "";
+        
         //Arguments for the function call
         string args;
-        //Chain ID of the network the contract is deployed on, here Rinkeby so 4
-        string chainId= "4";
+        
+        //Chain ID of the network the contract is deployed on
+        string chainId;
+        
         //The data to be sent to the contract
         private string data;
+        
         //User's current in game diamonds
         int currentDiamond;
         
-        string chain = "ethereum";
-        string network = "rinkeby";
+        //Chain of the network
+        string chain;
+        
+        //Network name
+        string network;
         
         private string transaction;
         
         string txConfirmed;
         
-        [SerializeField] Button btn;
-        
+        private void Awake()
+        {
+            chain = Environment.GetEnvironmentVariable("chain");
+            chainId = Environment.GetEnvironmentVariable("chainId");
+            network = Environment.GetEnvironmentVariable("network");
+            abi = Environment.GetEnvironmentVariable("abi");
+            contract = Environment.GetEnvironmentVariable("contract");
+        }
+
         public void OnClick()
         {
-            mintButton();
+            //mintButton();
+            Debug.Log(chain);
         }
     
         //Retrieve all in-game diamond from the user
@@ -108,7 +127,7 @@ namespace GearnSDK.MintButton
                 retireMonnaie();
             }
             //reenable the button
-            yourButton.enabled = true;
+            MintBouton.enabled = true;
         }
     
         //Function called when the button is clicked,
@@ -116,7 +135,7 @@ namespace GearnSDK.MintButton
         private async void mintButton()
         {
             //Disable the button to prevent multiple clicks
-            yourButton.enabled = false;
+            MintBouton.enabled = false;
         
             //Get the current diamond in the database, this depends on the game and how it is implemented
             currentDiamond = Singleton<DataManager>.Instance.database.diamond;
@@ -126,7 +145,7 @@ namespace GearnSDK.MintButton
                 Notification.instance.Warning("You don't have any diamonds");
                 Singleton<SoundManager>.Instance.Play("Notification");
                 //Re-enable the button
-                yourButton.enabled = true;
+                MintBouton.enabled = true;
                 return;
             }
         

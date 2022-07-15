@@ -12,11 +12,14 @@ public class ERC20BalanceGearn : MonoBehaviour
     void Awake()
     {
         //Chain name
-        chain = "ethereum";
+        chain = Environment.GetEnvironmentVariable("chain");
+        
         //Network name, this varies depending on the chain
-        network = "rinkeby";
+        network = Environment.GetEnvironmentVariable("network");
+        
         //ERC20 contract address
-        contract = "0x9B7E19548fb3E11CF24cd2140FBE9271ef6E61EF";
+        contract = Environment.GetEnvironmentVariable("contract");
+        
         //User's wallet address
         account = PlayerPrefs.GetString("Account");
         

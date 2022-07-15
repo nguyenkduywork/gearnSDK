@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using System.Numerics;
 using System.Threading.Tasks;
@@ -9,8 +10,10 @@ using UnityEngine.UI;
 
 namespace GearnSDK.Web3_Database.Scripts
 {
+    [SuppressMessage("ReSharper", "LocalVariableHidesMember")]
     public class FindUserGameNft : MonoBehaviour
     {
+        [SuppressMessage("ReSharper", "UnusedAutoPropertyAccessor.Local")]
         private class NFTs
         {
             public string contract { get; set; }
@@ -18,8 +21,9 @@ namespace GearnSDK.Web3_Database.Scripts
         }
     
         //Initialize the variables
-        string chain = "ethereum";
-        string network = "rinkeby";
+        private string chain;
+        private string network;
+        
         private string account;
     
         //User's ERC1155 NFTs
@@ -34,7 +38,12 @@ namespace GearnSDK.Web3_Database.Scripts
         private JSONReader.Contract[] contractInDatabase;
 
         private List<int> indices;
-
+        
+        private void Awake()
+        {
+            chain = Environment.GetEnvironmentVariable("chain");
+            network = Environment.GetEnvironmentVariable("network");
+        }
         async void Start()
         {
         
@@ -63,7 +72,7 @@ namespace GearnSDK.Web3_Database.Scripts
         
         //Counter for onClick function
 
-        int i = 0;
+        int i;
         public void onClick()
         {
             try
@@ -82,15 +91,15 @@ namespace GearnSDK.Web3_Database.Scripts
         }
 
         //Get the list of indices in the Json file that are also in erc1155s
-        private List<int> ListOfIndices(JSONReader.Contract[] contractInDatabase)
+        private List<int> ListOfIndices(JSONReader.Contract[] databaseContracts)
         {
             List<int> indices = new List<int>();
-            for (int i = 0; i < contractInDatabase.Length; i++)
+            for (int i = 0; i < databaseContracts.Length; i++)
             {
                 for (int j = 0; j < erc1155s.Length; j++)
                 {
-                    if (contractInDatabase[i].contract == erc1155s[j].contract &&
-                        contractInDatabase[i].tokenId == erc1155s[j].tokenId)
+                    if (databaseContracts[i].contract == erc1155s[j].contract &&
+                        databaseContracts[i].tokenId == erc1155s[j].tokenId)
                     {
                         //if the indices are already in the list, don't add them again
                         if (!indices.Contains(i))

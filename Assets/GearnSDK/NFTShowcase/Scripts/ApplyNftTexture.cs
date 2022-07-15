@@ -1,3 +1,5 @@
+using System;
+using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using System.Numerics;
 using System.Threading.Tasks;
@@ -5,15 +7,18 @@ using Newtonsoft.Json;
 using UnityEngine;
 using UnityEngine.Networking;
 using UnityEngine.UI;
+#pragma warning disable CS0649
 
 namespace GearnSDK.NFTShowcase.Scripts
 {
     public class ApplyNftTexture : MonoBehaviour
     {
-        public class Response {
+        [SuppressMessage("ReSharper", "InconsistentNaming")]
+        private class Response { 
             public string image;
         }
     
+        [SuppressMessage("ReSharper", "UnusedAutoPropertyAccessor.Local")]
         private class NFTs
         {
             public string contract { get; set; }
@@ -21,11 +26,14 @@ namespace GearnSDK.NFTShowcase.Scripts
         }
     
         //Initialize the variables
-        string chain = "ethereum";
-        string network = "rinkeby";
+        string chain;
+        string network;
+        
         string contract;
         string tokenId;
+        
         string account;
+        
         int count;
     
         //Array of NFTs
@@ -37,6 +45,12 @@ namespace GearnSDK.NFTShowcase.Scripts
     
         //The gameobject that will hold the image of NFTs
         private GameObject myNft;
+        
+        private void Awake()
+        {
+            chain = Environment.GetEnvironmentVariable("chain");
+            network = Environment.GetEnvironmentVariable("network");
+        }
         async void Start()
         {
             btn = GetComponent<Button>();
@@ -98,7 +112,7 @@ namespace GearnSDK.NFTShowcase.Scripts
                 myNft.GetComponent<Renderer>().material.mainTexture =
                     ((DownloadHandlerTexture) textureRequest.downloadHandler).texture;
             }
-            catch (System.Exception e)
+            catch (Exception e)
             {
                 Debug.Log(e);
             }
@@ -111,7 +125,7 @@ namespace GearnSDK.NFTShowcase.Scripts
                 // parse json to get image uri
                 imageUri = data.image;
             }
-            catch(System.Exception e)
+            catch(Exception e)
             {
                 Debug.Log(e);
                 imageUri = "";
@@ -139,7 +153,7 @@ namespace GearnSDK.NFTShowcase.Scripts
                     JsonUtility.FromJson<Response>(System.Text.Encoding.UTF8.GetString(webRequest.downloadHandler.data));
                 return data;
             }
-            catch (System.Exception e)
+            catch (Exception e)
             {
                 Debug.Log(e);
             }

@@ -12,9 +12,9 @@ public class ETHBalance : MonoBehaviour
     void Awake()
     {
         //Chain name
-        chain = "ethereum";
+        chain = Environment.GetEnvironmentVariable("chain");
         //Network name, this varies depending on the chain
-        network = "rinkeby"; // mainnet ropsten kovan rinkeby goerli
+        network = Environment.GetEnvironmentVariable("network"); // mainnet ropsten kovan rinkeby goerli
         //User's wallet address
         account = PlayerPrefs.GetString("Account");
 
