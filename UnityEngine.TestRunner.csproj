@@ -132,8 +132,8 @@
      <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.29\UnityEngine.TestRunner\TestRunner\Callbacks\PlayModeRunnerCallback.cs" />
      <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.29\UnityEngine.TestRunner\NUnitExtensions\Commands\EnumerableSetUpTearDownCommand.cs" />
      <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.29\UnityEngine.TestRunner\Utils\MonoBehaviourTest\IMonoBehaviourTest.cs" />
-     <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.29\UnityEngine.TestRunner\Utils\IPrebuildSceneSetup.cs" />
      <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.29\UnityEngine.TestRunner\NUnitExtensions\Attributes\UnitySetUpAttribute.cs" />
+     <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.29\UnityEngine.TestRunner\Utils\IPrebuildSceneSetup.cs" />
      <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.29\UnityEngine.TestRunner\NUnitExtensions\Runner\UnityWorkItemDataHolder.cs" />
      <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.29\UnityEngine.TestRunner\Utils\MonoBehaviourTest\MonoBehaviourTest.cs" />
      <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.29\UnityEngine.TestRunner\TestRunner\Callbacks\RemoteTestResultSender.cs" />
