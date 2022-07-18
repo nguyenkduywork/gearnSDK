@@ -16,7 +16,7 @@ public class DiamondBalance : MonoBehaviour
     {
         if(DiamondText!=null) DiamondText.text = currentDiamond.ToString();
     }
-    
+
     public void setDiamondBalance(int amount)
     {
         currentDiamond = amount;

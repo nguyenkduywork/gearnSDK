@@ -152,7 +152,5 @@ namespace GearnSDK.Web3_Database.Scripts
                 print("Error: " + e);
             }
         }
-    
-    
     }
 }

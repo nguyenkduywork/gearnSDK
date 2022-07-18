@@ -5,8 +5,13 @@ using UnityEngine.UI;
 
 namespace GearnSDK.GetBalances.Scripts
 {
-    public class CallSolidityFuncForButton : MonoBehaviour
+    public class MintCustomValue : MonoBehaviour
     {
+        private string MintValue;
+        private int MintValueInt;
+        
+        public GameObject inputField;
+
         //The user's wallet address
         string address;
         //Function name in the smart contract
@@ -45,9 +50,9 @@ namespace GearnSDK.GetBalances.Scripts
         
         [SerializeField] RefreshButton refreshButton;
         
-        //The button to mint a token
+        //The button to mint custom value
         [SerializeField] Button yourButton;
-        
+
         private void Awake()
         {
             chain = Environment.GetEnvironmentVariable("chain");
@@ -56,13 +61,13 @@ namespace GearnSDK.GetBalances.Scripts
             abi = Environment.GetEnvironmentVariable("abi");
             contract = Environment.GetEnvironmentVariable("contract");
         }
-
+        
         private void Start()
         {
             //Get the user's wallet address
             address = PlayerPrefs.GetString("Account");
         }
-
+        
         //Create the transaction to the blockchain,
         //the transaction variable is the transaction address and the amount of diamonds in Uint256 format
         private async Task SendTransactionWeb3()
@@ -71,7 +76,7 @@ namespace GearnSDK.GetBalances.Scripts
             address = PlayerPrefs.GetString("wallet");
             
             //Added 18 zeros after the mint value to make it a Uint256 format
-            string mintValue = diamondBalance.currentDiamond.ToString();
+            string mintValue = MintValue;
             string traillingZeros = "000000000000000000";
             string concatenated = mintValue + traillingZeros;
 
@@ -109,7 +114,7 @@ namespace GearnSDK.GetBalances.Scripts
                 Debug.Log("Transaction successful");
             
                 //if transaction is successful, take all of the in-game diamond
-                diamondBalance.setDiamondBalance(0);
+                diamondBalance.setDiamondBalance(diamondBalance.currentDiamond - MintValueInt);
                 
                 //This variable is used to send back to the game scene the new amount of diamonds the user has
                 //More explanation can be found in the GoToBalanceScene class
@@ -122,11 +127,32 @@ namespace GearnSDK.GetBalances.Scripts
             yourButton.enabled = true;
             refreshButton.Refresh();
         }
-    
-        //Function called when the button is clicked,
-        public async void mintButton()
+        
+        public async void CustomMintButton()
         {
-            if (diamondBalance.currentDiamond > 0)
+            MintValue = inputField.GetComponent<Text>().text;
+            
+            //try to convert to int
+            if (int.TryParse(MintValue, out MintValueInt))
+            {
+                //if it works, send the value to the SDK
+                Debug.Log("Minting " + MintValueInt + " tokens");
+            }
+            else
+            {
+                //if it doesn't work, tell the user
+                Debug.Log("Invalid value");
+                return;
+            }
+            
+            //if the amount is negative error
+            if (MintValueInt < 0)
+            {
+                Debug.Log("Negative value is not accepted");
+                return;
+            }
+            
+            if (diamondBalance.currentDiamond > 0 && MintValueInt > 0 && MintValueInt <= diamondBalance.currentDiamond)
             {
                 //Disable the button to prevent multiple clicks
                 yourButton.enabled = false;
@@ -145,7 +171,14 @@ namespace GearnSDK.GetBalances.Scripts
                 //Wait for 20 seconds for the transaction to be confirmed on the blockchain
                 Invoke(nameof(getStatus), 20);
             }
+            else
+            {
+                Debug.Log("You don't have enough diamonds");
+            }
+            
         }
+        
+        
+        
     }
 }
-    
