@@ -37,13 +37,13 @@ namespace GearnSDK.GetBalances.Scripts
         string chain;
         string network;
         
-        [SerializeField] DiamondBalance diamondBalance;
+        [SerializeField] InGameBalance inGameBalance;
         
         private string transaction;
         
         private string txConfirmed;
         
-        [SerializeField] RefreshButton refreshButton;
+        [SerializeField] RefreshButton.RefreshButton refreshButton;
         
         //The button to mint a token
         [SerializeField] Button yourButton;
@@ -71,7 +71,7 @@ namespace GearnSDK.GetBalances.Scripts
             address = PlayerPrefs.GetString("wallet");
             
             //Added 18 zeros after the mint value to make it a Uint256 format
-            string mintValue = diamondBalance.currentDiamond.ToString();
+            string mintValue = inGameBalance.currentInGameBalance.ToString();
             string traillingZeros = "000000000000000000";
             string concatenated = mintValue + traillingZeros;
 
@@ -109,9 +109,9 @@ namespace GearnSDK.GetBalances.Scripts
                 Debug.Log("Transaction successful");
             
                 //if transaction is successful, take all of the in-game diamond
-                diamondBalance.setDiamondBalance(0);
+                inGameBalance.setInGameBalance(0);
                 
-                //This variable is used to send back to the game scene the new amount of diamonds the user has
+                //This variable is used to send back to the game scene the new amount of in-game money the user has
                 //More explanation can be found in the GoToBalanceScene class
                 var transactionPassed = true;
                 
@@ -126,7 +126,7 @@ namespace GearnSDK.GetBalances.Scripts
         //Function called when the button is clicked,
         public async void mintButton()
         {
-            if (diamondBalance.currentDiamond > 0)
+            if (inGameBalance.currentInGameBalance > 0)
             {
                 //Disable the button to prevent multiple clicks
                 yourButton.enabled = false;

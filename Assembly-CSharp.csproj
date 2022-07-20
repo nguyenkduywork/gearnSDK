@@ -52,7 +52,7 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\GearnSDK\GetBalances\Scripts\DiamondBalance.cs" />
+     <Compile Include="Assets\GearnSDK\GetBalances\Scripts\InGameBalance.cs" />
      <Compile Include="Assets\Web3Unity\Scripts\Prefabs\ERC20\ERC20SymbolExample.cs" />
      <Compile Include="Assets\Web3Unity\Scripts\Prefabs\ERC721\ERC721URIExample.cs" />
      <Compile Include="Assets\Spine\Runtime\spine-unity\SpineAttributes.cs" />

@@ -141,7 +141,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ac6a455a12b03b4694a64fcd9bf9e07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  diamondBalance: {fileID: 6914059835711798819}
+  inGameBalance: {fileID: 6914059835711798819}
   refreshButton: {fileID: 856694039}
   yourButton: {fileID: 7620441325584905351}
 --- !u!1 &78092893
@@ -615,7 +615,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   burnButton: {fileID: 253621493}
-  diamondBalance: {fileID: 6914059835711798819}
+  inGameBalance: {fileID: 6914059835711798819}
   refreshButton: {fileID: 856694039}
 --- !u!1 &856694036 stripped
 GameObject:
@@ -635,7 +635,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d18f3302450bd044b99c12f125d6d304, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  refreshButton: {fileID: 8292576601791543685}
 --- !u!224 &932375399 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6656094689561526087, guid: ef3078c0ed364d74ab18231421f987fb,
@@ -1187,10 +1186,15 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8792050765290373898, guid: 10886571027c1c44386ec3052cb45732,
+        type: 3}
+      propertyPath: m_Text
+      value: In-game Money
+      objectReference: {fileID: 0}
     - target: {fileID: 8792050765945674952, guid: 10886571027c1c44386ec3052cb45732,
         type: 3}
       propertyPath: m_Name
-      value: Diamond Balance
+      value: In Game Balance
       objectReference: {fileID: 0}
     - target: {fileID: 8792050765945674952, guid: 10886571027c1c44386ec3052cb45732,
         type: 3}
@@ -1200,7 +1204,7 @@ PrefabInstance:
     - target: {fileID: 8792050766426611250, guid: 10886571027c1c44386ec3052cb45732,
         type: 3}
       propertyPath: m_Name
-      value: Diamond Amount Text
+      value: In Game Amount Text
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 10886571027c1c44386ec3052cb45732, type: 3}
@@ -1756,6 +1760,11 @@ PrefabInstance:
       objectReference: {fileID: 149377768}
     - target: {fileID: 6656094689561526088, guid: ef3078c0ed364d74ab18231421f987fb,
         type: 3}
+      propertyPath: inGameBalance
+      value: 
+      objectReference: {fileID: 6914059835711798819}
+    - target: {fileID: 6656094689561526088, guid: ef3078c0ed364d74ab18231421f987fb,
+        type: 3}
       propertyPath: refreshButton
       value: 
       objectReference: {fileID: 856694039}
@@ -1784,8 +1793,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 485dcbd8b78f65f4e9b09a403fd2b6d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentDiamond: 0
-  DiamondText: {fileID: 6914059835711798829}
+  currentInGameBalance: 0
+  InGameBalanceText: {fileID: 6914059835711798829}
 --- !u!114 &6914059835711798829 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8792050766426611261, guid: 10886571027c1c44386ec3052cb45732,
@@ -2255,15 +2264,3 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5eaac8659ef2e44eb12fa5edb8e6dd4, type: 3}
---- !u!114 &8292576601791543685 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1516565121494000081, guid: f84d55b5e2dfd9043bb70e348dcaae99,
-    type: 3}
-  m_PrefabInstance: {fileID: 7358544837515515988}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 856694036}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

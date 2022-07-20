@@ -1,35 +1,35 @@
-using System.Collections;
-using System.Collections.Generic;
+using GearnSDK.GetBalances.Scripts;
 using UnityEngine;
-using UnityEngine.UI;
 
-public class RefreshButton : MonoBehaviour
+namespace GearnSDK.RefreshButton
 {
-    [SerializeField] Button refreshButton;
-    ETHBalance ethBalance;
-    ERC20BalanceGearn erc20Balance;
-    DiamondBalance diamondBalance;
-    void Start()
+    public class RefreshButton : MonoBehaviour
     {
-        diamondBalance = FindObjectOfType<DiamondBalance>();
-        ethBalance = FindObjectOfType<ETHBalance>();
-        erc20Balance = FindObjectOfType<ERC20BalanceGearn>();
-    }
+        ETHBalance ethBalance;
+        ERC20BalanceGearn erc20Balance;
+        InGameBalance inGameBalance;
+        void Start()
+        {
+            inGameBalance = FindObjectOfType<InGameBalance>();
+            ethBalance = FindObjectOfType<ETHBalance>();
+            erc20Balance = FindObjectOfType<ERC20BalanceGearn>();
+        }
     
-    public void Refresh()
-    {
-        Debug.Log("Refresh");
-        if(diamondBalance != null)
+        public void Refresh()
         {
-            diamondBalance.ShowDiamondBalance();
-        }
-        if(ethBalance != null)
-        {
-            ethBalance.ShowETHBalance();
-        }
-        if(erc20Balance != null)
-        {
-            erc20Balance.ShowERC20Balance();
+            Debug.Log("Refresh");
+            if(inGameBalance != null)
+            {
+                inGameBalance.ShowInGameBalance();
+            }
+            if(ethBalance != null)
+            {
+                ethBalance.ShowETHBalance();
+            }
+            if(erc20Balance != null)
+            {
+                erc20Balance.ShowERC20Balance();
+            }
         }
     }
 }

@@ -43,9 +43,9 @@ namespace GearnSDK.GetBalances.Scripts
         //The button to burn tokens
         [SerializeField] Button burnButton;
         
-        [SerializeField] DiamondBalance diamondBalance;
+        [SerializeField] InGameBalance inGameBalance;
         
-        [SerializeField] RefreshButton refreshButton;
+        [SerializeField] RefreshButton.RefreshButton refreshButton;
         
         private string transaction;
         
@@ -70,7 +70,6 @@ namespace GearnSDK.GetBalances.Scripts
         }
 
         //Create the transaction to the blockchain,
-        //the transaction variable is the transaction address and the amount of diamonds in Uint256 format
         private async Task SendTransactionWeb3()
         {
             //Get the user's wallet address
@@ -92,7 +91,7 @@ namespace GearnSDK.GetBalances.Scripts
 
             //Arguments used for the smart contract function call
 
-            args = string.Format("[\"{0}\"]", balanceOfString);
+            args = $"[\"{balanceOfString}\"]";
         
             //Create the data to be sent to the contract
             data = await EVM.CreateContractData(abi, method, args);
@@ -132,7 +131,7 @@ namespace GearnSDK.GetBalances.Scripts
                 int balanceOfInt = int.Parse(balanceOfString);
                 
                 //change the in-game diamond balance to the new balance
-                diamondBalance.setDiamondBalance(balanceOfInt);
+                inGameBalance.setInGameBalance(balanceOfInt);
                 
                 
                 //This variable is used to send back to the game scene the new amount of diamonds the user has

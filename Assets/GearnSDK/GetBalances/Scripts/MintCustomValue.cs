@@ -1,10 +1,10 @@
 using System;
 using System.Threading.Tasks;
+using GearnSDK.GetBalances.Scripts;
+using GearnSDK.RefreshButton;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace GearnSDK.GetBalances.Scripts
-{
     public class MintCustomValue : MonoBehaviour
     {
         private string MintValue;
@@ -42,7 +42,7 @@ namespace GearnSDK.GetBalances.Scripts
         string chain;
         string network;
         
-        [SerializeField] DiamondBalance diamondBalance;
+        [SerializeField] InGameBalance inGameBalance;
         
         private string transaction;
         
@@ -114,7 +114,7 @@ namespace GearnSDK.GetBalances.Scripts
                 Debug.Log("Transaction successful");
             
                 //if transaction is successful, take all of the in-game diamond
-                diamondBalance.setDiamondBalance(diamondBalance.currentDiamond - MintValueInt);
+                inGameBalance.setInGameBalance(inGameBalance.currentInGameBalance - MintValueInt);
                 
                 //This variable is used to send back to the game scene the new amount of diamonds the user has
                 //More explanation can be found in the GoToBalanceScene class
@@ -152,7 +152,7 @@ namespace GearnSDK.GetBalances.Scripts
                 return;
             }
             
-            if (diamondBalance.currentDiamond > 0 && MintValueInt > 0 && MintValueInt <= diamondBalance.currentDiamond)
+            if (inGameBalance.currentInGameBalance > 0 && MintValueInt > 0 && MintValueInt <= inGameBalance.currentInGameBalance)
             {
                 //Disable the button to prevent multiple clicks
                 yourButton.enabled = false;
@@ -181,4 +181,3 @@ namespace GearnSDK.GetBalances.Scripts
         
         
     }
-}

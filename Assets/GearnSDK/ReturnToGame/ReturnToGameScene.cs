@@ -1,13 +1,16 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class ReturnToGameScene : MonoBehaviour
+namespace GearnSDK.ReturnToGame
 {
-    
-    //Move to next scene when click on the button
-    public void MoveToGameScene()
+    public class ReturnToGameScene : MonoBehaviour
     {
-        //Load the next scene
-        SceneManager.LoadScene("Game");
+    
+        //Move to next scene when click on the button
+        public void MoveToGameScene()
+        {
+            //Load the next scene
+            SceneManager.LoadScene("Game");
+        }
     }
 }
