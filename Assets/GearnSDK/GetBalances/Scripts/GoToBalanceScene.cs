@@ -16,7 +16,7 @@ namespace GearnSDK.GetBalances.Scripts
                 //SetInGameBalance()
                 
                 //Change this accordingly to your project
-                //[[Call your function to get the current in-game balance here then delete the "//" at the start of the line]] = PlayerPrefs.GetInt("InGameMoney");
+                TheDataManager.THE_PLAYER_DATA.GEM = PlayerPrefs.GetInt("InGameMoney");
             
                 var transactionPassed = false;
                 
@@ -31,7 +31,7 @@ namespace GearnSDK.GetBalances.Scripts
         {
             //Get the current in-game balance in the database, this depends on the game and how it is implemented
             
-            //int currentInGameBalance = [[Call your function to get the current in-game balance here then delete the "//" at the start of the line]];
+            int currentInGameBalance = TheDataManager.THE_PLAYER_DATA.GEM;
             PlayerPrefs.SetInt("InGameMoney", currentInGameBalance);
             
             //Loads next scene
