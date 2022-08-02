@@ -52,7 +52,7 @@
   <li> CallSolidityFuncForButton: A general script to call simple Solidity functions. Here I use mint function as an example </li>
   <li> BurnButton: A script to call the Burn function from Solidity and assign it to a button. Useful for "Web3 shopping" in game </li>  
   <li> ApplyNftTexture: A script that changes the material of a game object into the user's desired NFT's image </li>
-  <li> NftScene_ButtonListener: A script that is used to save the wallet address and bring it to the nft showcase scene when the user clicks on the button "Your NFTs" </li>
+</li>
   <li> JSONReader: A script that reads the contents in the JSON Text file </li>
   <li> FindUserGameNft: A script that compares the NFTs that the user has with the NFTs stored inside the JSON Text file, then apply the texture to a game object </li>
 </ul>
