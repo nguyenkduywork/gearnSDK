@@ -29,13 +29,17 @@ namespace GearnSDK.GetBalances.Scripts
         //Move to next scene when click on the button
         public void MoveToBalanceScene()
         {
+            //Get the build index of the current scene
+            int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+            PlayerPrefs.SetInt("currentSceneIndex", currentSceneIndex);
+            
             //Get the current in-game balance in the database, this depends on the game and how it is implemented
             
             int currentInGameBalance = TheDataManager.THE_PLAYER_DATA.GEM;
             PlayerPrefs.SetInt("InGameMoney", currentInGameBalance);
             
             //Loads next scene
-            SceneManager.LoadScene("TokenBalances");
+            SceneManager.LoadScene("WalletLogin");
         }
     }
 }

@@ -10,7 +10,7 @@ namespace GearnSDK.ReturnToGame
         public void MoveToGameScene()
         {
             //load the first scene, please change the index to the first scene you want to load
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene(PlayerPrefs.GetInt("currentSceneIndex", 0));
         }
     }
 }
